@@ -1,0 +1,3169 @@
+Key;Attribute;DefaultLanguage;de-DE
+APPLICATION_PROGRAM;VisibleDescription;;
+APPLICATION_PROGRAM;Name;RAMSES 718 P;
+APPLICATION_PROGRAM;HelpFile;;
+ENUM_PAT_A_EINAUSUM8.EIN;Text;EIN;EIN
+ENUM_PAT_A_EINAUSUM8.AUS;Text;AUS;AUS
+ENUM_PAT_A_EINAUSUM8.UM;Text;UM;UM
+ENUM_PAT_A_NEINJA.NEIN;Text;Nein;Nein
+ENUM_PAT_A_NEINJA.JA;Text;Ja;Ja
+ENUM_PAT_A_PRIOEINAUSKEINE8.KEINE;Text;keine Priorität;keine Priorität
+ENUM_PAT_A_PRIOEINAUSKEINE8.P_AUS;Text;Priorität Aus;Priorität Aus
+ENUM_PAT_A_PRIOEINAUSKEINE8.P_EIN;Text;Priorität Ein;Priorität Ein
+ENUM_PAT_A_SPERRSINN.STD1;Text;Sperren mit 1 (Standard);Sperren mit 1 (Standard)
+ENUM_PAT_A_SPERRSINN.INV;Text;Sperren mit 0;Sperren mit 0
+ENUM_PAT_A_STETIG2PKT.PI;Text;stetig;stetig
+ENUM_PAT_A_STETIG2PKT.2PKT;Text;2-Punkt;2-Punkt
+ENUM_PAT_A_TSENDNOTSEND.NICHT;Text;nicht senden;nicht senden
+ENUM_PAT_A_TSENDNOTSEND.TELSEND;Text;Telegramm senden;Telegramm senden
+ENUM_PAT_A_ZYKSND.NEIN;Text;nicht zyklisch senden;nicht zyklisch senden
+ENUM_PAT_A_ZYKSND.1MIN;Text;jede min;jede min
+ENUM_PAT_A_ZYKSND.2MIN;Text;alle 2 min;alle 2 min
+ENUM_PAT_A_ZYKSND.3MIN;Text;alle 3 min;alle 3 min
+ENUM_PAT_A_ZYKSND.5MIN;Text;alle 5 min;alle 5 min
+ENUM_PAT_A_ZYKSND.10MIN;Text;alle 10 min;alle 10 min
+ENUM_PAT_A_ZYKSND.15MIN;Text;alle 15 min;alle 15 min
+ENUM_PAT_A_ZYKSND.20MIN;Text;alle 20 min;alle 20 min
+ENUM_PAT_A_ZYKSND.30MIN;Text;alle 30 min;alle 30 min
+ENUM_PAT_A_ZYKSND.45MIN;Text;alle 45 min;alle 45 min
+ENUM_PAT_A_ZYKSND.60MIN;Text;alle 60 min;alle 60 min
+ENUM_PAT_A_ZYKZT.1MIN;Text;jede min;jede min
+ENUM_PAT_A_ZYKZT.2MIN;Text;alle 2 min;alle 2 min
+ENUM_PAT_A_ZYKZT.3MIN;Text;alle 3 min;alle 3 min
+ENUM_PAT_A_ZYKZT.5MIN;Text;alle 5 min;alle 5 min
+ENUM_PAT_A_ZYKZT.10MIN;Text;alle 10 min;alle 10 min
+ENUM_PAT_A_ZYKZT.15MIN;Text;alle 15 min;alle 15 min
+ENUM_PAT_A_ZYKZT.20MIN;Text;alle 20 min;alle 20 min
+ENUM_PAT_A_ZYKZT.30MIN;Text;alle 30 min;alle 30 min
+ENUM_PAT_A_ZYKZT.45MIN;Text;alle 45 min;alle 45 min
+ENUM_PAT_A_ZYKZT.60MIN;Text;alle 60 min;alle 60 min
+ENUM_PAT_ALG_LED_HELL.NIE;Text;nie;nie
+ENUM_PAT_ALG_LED_HELL.IMMR;Text;immer;immer
+ENUM_PAT_ALG_LED_HELL.NACHTS;Text;nur im Nachtbetrieb;nur im Nachtbetrieb
+ENUM_PAT_ALG_LED_HELL.BUS;Text;über Bus;über Bus
+ENUM_PAT_ALG_LED_REDUZ_OBJTYP.SCHALTEN;Text;über Schaltobjekt;über Schaltobjekt
+ENUM_PAT_ALG_LED_REDUZ_OBJTYP.PROZENT;Text;über Prozentwert;über Prozentwert
+ENUM_PAT_BM_I34ANALOG.BIN;Text;Binäreingang..;Binäreingang..
+ENUM_PAT_BM_I34ANALOG.ANALOG;Text;Temperatursensoreingang..;Temperatursensoreingang..
+ENUM_PAT_MW_DELTATMP.NEIN;Text;nicht aufgrund einer Änderung;nicht aufgrund einer Änderung
+ENUM_PAT_MW_DELTATMP.0_2;Text;0,2 K;0,2 K
+ENUM_PAT_MW_DELTATMP.0_3;Text;0,3 K;0,3 K
+ENUM_PAT_MW_DELTATMP.0_5;Text;0,5 K;0,5 K
+ENUM_PAT_MW_DELTATMP.0_7;Text;0,7 K;0,7 K
+ENUM_PAT_MW_DELTATMP.1;Text;1 K;1 K
+ENUM_PAT_MW_DELTATMP.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_MW_DELTATMP.2;Text;2 K;2 K
+ENUM_PID_HARDWARE_TYPE_RESTRICTION.PID_HARDWARE_TYPE_ENUMERATION;Text;;
+ENUM_PAT_RTR_NURSOLLWGEB.VOLLRTR;Text;Raumtemperaturregler;Raumtemperaturregler
+ENUM_PAT_RTR_NURSOLLWGEB.SOLLGEB;Text;Sollwertgeber;Sollwertgeber
+ENUM_PAT_RTR_FCTRAD.BASIS;Text;Basissollwert;Basissollwert
+ENUM_PAT_RTR_FCTRAD.MAN;Text;Manuelle Verschiebung;Manuelle Verschiebung
+ENUM_PAT_RTR_FCTRAD.GESP;Text;Gesperrt;Gesperrt
+ENUM_PAT_RTR_FCTTAST_RTR.BETR;Text;Betriebsart anwählen;Betriebsart anwählen
+ENUM_PAT_RTR_FCTTAST_RTR.GESP;Text;Gesperrt;Gesperrt
+ENUM_PAT_RTR_REGELNG.HEIZ;Text;Nur Heizungsregelung;Nur Heizungsregelung
+ENUM_PAT_RTR_REGELNG.HK;Text;Heizen und Kühlen;Heizen und Kühlen
+ENUM_PAT_RTR_ZTKOMFVERL.30M;Text;30 min;30 min
+ENUM_PAT_RTR_ZTKOMFVERL.1H;Text;1 h;1 h
+ENUM_PAT_RTR_ZTKOMFVERL.1H5;Text;1,5 h;1,5 h
+ENUM_PAT_RTR_ZTKOMFVERL.2H;Text;2 h;2 h
+ENUM_PAT_RTR_ZTKOMFVERL.2H5;Text;2,5 h;2,5 h
+ENUM_PAT_RTR_ZTKOMFVERL.3H;Text;3 h;3 h
+ENUM_PAT_RTR_MANVERSCHWANN.KSN;Text;bei Komfort-, Standby- und Nachtbetrieb;bei Komfort-, Standby- und Nachtbetrieb
+ENUM_PAT_RTR_MANVERSCHWANN.KS;Text;bei Komfort und Standby;bei Komfort und Standby
+ENUM_PAT_RTR_MANVERSCHWANN.K;Text;nur bei Komfort;nur bei Komfort
+ENUM_PAT_RTR_MANVERSCHNACHT.NEIN;Text;Nicht ändern;Nicht ändern
+ENUM_PAT_RTR_MANVERSCHNACHT.0K;Text;Auf 0 K zurücksetzen;Auf 0 K zurücksetzen
+ENUM_PAT_RTR_SRC_ISTW_EXT.INT;Text;Interner Fühler;Interner Fühler
+ENUM_PAT_RTR_SRC_ISTW_EXT.OBJ;Text;Objekt Externer Istwert;Objekt Externer Istwert
+ENUM_PAT_RTR_SRC_ISTW_EXT.I3;Text;Fühler an I3;Fühler an I3
+ENUM_PAT_RTR_SRC_ISTW_EXT.INI3;Text;Mittelwert aus intern + I3;Mittelwert aus intern + I3
+ENUM_PAT_RTR_SRC_ISTW_EXT.I3O;Text;Mittelwert aus I3 + Obj. Ext. Istwert;Mittelwert aus I3 + Obj. Ext. Istwert
+ENUM_PAT_RTR_SRC_ISTW_EXT.INO;Text;Mittelwert aus intern + Obj. Ext. Istwert;Mittelwert aus intern + Obj. Ext. Istwert
+ENUM_PAT_RTR_SRC_ISTW_EXT.MINI3O;Text;Mittelwert aus intern + I3 + Obj. Ext. Istwert;Mittelwert aus intern + I3 + Obj. Ext. Istwert
+ENUM_PAT_RTR_SRC_ISTW.INT;Text;Interner Fühler;Interner Fühler
+ENUM_PAT_RTR_SRC_ISTW.OBJ;Text;Objekt Externer Istwert;Objekt Externer Istwert
+ENUM_PAT_RTR_SRC_ISTW.INO;Text;Mittelwert aus intern + Obj. Ext. Istwert;Mittelwert aus intern + Obj. Ext. Istwert
+ENUM_PAT_RTR_ISTWFEHLER_SENDEN.IMMER;Text;immer zyklisch;immer zyklisch
+ENUM_PAT_RTR_ISTWFEHLER_SENDEN.BEIFEHLER;Text;nur im Fehlerfall zyklisch senden;nur im Fehlerfall zyklisch senden
+ENUM_PAT_RTR_TIMEOUT.2;Text;2 min;2 min
+ENUM_PAT_RTR_TIMEOUT.3;Text;3 min;3 min
+ENUM_PAT_RTR_TIMEOUT.5;Text;5 min;5 min
+ENUM_PAT_RTR_TIMEOUT.10;Text;10 min;10 min
+ENUM_PAT_RTR_TIMEOUT.15;Text;15 min;15 min
+ENUM_PAT_RTR_TIMEOUT.20;Text;20 min;20 min
+ENUM_PAT_RTR_TIMEOUT.30;Text;30 min;30 min
+ENUM_PAT_RTR_TIMEOUT.45;Text;45 min;45 min
+ENUM_PAT_RTR_TIMEOUT.60;Text;60 min;60 min
+ENUM_PAT_RTR_TIMEOUT_REAKTION.AUS;Text;bei PI-Regler: 0%, bei 2-Punktregler: Aus;bei PI-Regler: 0%, bei 2-Punktregler: Aus
+ENUM_PAT_RTR_TIMEOUT_REAKTION.10;Text;bei PI-Regler: 10%, bei 2-Punktregler: Ein;bei PI-Regler: 10%, bei 2-Punktregler: Ein
+ENUM_PAT_RTR_TIMEOUT_REAKTION.20;Text;bei PI-Regler: 20%, bei 2-Punktregler: Ein;bei PI-Regler: 20%, bei 2-Punktregler: Ein
+ENUM_PAT_RTR_TIMEOUT_REAKTION.30;Text;bei PI-Regler: 30%, bei 2-Punktregler: Ein;bei PI-Regler: 30%, bei 2-Punktregler: Ein
+ENUM_PAT_RTR_TIMEOUT_REAKTION.50;Text;bei PI-Regler: 50%, bei 2-Punktregler: Ein;bei PI-Regler: 50%, bei 2-Punktregler: Ein
+ENUM_PAT_RTR_BETRARTRST.FROST;Text;Frostschutz;Frostschutz
+ENUM_PAT_RTR_BETRARTRST.NACHT;Text;Nachtabsenkung;Nachtabsenkung
+ENUM_PAT_RTR_BETRARTRST.STDB;Text;Standby;Standby
+ENUM_PAT_RTR_BETRARTRST.KOMF;Text;Komfort;Komfort
+ENUM_PAT_RTR_OBJBETRART.NEU;Text;Neu: Betriebsart, Präsenz, Fensterstatus;Neu: Betriebsart, Präsenz, Fensterstatus
+ENUM_PAT_RTR_OBJBETRART.ALT;Text;Alt: Komfort, Nacht, Frost;Alt: Komfort, Nacht, Frost
+ENUM_PAT_RTR_RADPRES.PNICHT;Text;Präsenzobjekt nicht setzen;Präsenzobjekt nicht setzen
+ENUM_PAT_RTR_RADPRES.PSETZ;Text;Präsenzobjekt setzen;Präsenzobjekt setzen
+ENUM_PAT_RTR_ARTPRESSENS.MELD;Text;Präsenzmelder;Präsenzmelder
+ENUM_PAT_RTR_ARTPRESSENS.TAST;Text;Präsenztaster;Präsenztaster
+ENUM_PAT_RTR_BASSOLRST.18;Text;18 °C;18 °C
+ENUM_PAT_RTR_BASSOLRST.19;Text;19 °C;19 °C
+ENUM_PAT_RTR_BASSOLRST.20;Text;20 °C;20 °C
+ENUM_PAT_RTR_BASSOLRST.21;Text;21 °C;21 °C
+ENUM_PAT_RTR_BASSOLRST.22;Text;22 °C;22 °C
+ENUM_PAT_RTR_BASSOLRST.23;Text;23 °C;23 °C
+ENUM_PAT_RTR_BASSOLRST.24;Text;24 °C;24 °C
+ENUM_PAT_RTR_BASSOLRST.25;Text;25 °C;25 °C
+ENUM_PAT_RTR_MINBASSOL.5;Text;5 °C;5 °C
+ENUM_PAT_RTR_MINBASSOL.6;Text;6 °C;6 °C
+ENUM_PAT_RTR_MINBASSOL.7;Text;7 °C;7 °C
+ENUM_PAT_RTR_MINBASSOL.8;Text;8 °C;8 °C
+ENUM_PAT_RTR_MINBASSOL.9;Text;9 °C;9 °C
+ENUM_PAT_RTR_MINBASSOL.10;Text;10 °C;10 °C
+ENUM_PAT_RTR_MINBASSOL.11;Text;11 °C;11 °C
+ENUM_PAT_RTR_MINBASSOL.12;Text;12 °C;12 °C
+ENUM_PAT_RTR_MINBASSOL.13;Text;13 °C;13 °C
+ENUM_PAT_RTR_MINBASSOL.14;Text;14 °C;14 °C
+ENUM_PAT_RTR_MINBASSOL.15;Text;15 °C;15 °C
+ENUM_PAT_RTR_MINBASSOL.16;Text;16 °C;16 °C
+ENUM_PAT_RTR_MINBASSOL.17;Text;17 °C;17 °C
+ENUM_PAT_RTR_MINBASSOL.18;Text;18 °C;18 °C
+ENUM_PAT_RTR_MINBASSOL.19;Text;19 °C;19 °C
+ENUM_PAT_RTR_MINBASSOL.20;Text;20 °C;20 °C
+ENUM_PAT_RTR_MAXBASSOL.17;Text;17 °C;17 °C
+ENUM_PAT_RTR_MAXBASSOL.18;Text;18 °C;18 °C
+ENUM_PAT_RTR_MAXBASSOL.19;Text;19 °C;19 °C
+ENUM_PAT_RTR_MAXBASSOL.20;Text;20 °C;20 °C
+ENUM_PAT_RTR_MAXBASSOL.21;Text;21 °C;21 °C
+ENUM_PAT_RTR_MAXBASSOL.22;Text;22 °C;22 °C
+ENUM_PAT_RTR_MAXBASSOL.23;Text;23 °C;23 °C
+ENUM_PAT_RTR_MAXBASSOL.24;Text;24 °C;24 °C
+ENUM_PAT_RTR_MAXBASSOL.25;Text;25 °C;25 °C
+ENUM_PAT_RTR_MAXBASSOL.26;Text;26 °C;26 °C
+ENUM_PAT_RTR_MAXBASSOL.27;Text;27 °C;27 °C
+ENUM_PAT_RTR_MAXBASSOL.28;Text;28 °C;28 °C
+ENUM_PAT_RTR_MAXBASSOL.29;Text;29 °C;29 °C
+ENUM_PAT_RTR_MAXBASSOL.30;Text;30 °C;30 °C
+ENUM_PAT_RTR_MAXBASSOL.31;Text;31 °C;31 °C
+ENUM_PAT_RTR_MAXBASSOL.32;Text;32 °C;32 °C
+ENUM_PAT_RTR_MAXSOLVERSCH.1;Text;+/- 1 K;+/- 1 K
+ENUM_PAT_RTR_MAXSOLVERSCH.2;Text;+/- 2 K;+/- 2 K
+ENUM_PAT_RTR_MAXSOLVERSCH.3;Text;+/- 3 K;+/- 3 K
+ENUM_PAT_RTR_MAXSOLVERSCH.4;Text;+/- 4 K;+/- 4 K
+ENUM_PAT_RTR_MAXSOLVERSCH.5;Text;+/- 5 K;+/- 5 K
+ENUM_PAT_RTR_NACHTABSH.3;Text;3 K;3 K
+ENUM_PAT_RTR_NACHTABSH.4;Text;4 K;4 K
+ENUM_PAT_RTR_NACHTABSH.5;Text;5 K;5 K
+ENUM_PAT_RTR_NACHTABSH.6;Text;6 K;6 K
+ENUM_PAT_RTR_NACHTABSH.7;Text;7 K;7 K
+ENUM_PAT_RTR_NACHTABSH.8;Text;8 K;8 K
+ENUM_PAT_RTR_SOLFROST.3;Text;3 °C;3 °C
+ENUM_PAT_RTR_SOLFROST.4;Text;4 °C;4 °C
+ENUM_PAT_RTR_SOLFROST.5;Text;5 °C;5 °C
+ENUM_PAT_RTR_SOLFROST.6;Text;6 °C;6 °C
+ENUM_PAT_RTR_SOLFROST.7;Text;7 °C;7 °C
+ENUM_PAT_RTR_SOLFROST.8;Text;8 °C;8 °C
+ENUM_PAT_RTR_SOLFROST.9;Text;9 °C;9 °C
+ENUM_PAT_RTR_SOLFROST.10;Text;10 °C;10 °C
+ENUM_PAT_RTR_FUSSTMAX.24;Text;24 °C;24 °C
+ENUM_PAT_RTR_FUSSTMAX.26;Text;26 °C;26 °C
+ENUM_PAT_RTR_FUSSTMAX.28;Text;28 °C;28 °C
+ENUM_PAT_RTR_FUSSTMAX.30;Text;30 °C;30 °C
+ENUM_PAT_RTR_FUSSTMAX.32;Text;32 °C;32 °C
+ENUM_PAT_RTR_FUSSTMAX.34;Text;34 °C;34 °C
+ENUM_PAT_RTR_FUSSTMAX.36;Text;36 °C;36 °C
+ENUM_PAT_RTR_FUSSTMAX.38;Text;38 °C;38 °C
+ENUM_PAT_RTR_FUSSTMAX.40;Text;40 °C;40 °C
+ENUM_PAT_RTR_NACHTANHK.3;Text;3 K;3 K
+ENUM_PAT_RTR_NACHTANHK.4;Text;4 K;4 K
+ENUM_PAT_RTR_NACHTANHK.5;Text;5 K;5 K
+ENUM_PAT_RTR_NACHTANHK.6;Text;6 K;6 K
+ENUM_PAT_RTR_NACHTANHK.7;Text;7 K;7 K
+ENUM_PAT_RTR_NACHTANHK.8;Text;8 K;8 K
+ENUM_PAT_RTR_SOLHITZ.NEIN;Text;42 °C d.h. quasi kein Hitzeschutz;42 °C d.h. quasi kein Hitzeschutz
+ENUM_PAT_RTR_SOLHITZ.29;Text;29 °C;29 °C
+ENUM_PAT_RTR_SOLHITZ.30;Text;30 °C;30 °C
+ENUM_PAT_RTR_SOLHITZ.31;Text;31 °C;31 °C
+ENUM_PAT_RTR_SOLHITZ.32;Text;32 °C;32 °C
+ENUM_PAT_RTR_SOLHITZ.33;Text;33 °C;33 °C
+ENUM_PAT_RTR_SOLHITZ.34;Text;34 °C;34 °C
+ENUM_PAT_RTR_SOLHITZ.35;Text;35 °C;35 °C
+ENUM_PAT_RTR_STBYABSH.0;Text;0 K;0 K
+ENUM_PAT_RTR_STBYABSH.0_5;Text;0,5 K;0,5 K
+ENUM_PAT_RTR_STBYABSH.1;Text;1 K;1 K
+ENUM_PAT_RTR_STBYABSH.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_STBYABSH.2;Text;2 K;2 K
+ENUM_PAT_RTR_STBYABSH.2_5;Text;2,5 K;2,5 K
+ENUM_PAT_RTR_STBYABSH.3;Text;3 K;3 K
+ENUM_PAT_RTR_STBYABSH.3_5;Text;3,5 K;3,5 K
+ENUM_PAT_RTR_STBYABSH.4;Text;4 K;4 K
+ENUM_PAT_RTR_STBYABSH.4_5;Text;4,5 K;4,5 K
+ENUM_PAT_RTR_STBYABSH.5;Text;5 K;5 K
+ENUM_PAT_RTR_AKTSOLKOMF.WERT;Text;Tatsächlicher Wert (Heizen <> Kühlen);Tatsächlicher Wert (Heizen <> Kühlen)
+ENUM_PAT_RTR_AKTSOLKOMF.MITTEL;Text;Mittelwert zw. Heizen und Kühlen;Mittelwert zw. Heizen und Kühlen
+ENUM_PAT_RTR_TOTZO2RO.0;Text;0 K;0 K
+ENUM_PAT_RTR_TOTZO2RO.0_5;Text;0,5 K;0,5 K
+ENUM_PAT_RTR_TOTZO2RO.1;Text;1 K;1 K
+ENUM_PAT_RTR_TOTZO2RO.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_TOTZO2RO.2;Text;2 K;2 K
+ENUM_PAT_RTR_TOTZO2RO.2_5;Text;2,5 K;2,5 K
+ENUM_PAT_RTR_TOTZO2RO.3;Text;3 K;3 K
+ENUM_PAT_RTR_TOTZO2RO.3_5;Text;3,5 K;3,5 K
+ENUM_PAT_RTR_TOTZO2RO.4;Text;4 K;4 K
+ENUM_PAT_RTR_TOTZO2RO.4_5;Text;4,5 K;4,5 K
+ENUM_PAT_RTR_TOTZO2RO.5;Text;5 K;5 K
+ENUM_PAT_RTR_TOTZO2RO.5_5;Text;5,5 K;5,5 K
+ENUM_PAT_RTR_TOTZO2RO.6;Text;6 K;6 K
+ENUM_PAT_RTR_TOTZO4RO.1;Text;1 K;1 K
+ENUM_PAT_RTR_TOTZO4RO.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_TOTZO4RO.2;Text;2 K;2 K
+ENUM_PAT_RTR_TOTZO4RO.2_5;Text;2,5 K;2,5 K
+ENUM_PAT_RTR_TOTZO4RO.3;Text;3 K;3 K
+ENUM_PAT_RTR_TOTZO4RO.3_5;Text;3,5 K;3,5 K
+ENUM_PAT_RTR_TOTZO4RO.4;Text;4 K;4 K
+ENUM_PAT_RTR_TOTZO4RO.4_5;Text;4,5 K;4,5 K
+ENUM_PAT_RTR_TOTZO4RO.5;Text;5 K;5 K
+ENUM_PAT_RTR_TOTZO4RO.5_5;Text;5,5 K;5,5 K
+ENUM_PAT_RTR_TOTZO4RO.6;Text;6 K;6 K
+ENUM_PAT_RTR_STBYANHK.0;Text;0 K;0 K
+ENUM_PAT_RTR_STBYANHK.0_5;Text;0,5 K;0,5 K
+ENUM_PAT_RTR_STBYANHK.1;Text;1 K;1 K
+ENUM_PAT_RTR_STBYANHK.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_STBYANHK.2;Text;2 K;2 K
+ENUM_PAT_RTR_STBYANHK.2_5;Text;2,5 K;2,5 K
+ENUM_PAT_RTR_STBYANHK.3;Text;3 K;3 K
+ENUM_PAT_RTR_STBYANHK.3_5;Text;3,5 K;3,5 K
+ENUM_PAT_RTR_STBYANHK.4;Text;4 K;4 K
+ENUM_PAT_RTR_STBYANHK.4_5;Text;4,5 K;4,5 K
+ENUM_PAT_RTR_STBYANHK.5;Text;5 K;5 K
+ENUM_PAT_RTR_SOLANPAB.25;Text;25 °C;25 °C
+ENUM_PAT_RTR_SOLANPAB.26;Text;26 °C;26 °C
+ENUM_PAT_RTR_SOLANPAB.27;Text;27 °C;27 °C
+ENUM_PAT_RTR_SOLANPAB.28;Text;28 °C;28 °C
+ENUM_PAT_RTR_SOLANPAB.29;Text;29 °C;29 °C
+ENUM_PAT_RTR_SOLANPAB.30;Text;30 °C;30 °C
+ENUM_PAT_RTR_SOLANPAB.31;Text;31 °C;31 °C
+ENUM_PAT_RTR_SOLANPAB.32;Text;32 °C;32 °C
+ENUM_PAT_RTR_SOLANPAB.33;Text;33 °C;33 °C
+ENUM_PAT_RTR_SOLANPAB.34;Text;34 °C;34 °C
+ENUM_PAT_RTR_SOLANPAB.35;Text;35 °C;35 °C
+ENUM_PAT_RTR_SOLANPAB.36;Text;36 °C;36 °C
+ENUM_PAT_RTR_SOLANPAB.37;Text;37 °C;37 °C
+ENUM_PAT_RTR_SOLANPAB.38;Text;38 °C;38 °C
+ENUM_PAT_RTR_SOLANPAB.39;Text;39 °C;39 °C
+ENUM_PAT_RTR_SOLANPAB.40;Text;40 °C;40 °C
+ENUM_PAT_RTR_SOLANP.1;Text;1 K pro 1 K Außentemperatur;1 K pro 1 K Außentemperatur
+ENUM_PAT_RTR_SOLANP.2;Text;1 K pro 2 K Außentemperatur;1 K pro 2 K Außentemperatur
+ENUM_PAT_RTR_SOLANP.3;Text;1 K pro 3 K Außentemperatur;1 K pro 3 K Außentemperatur
+ENUM_PAT_RTR_SOLANP.4;Text;1 K pro 4 K Außentemperatur;1 K pro 4 K Außentemperatur
+ENUM_PAT_RTR_SOLANP.5;Text;1 K pro 5 K Außentemperatur;1 K pro 5 K Außentemperatur
+ENUM_PAT_RTR_SOLANP.6;Text;1 K pro 6 K Außentemperatur;1 K pro 6 K Außentemperatur
+ENUM_PAT_RTR_SOLANP.7;Text;1 K pro 7 K Außentemperatur;1 K pro 7 K Außentemperatur
+ENUM_PAT_RTR_BASSOLANP.15;Text;15 °C;15 °C
+ENUM_PAT_RTR_BASSOLANP.16;Text;16 °C;16 °C
+ENUM_PAT_RTR_BASSOLANP.17;Text;17 °C;17 °C
+ENUM_PAT_RTR_BASSOLANP.18;Text;18 °C;18 °C
+ENUM_PAT_RTR_BASSOLANP.19;Text;19 °C;19 °C
+ENUM_PAT_RTR_BASSOLANP.20;Text;20 °C;20 °C
+ENUM_PAT_RTR_BASSOLANP.21;Text;21 °C;21 °C
+ENUM_PAT_RTR_BASSOLANP.22;Text;22 °C;22 °C
+ENUM_PAT_RTR_BASSOLANP.23;Text;23 °C;23 °C
+ENUM_PAT_RTR_BASSOLANP.24;Text;24 °C;24 °C
+ENUM_PAT_RTR_BASSOLANP.25;Text;25 °C;25 °C
+ENUM_PAT_RTR_BASSOLANP.26;Text;26 °C;26 °C
+ENUM_PAT_RTR_BASSOLANP.27;Text;27 °C;27 °C
+ENUM_PAT_RTR_BASSOLANP.28;Text;28 °C;28 °C
+ENUM_PAT_RTR_BASSOLANP.29;Text;29 °C;29 °C
+ENUM_PAT_RTR_BASSOLANP.30;Text;30 °C;30 °C
+ENUM_PAT_RTR_FORMTSOLANP.REL;Text;relativ;relativ
+ENUM_PAT_RTR_FORMTSOLANP.ABS;Text;absolut;absolut
+ENUM_PAT_RTR_MAXANP.NEIN;Text;Unbegrenzt;Unbegrenzt
+ENUM_PAT_RTR_MAXANP.3;Text;+3 K;+3 K
+ENUM_PAT_RTR_MAXANP.5;Text;+5 K;+5 K
+ENUM_PAT_RTR_MAXANP.7;Text;+7 K;+7 K
+ENUM_PAT_RTR_MAXANPEMPF.NEIN;Text;bis Hitzeschutztemperatur erreicht;bis Hitzeschutztemperatur erreicht
+ENUM_PAT_RTR_MAXANPEMPF.3;Text;+3 K;+3 K
+ENUM_PAT_RTR_MAXANPEMPF.5;Text;+5 K;+5 K
+ENUM_PAT_RTR_MAXANPEMPF.7;Text;+7 K;+7 K
+ENUM_PAT_RTR_SOLANPASS.NEIN;Text;Keine;Keine
+ENUM_PAT_RTR_SOLANPASS.EMPF;Text;Nur empfangen;Nur empfangen
+ENUM_PAT_RTR_SOLANPASS.INTERN;Text;Intern berechnen und senden;Intern berechnen und senden
+ENUM_PAT_RTR_ANZHSTUF.EINE;Text;Nur eine Heizstufe;Nur eine Heizstufe
+ENUM_PAT_RTR_ANZHSTUF.ZWEI;Text;Hauptstufe und Zusatzstufe;Hauptstufe und Zusatzstufe
+ENUM_PAT_RTR_HYS2PKT.0_3;Text;0,3 K;0,3 K
+ENUM_PAT_RTR_HYS2PKT.0_5;Text;0,5 K;0,5 K
+ENUM_PAT_RTR_HYS2PKT.0_7;Text;0,7K;0,7K
+ENUM_PAT_RTR_HYS2PKT.1;Text;1 K;1 K
+ENUM_PAT_RTR_HYS2PKT.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_RCKFHYST.NEIN;Text;Keine;Keine
+ENUM_PAT_RTR_RCKFHYST.1;Text;0,1 K/min;0,1 K/min
+ENUM_PAT_RTR_RCKFHYST.2;Text;0,2 K/min;0,2 K/min
+ENUM_PAT_RTR_RCKFHYST.3;Text;0,3 K/min;0,3 K/min
+ENUM_PAT_RTR_REGPARAM.ANL;Text;Über Anlagentyp;Über Anlagentyp
+ENUM_PAT_RTR_REGPARAM.USER;Text;benutzerdefiniert;benutzerdefiniert
+ENUM_PAT_RTR_PBAND.1;Text;1 K;1 K
+ENUM_PAT_RTR_PBAND.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_PBAND.2;Text;2 K;2 K
+ENUM_PAT_RTR_PBAND.2_5;Text;2,5 K;2,5 K
+ENUM_PAT_RTR_PBAND.3;Text;3 K;3 K
+ENUM_PAT_RTR_PBAND.3_5;Text;3,5 K;3,5 K
+ENUM_PAT_RTR_PBAND.4;Text;4 K;4 K
+ENUM_PAT_RTR_PBAND.4_5;Text;4,5 K;4,5 K
+ENUM_PAT_RTR_PBAND.5;Text;5 K;5 K
+ENUM_PAT_RTR_PBAND.5_5;Text;5,5 K;5,5 K
+ENUM_PAT_RTR_PBAND.6;Text;6 K;6 K
+ENUM_PAT_RTR_PBAND.6_5;Text;6,5 K;6,5 K
+ENUM_PAT_RTR_PBAND.7;Text;7 K;7 K
+ENUM_PAT_RTR_PBAND.7_5;Text;7,5 K;7,5 K
+ENUM_PAT_RTR_PBAND.8;Text;8 K;8 K
+ENUM_PAT_RTR_PBAND.8_5;Text;8,5 K;8,5 K
+ENUM_PAT_RTR_IZEIT.PREGLER;Text;reiner P-Regler;reiner P-Regler
+ENUM_PAT_RTR_IZEIT.30MIN.;Text;30 min.;30 min.
+ENUM_PAT_RTR_IZEIT.60MIN.;Text;60 min.;60 min.
+ENUM_PAT_RTR_IZEIT.90MIN.;Text;90 min.;90 min.
+ENUM_PAT_RTR_IZEIT.120MIN.;Text;120 min.;120 min.
+ENUM_PAT_RTR_IZEIT.150MIN.;Text;150 min.;150 min.
+ENUM_PAT_RTR_IZEIT.180MIN.;Text;180 min.;180 min.
+ENUM_PAT_RTR_IZEIT.210MIN.;Text;210 min.;210 min.
+ENUM_PAT_RTR_IZEIT.4H;Text;4 h;4 h
+ENUM_PAT_RTR_IZEIT.5H;Text;5 h;5 h
+ENUM_PAT_RTR_IZEIT.10H;Text;10 h;10 h
+ENUM_PAT_RTR_IZEIT.15H;Text;15 h;15 h
+ENUM_PAT_RTR_IZEIT.20H;Text;20 h;20 h
+ENUM_PAT_RTR_IZEIT.25H;Text;25 h;25 h
+ENUM_PAT_RTR_IZEIT.30H;Text;30 h;30 h
+ENUM_PAT_RTR_IZEIT.35H;Text;35 h;35 h
+ENUM_PAT_RTR_ANLTYPH.RADI;Text;Radiatorenheizung;Radiatorenheizung
+ENUM_PAT_RTR_ANLTYPH.FUSS;Text;Fußbodenheizung;Fußbodenheizung
+ENUM_PAT_RTR_DELTASNDSTGR.1;Text;Bei Änderung um 1 %;Bei Änderung um 1 %
+ENUM_PAT_RTR_DELTASNDSTGR.2;Text;Bei Änderung um 2 %;Bei Änderung um 2 %
+ENUM_PAT_RTR_DELTASNDSTGR.3;Text;Bei Änderung um 3 %;Bei Änderung um 3 %
+ENUM_PAT_RTR_DELTASNDSTGR.5;Text;Bei Änderung um 5 %;Bei Änderung um 5 %
+ENUM_PAT_RTR_DELTASNDSTGR.7;Text;Bei Änderung um 7 %;Bei Änderung um 7 %
+ENUM_PAT_RTR_DELTASNDSTGR.10;Text;Bei Änderung um 10 %;Bei Änderung um 10 %
+ENUM_PAT_RTR_DELTASNDSTGR.15;Text;Bei Änderung um 15 %;Bei Änderung um 15 %
+ENUM_PAT_RTR_PROZODERPWM.PROZ;Text;Prozent;Prozent
+ENUM_PAT_RTR_PROZODERPWM.PWM;Text;PWM;PWM
+ENUM_PAT_RTR_DELTAZUSSTUF.0;Text;0 K;0 K
+ENUM_PAT_RTR_DELTAZUSSTUF.0_5;Text;0,5 K;0,5 K
+ENUM_PAT_RTR_DELTAZUSSTUF.1;Text;1 K;1 K
+ENUM_PAT_RTR_DELTAZUSSTUF.1_5;Text;1,5 K;1,5 K
+ENUM_PAT_RTR_DELTAZUSSTUF.2;Text;2 K;2 K
+ENUM_PAT_RTR_DELTAZUSSTUF.2_5;Text;2,5 K;2,5 K
+ENUM_PAT_RTR_DELTAZUSSTUF.3;Text;3 K;3 K
+ENUM_PAT_RTR_DELTAZUSSTUF.3_5;Text;3,5 K;3,5 K
+ENUM_PAT_RTR_DELTAZUSSTUF.4;Text;4 K;4 K
+ENUM_PAT_RTR_ANZKSTUF.EINE;Text;Nur eine Kühlstufe;Nur eine Kühlstufe
+ENUM_PAT_RTR_ANZKSTUF.ZWEI;Text;Hauptstufe und Zusatzstufe;Hauptstufe und Zusatzstufe
+ENUM_PAT_RTR_ANLTYPK.DECK;Text;Kühldecke;Kühldecke
+ENUM_PAT_RTR_ANLTYPK.FANC;Text;Fan Coil Unit;Fan Coil Unit
+ENUM_PAT_RTR_UMSCHHK.AUT;Text;Automatisch;Automatisch
+ENUM_PAT_RTR_UMSCHHK.OBJ;Text;Über Objekt;Über Objekt
+ENUM_PAT_RTR_FORMTHKOBJ.DPT;Text;DPT1.100 (Heizen=1 / Kühlen=0);DPT1.100 (Heizen=1 / Kühlen=0)
+ENUM_PAT_RTR_FORMTHKOBJ.ALT;Text;Invertiert (Heizen=0 / Kühlen=1);Invertiert (Heizen=0 / Kühlen=1)
+ENUM_PAT_RTR_AUSGSTGRK.SEP;Text;Auf separatem Obj. (4-Rohr-Systeme);Auf separatem Obj. (4-Rohr-Systeme)
+ENUM_PAT_RTR_AUSGSTGRK.GEM;Text;Gemeinsam mit Stellgr. Heizen (2-Rohr-Systeme);Gemeinsam mit Stellgr. Heizen (2-Rohr-Systeme)
+ENUM_PAT_BM_ANZAHLTELEGRAMME.EINS;Text;Ein Telegramm;Ein Telegramm
+ENUM_PAT_BM_ANZAHLTELEGRAMME.ZWEI;Text;Zwei Telegramme;Zwei Telegramme
+ENUM_PAT_BM_ANZAHLTELEGRAMME.DREI;Text;Drei Telegramme;Drei Telegramme
+ENUM_PAT_BM_FUNKTI12.SW;Text;Schalter;Schalter
+ENUM_PAT_BM_FUNKTI12.TAST;Text;Taster;Taster
+ENUM_PAT_BM_FUNKTI12.DIM;Text;Dimmen;Dimmen
+ENUM_PAT_BM_FUNKTI12.JAL;Text;Jalousie;Jalousie
+ENUM_PAT_BM_TEMPSENSOR_I3.NTC;Text;Fernfühler 1 (9070191);Fernfühler 1 (9070191)
+ENUM_PAT_BM_TEMPSENSOR_I3.RAMSES;Text;Fernfühler IP65 (9070459);Fernfühler IP65 (9070459)
+ENUM_PAT_BM_TEMPSENSOR_I4.NTC;Text;Fernfühler 1 (9070191);Fernfühler 1 (9070191)
+ENUM_PAT_BM_TEMPSENSOR_I4.RAMSES;Text;Fernfühler IP65 (9070459);Fernfühler IP65 (9070459)
+ENUM_PAT_BM_TEMPSENSOR_I4.FLOOR;Text;Fußbodensensor (9070321);Fußbodensensor (9070321)
+ENUM_PAT_BM_OBJTYPJAL.SCHALT;Text;Schalten (1 Bit);Schalten (1 Bit)
+ENUM_PAT_BM_OBJTYPJAL.PRIO;Text;Priorität (2 Bit);Priorität (2 Bit)
+ENUM_PAT_BM_OBJTYPJAL.WERT;Text;Wert 0-255;Wert 0-255
+ENUM_PAT_BM_OBJTYPJAL.PROZ;Text;Prozentwert (1 Byte);Prozentwert (1 Byte)
+ENUM_PAT_BM_OBJTYPJAL.2BY;Text;2 Byte Gleitkommazahl DPT 9.x;2 Byte Gleitkommazahl DPT 9.x
+ENUM_PAT_BM_OBJTYPJAL.4BY;Text;4 Byte Gleitkommazahl DPT 14.x;4 Byte Gleitkommazahl DPT 14.x
+ENUM_PAT_BM_OBJTYPJAL.JAL;Text;Höhe % + Lamelle %;Höhe % + Lamelle %
+ENUM_PAT_ENUM_EN_DIS.ENABLED;Text;EIN;EIN
+ENUM_PAT_ENUM_EN_DIS.DISABLED;Text;AUS;AUS
+ENUM_PAT_BM_D_BUSWIEDDKL.KEINE;Text;keine;keine
+ENUM_PAT_BM_D_BUSWIEDDKL.SOFORT;Text;wie bei Doppelklick (sofort);wie bei Doppelklick (sofort)
+ENUM_PAT_BM_D_BUSWIEDDKL.5S;Text;wie bei Doppelklick (nach 5 s);wie bei Doppelklick (nach 5 s)
+ENUM_PAT_BM_D_BUSWIEDDKL.10S;Text;wie bei Doppelklick (nach 10 s);wie bei Doppelklick (nach 10 s)
+ENUM_PAT_BM_D_BUSWIEDDKL.15S;Text;wie bei Doppelklick (nach 15 s);wie bei Doppelklick (nach 15 s)
+ENUM_PAT_BM_D_REAKBUSWIED.KEINE;Text;keine;keine
+ENUM_PAT_BM_D_REAKBUSWIED.EIN;Text;EIN;EIN
+ENUM_PAT_BM_D_REAKBUSWIED.AUS;Text;AUS;AUS
+ENUM_PAT_BM_D_REAKBUSWIED.5SEIN;Text;nach 5 s EIN;nach 5 s EIN
+ENUM_PAT_BM_D_REAKBUSWIED.10SEIN;Text;nach 10 s EIN;nach 10 s EIN
+ENUM_PAT_BM_D_REAKBUSWIED.15SEIN;Text;nach 15 s EIN;nach 15 s EIN
+ENUM_PAT_BM_D_REAKBUSWIED.5SAUS;Text;nach 5 s AUS;nach 5 s AUS
+ENUM_PAT_BM_D_REAKBUSWIED.10SAUS;Text;nach 10 s AUS;nach 10 s AUS
+ENUM_PAT_BM_D_REAKBUSWIED.15SAUS;Text;nach 15 s AUS;nach 15 s AUS
+ENUM_PAT_BM_D_REAKLANGKURZ.1FLAECH;Text;Eintastenbedienung;Eintastenbedienung
+ENUM_PAT_BM_D_REAKLANGKURZ.HELLEIN;Text;heller / EIN;heller / EIN
+ENUM_PAT_BM_D_REAKLANGKURZ.HELLUM;Text;heller / UM;heller / UM
+ENUM_PAT_BM_D_REAKLANGKURZ.DUNKLAUS;Text;dunkler / AUS;dunkler / AUS
+ENUM_PAT_BM_D_REAKLANGKURZ.DUNKLUM;Text;dunkler / UM;dunkler / UM
+ENUM_PAT_BM_D_SCHRITTWEITE.100;Text;100 %;100 %
+ENUM_PAT_BM_D_SCHRITTWEITE.50;Text;50 %;50 %
+ENUM_PAT_BM_D_SCHRITTWEITE.25;Text;25 %;25 %
+ENUM_PAT_BM_D_SCHRITTWEITE.12;Text;12,5 %;12,5 %
+ENUM_PAT_BM_D_SCHRITTWEITE.6;Text;6 %;6 %
+ENUM_PAT_BM_D_SCHRITTWEITE.3;Text;3 %;3 %
+ENUM_PAT_BM_D_SCHRITTWEITE.1;Text;1,5 %;1,5 %
+ENUM_PAT_BM_D_SPERRAUS.KEIN;Text;Keine Reaktion;Keine Reaktion
+ENUM_PAT_BM_D_SPERRAUS.EIN;Text;EIN;EIN
+ENUM_PAT_BM_D_SPERRAUS.AUS;Text;AUS;AUS
+ENUM_PAT_BM_D_SPERRAUSDKL.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_D_SPERRAUSDKL.DOPKL;Text;wie bei Doppelklick;wie bei Doppelklick
+ENUM_PAT_BM_D_SPERREIN.IGNOR;Text;Sperre ignorieren;Sperre ignorieren
+ENUM_PAT_BM_D_SPERREIN.KEIN;Text;Keine Reaktion;Keine Reaktion
+ENUM_PAT_BM_D_SPERREIN.EIN;Text;EIN;EIN
+ENUM_PAT_BM_D_SPERREIN.AUS;Text;AUS;AUS
+ENUM_PAT_BM_D_SPERREINDKL.IGNOR;Text;Sperre ignorieren;Sperre ignorieren
+ENUM_PAT_BM_D_SPERREINDKL.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_D_SPERREINDKL.DOPKL;Text;wie bei Doppelklick;wie bei Doppelklick
+ENUM_PAT_BM_ENTPREL.30MS;Text;30 ms;30 ms
+ENUM_PAT_BM_ENTPREL.50MS;Text;50 ms;50 ms
+ENUM_PAT_BM_ENTPREL.80MS;Text;80 ms;80 ms
+ENUM_PAT_BM_ENTPREL.100MS;Text;100 ms;100 ms
+ENUM_PAT_BM_ENTPREL.200MS;Text;200 ms;200 ms
+ENUM_PAT_BM_ENTPREL.1S;Text;1 s ;1 s 
+ENUM_PAT_BM_ENTPREL.5S;Text;5 s;5 s
+ENUM_PAT_BM_ENTPREL.10S;Text;10 s;10 s
+ENUM_PAT_BM_J_BEDIEN.EINFBED;Text;Einflächenbedienung;Einflächenbedienung
+ENUM_PAT_BM_J_BEDIEN.AB;Text;AB;AB
+ENUM_PAT_BM_J_BEDIEN.AUF;Text;AUF;AUF
+ENUM_PAT_BM_J_BUSWIEDDKL.KEIN;Text;keine;keine
+ENUM_PAT_BM_J_BUSWIEDDKL.0S;Text;wie bei Doppelklick (sofort);wie bei Doppelklick (sofort)
+ENUM_PAT_BM_J_BUSWIEDDKL.5S;Text;wie bei Doppelklick (nach 5 s);wie bei Doppelklick (nach 5 s)
+ENUM_PAT_BM_J_BUSWIEDDKL.10S;Text;wie bei Doppelklick (nach 10 s);wie bei Doppelklick (nach 10 s)
+ENUM_PAT_BM_J_BUSWIEDDKL.15S;Text;wie bei Doppelklick (nach 15 s);wie bei Doppelklick (nach 15 s)
+ENUM_PAT_BM_J_REAKBUSWIED.KEIN;Text;keine;keine
+ENUM_PAT_BM_J_REAKBUSWIED.AUF;Text;AUF;AUF
+ENUM_PAT_BM_J_REAKBUSWIED.AB;Text;AB;AB
+ENUM_PAT_BM_J_REAKBUSWIED.5SAUF;Text;nach 5 s AUF;nach 5 s AUF
+ENUM_PAT_BM_J_REAKBUSWIED.10SAUF;Text;nach 10 s AUF;nach 10 s AUF
+ENUM_PAT_BM_J_REAKBUSWIED.15SAUF;Text;nach 15 s AUF;nach 15 s AUF
+ENUM_PAT_BM_J_REAKBUSWIED.5SAB;Text;nach 5 s AB;nach 5 s AB
+ENUM_PAT_BM_J_REAKBUSWIED.10SAB;Text;nach 10 s AB;nach 10 s AB
+ENUM_PAT_BM_J_REAKBUSWIED.15SAB;Text;nach 15 s AB;nach 15 s AB
+ENUM_PAT_BM_J_SPERRAUS.KEIN;Text;Keine Reaktion;Keine Reaktion
+ENUM_PAT_BM_J_SPERRAUS.AUF;Text;AUF;AUF
+ENUM_PAT_BM_J_SPERRAUS.AB;Text;AB;AB
+ENUM_PAT_BM_J_SPERRAUSDKL.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_J_SPERRAUSDKL.DOPKL;Text;wie bei Doppelklick;wie bei Doppelklick
+ENUM_PAT_BM_J_SPERREIN.IGNOR;Text;Sperre ignorieren;Sperre ignorieren
+ENUM_PAT_BM_J_SPERREIN.KEIN;Text;Keine Reaktion;Keine Reaktion
+ENUM_PAT_BM_J_SPERREIN.AUF;Text;AUF;AUF
+ENUM_PAT_BM_J_SPERREIN.AB;Text;AB;AB
+ENUM_PAT_BM_J_SPERREINDKL.IGNOR;Text;Sperre ignorieren;Sperre ignorieren
+ENUM_PAT_BM_J_SPERREINDKL.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_J_SPERREINDKL.DOPKL;Text;wie bei Doppelklick;wie bei Doppelklick
+ENUM_PAT_BM_J_STOPMIT.LOSLAS;Text;Loslassen der Taste;Loslassen der Taste
+ENUM_PAT_BM_J_STOPMIT.KURZ;Text;Kurze Bedienung;Kurze Bedienung
+ENUM_PAT_BM_LANGDRCK.300MS;Text;300 ms;300 ms
+ENUM_PAT_BM_LANGDRCK.400MS;Text;400 ms;400 ms
+ENUM_PAT_BM_LANGDRCK.500MS;Text;500 ms;500 ms
+ENUM_PAT_BM_LANGDRCK.600MS;Text;600 ms;600 ms
+ENUM_PAT_BM_LANGDRCK.700MS;Text;700 ms;700 ms
+ENUM_PAT_BM_LANGDRCK.800MS;Text;800 ms;800 ms
+ENUM_PAT_BM_LANGDRCK.900MS;Text;900 ms;900 ms
+ENUM_PAT_BM_LANGDRCK.1S;Text;1 s;1 s
+ENUM_PAT_BM_OBJTYP.SCHALT;Text;Schalten (1 Bit);Schalten (1 Bit)
+ENUM_PAT_BM_OBJTYP.PRIO;Text;Priorität (2 Bit);Priorität (2 Bit)
+ENUM_PAT_BM_OBJTYP.WERT;Text;Wert 0-255;Wert 0-255
+ENUM_PAT_BM_OBJTYP.PROZ;Text;Prozentwert (1 Byte);Prozentwert (1 Byte)
+ENUM_PAT_BM_OBJTYP.2BY;Text;2 Byte Gleitkommazahl DPT 9.x;2 Byte Gleitkommazahl DPT 9.x
+ENUM_PAT_BM_OBJTYP.4BY;Text;4 Byte Gleitkommazahl DPT 14.x;4 Byte Gleitkommazahl DPT 14.x
+ENUM_PAT_BM_S_BUSWIED.KEIN;Text;Keine;Keine
+ENUM_PAT_BM_S_BUSWIED.0S;Text;Aktualisieren (sofort);Aktualisieren (sofort)
+ENUM_PAT_BM_S_BUSWIED.5S;Text;Aktualisieren (nach 5 s);Aktualisieren (nach 5 s)
+ENUM_PAT_BM_S_BUSWIED.10S;Text;Aktualisieren (nach 10 s);Aktualisieren (nach 10 s)
+ENUM_PAT_BM_S_BUSWIED.15S;Text;Aktualisieren (nach 15 s);Aktualisieren (nach 15 s)
+ENUM_PAT_BM_S_SPERRAUS.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_S_SPERRAUS.AKTU;Text;aktualisieren;aktualisieren
+ENUM_PAT_BM_S_SPERREIN.IGNOR;Text;Sperre ignorieren;Sperre ignorieren
+ENUM_PAT_BM_S_SPERREIN.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_S_SPERREIN.WIE1;Text;Wie bei Eingang = 1;Wie bei Eingang = 1
+ENUM_PAT_BM_S_SPERREIN.WIE0;Text;Wie bei Eingang = 0;Wie bei Eingang = 0
+ENUM_PAT_BM_S_ZYKSND.NEIN;Text;Nein;Nein
+ENUM_PAT_BM_S_ZYKSND.JA;Text;Ja, immer;Ja, immer
+ENUM_PAT_BM_S_ZYKSND.NUR1;Text;Nur wenn Eingang = 1;Nur wenn Eingang = 1
+ENUM_PAT_BM_S_ZYKSND.NUR0;Text;Nur wenn Eingang = 0;Nur wenn Eingang = 0
+ENUM_PAT_BM_SCHLIOEFFNR.SCHLI;Text;Schließer;Schließer
+ENUM_PAT_BM_SCHLIOEFFNR.OEFFN;Text;Öffner;Öffner
+ENUM_PAT_BM_T_BUSWIED.KEIN;Text;Keine;Keine
+ENUM_PAT_BM_T_BUSWIED.KRZ0S;Text;wie bei kurz (sofort);wie bei kurz (sofort)
+ENUM_PAT_BM_T_BUSWIED.KRZ5S;Text;wie bei kurz (nach 5 s);wie bei kurz (nach 5 s)
+ENUM_PAT_BM_T_BUSWIED.KRZ10S;Text;wie bei kurz (nach 10 s);wie bei kurz (nach 10 s)
+ENUM_PAT_BM_T_BUSWIED.KRZ15S;Text;wie bei kurz (nach 15 s);wie bei kurz (nach 15 s)
+ENUM_PAT_BM_T_BUSWIED.LNG0S;Text;wie bei lang (sofort);wie bei lang (sofort)
+ENUM_PAT_BM_T_BUSWIED.LNG5S;Text;wie bei lang (nach 5 s);wie bei lang (nach 5 s)
+ENUM_PAT_BM_T_BUSWIED.LNG10S;Text;wie bei lang (nach 10 s);wie bei lang (nach 10 s)
+ENUM_PAT_BM_T_BUSWIED.LNG15S;Text;wie bei lang (nach 15 s);wie bei lang (nach 15 s)
+ENUM_PAT_BM_T_BUSWIED.DKL0S;Text;wie bei Doppelklick (sofort);wie bei Doppelklick (sofort)
+ENUM_PAT_BM_T_BUSWIED.DKL5S;Text;wie bei Doppelklick (nach 5 s);wie bei Doppelklick (nach 5 s)
+ENUM_PAT_BM_T_BUSWIED.DKL10S;Text;wie bei Doppelklick (nach 10 s);wie bei Doppelklick (nach 10 s)
+ENUM_PAT_BM_T_BUSWIED.DKL15S;Text;wie bei Doppelklick (nach 15 s);wie bei Doppelklick (nach 15 s)
+ENUM_PAT_BM_T_SPERRAUS.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_T_SPERRAUS.KRZ;Text;wie bei kurz;wie bei kurz
+ENUM_PAT_BM_T_SPERRAUS.LNG;Text;wie bei lang;wie bei lang
+ENUM_PAT_BM_T_SPERRAUS.DKL;Text;wie bei Doppelklick;wie bei Doppelklick
+ENUM_PAT_BM_T_SPERREIN.IGNOR;Text;Sperre ignorieren;Sperre ignorieren
+ENUM_PAT_BM_T_SPERREIN.KEIN;Text;keine Reaktion;keine Reaktion
+ENUM_PAT_BM_T_SPERREIN.KRZ;Text;wie bei kurz;wie bei kurz
+ENUM_PAT_BM_T_SPERREIN.LNG;Text;wie bei lang;wie bei lang
+ENUM_PAT_BM_T_SPERREIN.DKL;Text;wie bei Doppelklick;wie bei Doppelklick
+ENUM_PAT_BM_ZTDOPLKLIK.300MS;Text;300 ms;300 ms
+ENUM_PAT_BM_ZTDOPLKLIK.400MS;Text;400 ms;400 ms
+ENUM_PAT_BM_ZTDOPLKLIK.500MS;Text;500 ms;500 ms
+ENUM_PAT_BM_ZTDOPLKLIK.600MS;Text;600 ms;600 ms
+ENUM_PAT_BM_ZTDOPLKLIK.700MS;Text;700 ms;700 ms
+ENUM_PAT_BM_ZTDOPLKLIK.800MS;Text;800 ms;800 ms
+ENUM_PAT_BM_ZTDOPLKLIK.900MS;Text;900 ms;900 ms
+ENUM_PAT_BM_ZTDOPLKLIK.1S;Text;1 s;1 s
+PID_HARDWARE_TYPE_PARAMETER;Text;PID_HARDWARE_TYPE_PARAMETER;
+PID_HARDWARE_TYPE_PARAMETER;SuffixText;;
+PAR_ALG_DOWNLOAD_KENNNUNG;Text;PAR_ALG_DOWNLOAD_KENNNUNG;
+PAR_ALG_DOWNLOAD_KENNNUNG;SuffixText;;
+PAR_ALG_LED_HELL;Text;Helligkeit der LEDs reduzieren;Helligkeit der LEDs reduzieren
+PAR_ALG_LED_HELL;SuffixText;;
+PAR_ALG_LED_REDUZ_OBJECTTYP;Text;Objekttyp;Objekttyp
+PAR_ALG_LED_REDUZ_OBJECTTYP;SuffixText;;
+PAR_ALG_LED_HELL_RED;Text;Wert für reduzierte Helligkeit;Wert für reduzierte Helligkeit
+PAR_ALG_LED_HELL_RED;SuffixText;%;%
+PAR_ALG_LED_HELL_RED_UEBERBUS;Text;Wert für reduzierte Helligkeit;Wert für reduzierte Helligkeit
+PAR_ALG_LED_HELL_RED_UEBERBUS;SuffixText;%;%
+PAR_ALG_I34ANALOG;Text;Funktion der externen Eingänge I3+I4;Funktion der externen Eingänge I3+I4
+PAR_ALG_I34ANALOG;SuffixText;;
+PAR_MW_DELTATMP;Text;Temperatur senden bei Änderung von (Interner Fühler);Temperatur senden bei Änderung von (Interner Fühler)
+PAR_MW_DELTATMP;SuffixText;;
+PAR_MW_ZYKSND_TMP;Text;Temperatur zyklisch senden;Temperatur zyklisch senden
+PAR_MW_ZYKSND_TMP;SuffixText;;
+PAR_MW_TEMPABGL;Text;Temperaturabgleich;Temperaturabgleich
+PAR_MW_TEMPABGL;SuffixText;x0,1 K;x0,1 K
+PAR_RTR_NURSOLGEB;Text;PAR_RTR_NURSOLGEB;
+PAR_RTR_NURSOLGEB;SuffixText;;
+PAR_RTR_REGELNG;Text;Regelung;Regelung
+PAR_RTR_REGELNG;SuffixText;;
+PAR_RTR_ARTREGH;Text;Art der Regelung;Art der Regelung
+PAR_RTR_ARTREGH;SuffixText;;
+PAR_RTR_ANZHSTUF;Text;Zahl der Heizstufen;Zahl der Heizstufen
+PAR_RTR_ANZHSTUF;SuffixText;;
+PAR_RTR_ARTREGK;Text;Art der Regelung;Art der Regelung
+PAR_RTR_ARTREGK;SuffixText;;
+PAR_RTR_ANZKSTUF;Text;Zahl der Kühlstufen;Zahl der Kühlstufen
+PAR_RTR_ANZKSTUF;SuffixText;;
+PAR_RTR_UMSCHHK;Text;Umschalten zwischen Heizen und Kühlen;Umschalten zwischen Heizen und Kühlen
+PAR_RTR_UMSCHHK;SuffixText;;
+PAR_RTR_FORMTHKOBJ;Text;Format Objekt Heizen/Kühlen;Format Objekt Heizen/Kühlen
+PAR_RTR_FORMTHKOBJ;SuffixText;;
+PAR_RTR_AUSGSTGRK;Text;Ausgabe der Stellgröße Kühlen;Ausgabe der Stellgröße Kühlen
+PAR_RTR_AUSGSTGRK;SuffixText;;
+PAR_RTR_AUSGSTGRK_2PKT;Text;Ausgabe der Stellgröße Kühlen;Ausgabe der Stellgröße Kühlen
+PAR_RTR_AUSGSTGRK_2PKT;SuffixText;;
+PAR_RTR_FCTRAD;Text;Funktion des Stellrades;Funktion des Stellrades
+PAR_RTR_FCTRAD;SuffixText;;
+PAR_RTR_BETRARTRST;Text;Betriebsart nach Reset;Betriebsart nach Reset
+PAR_RTR_BETRARTRST;SuffixText;;
+PAR_RTR_AKTSOLKOMF;Text;Aktueller Sollwert im Komfortbetrieb;Aktueller Sollwert im Komfortbetrieb
+PAR_RTR_AKTSOLKOMF;SuffixText;;
+PAR_RTR_MANVERSCHWANN;Text;Manuelle Verschiebung wirkt;Manuelle Verschiebung wirkt
+PAR_RTR_MANVERSCHWANN;SuffixText;;
+PAR_RTR_OBJBETRART;Text;Objekte zur Festlegung der Betriebsart;Objekte zur Festlegung der Betriebsart
+PAR_RTR_OBJBETRART;SuffixText;;
+PAR_RTR_ARTPRESSENS;Text;Art des Präsenzsensors (Obj. Präsenz);Art des Präsenzsensors (Obj. Präsenz)
+PAR_RTR_ARTPRESSENS;SuffixText;;
+PAR_RTR_ZTKOMFVERL;Text;Zeit für Komfortverlängerung;Zeit für Komfortverlängerung
+PAR_RTR_ZTKOMFVERL;SuffixText;;
+PAR_RTR_MANVERSCHNACHT;Text;Manuelle Verschiebung am Ende des Nachtbetriebs;Manuelle Verschiebung am Ende des Nachtbetriebs
+PAR_RTR_MANVERSCHNACHT;SuffixText;;
+PAR_RTR_FUSSBEGR;Text;Fußbodentemperaturbegrenzung verwenden (Fühler an I4);Fußbodentemperaturbegrenzung verwenden (Fühler an I4)
+PAR_RTR_FUSSBEGR;SuffixText;;
+PAR_RTR_SRC_ISTW_BM;Text;Quelle für Istwert;Quelle für Istwert
+PAR_RTR_SRC_ISTW_BM;SuffixText;;
+PAR_RTR_SRC_ISTW;Text;Quelle für Istwert;Quelle für Istwert
+PAR_RTR_SRC_ISTW;SuffixText;;
+PAR_RTR_ISTW_UEBERWACHEN;Text;Istwert überwachen;Istwert überwachen
+PAR_RTR_ISTW_UEBERWACHEN;SuffixText;;
+PAR_RTR_SOLANPASS;Text;Sollwertkorrektur bei hohen Außentemperaturen;Sollwertkorrektur bei hohen Außentemperaturen
+PAR_RTR_SOLANPASS;SuffixText;;
+PAR_RTR_SOLANP;Text;Anpassung;Anpassung
+PAR_RTR_SOLANP;SuffixText;;
+PAR_RTR_FORMTSOLANP;Text;Format der Sollwertanpassung;Format der Sollwertanpassung
+PAR_RTR_FORMTSOLANP;SuffixText;;
+PAR_RTR_DELTAISTWREG;Text;Istwert für Regelung senden bei Änderung von;Istwert für Regelung senden bei Änderung von
+PAR_RTR_DELTAISTWREG;SuffixText;;
+PAR_RTR_ZYKZEITISTWERT;Text;Zyklisch senden;Zyklisch senden
+PAR_RTR_ZYKZEITISTWERT;SuffixText;;
+PAR_RTR_ZYKZEITISTWERT1;Text;Zyklisch senden;Zyklisch senden
+PAR_RTR_ZYKZEITISTWERT1;SuffixText;;
+PAR_RTR_SENDISTWREG;Text;Istwert für Regelung zyklisch senden;Istwert für Regelung zyklisch senden
+PAR_RTR_SENDISTWREG;SuffixText;;
+PAR_RTR_ISTW_FEHLER;Text;Telegramm Istwertfehler;Telegramm Istwertfehler
+PAR_RTR_ISTW_FEHLER;SuffixText;;
+PAR_RTR_ISTW_TIMEOUT;Text;Überwachungszeit für ext. Istwert;Überwachungszeit für ext. Istwert
+PAR_RTR_ISTW_TIMEOUT;SuffixText;;
+PAR_RTR_ISTW_TIMEOUT_KL;Text;Überwachungszeit für ext. Istwert;Überwachungszeit für ext. Istwert
+PAR_RTR_ISTW_TIMEOUT_KL;SuffixText;;
+PAR_RTR_ISTW_REAKTIMEOUT;Text;Notprogramm bei Istwertausfall;Notprogramm bei Istwertausfall
+PAR_RTR_ISTW_REAKTIMEOUT;SuffixText;;
+PAR_RTR_RADPRES;Text;Bei Temperaturerhöhung am Stellrad;Bei Temperaturerhöhung am Stellrad
+PAR_RTR_RADPRES;SuffixText;;
+PAR_RTR_FCTTAST;Text;Funktion der Tasten;Funktion der Tasten
+PAR_RTR_FCTTAST;SuffixText;;
+PAR_RTR_FCTTASTALT;Text;Funktion der Tasten;Funktion der Tasten
+PAR_RTR_FCTTASTALT;SuffixText;;
+PAR_RTR_MAXANP;Text;Maximale Anpassung;Maximale Anpassung
+PAR_RTR_MAXANP;SuffixText;;
+PAR_RTR_MAXANPEMPF;Text;Maximale Anpassung;Maximale Anpassung
+PAR_RTR_MAXANPEMPF;SuffixText;;
+PAR_RTR_ZYKSNDBART;Text;Zyklisch Senden der aktuellen Betriebsart;Zyklisch Senden der aktuellen Betriebsart
+PAR_RTR_ZYKSNDBART;SuffixText;;
+PAR_RTR_ZYKSNDSOLL;Text;Zyklisch senden des aktuellen Sollwertes;Zyklisch senden des aktuellen Sollwertes
+PAR_RTR_ZYKSNDSOLL;SuffixText;;
+PAR_RTR_HYS2PKTH;Text;Hysterese des 2-Punkt Reglers;Hysterese des 2-Punkt Reglers
+PAR_RTR_HYS2PKTH;SuffixText;;
+PAR_RTR_RCKFHYS2PKTH;Text;Rückführung der Hysterese nach Schaltpunkt;Rückführung der Hysterese nach Schaltpunkt
+PAR_RTR_RCKFHYS2PKTH;SuffixText;;
+PAR_RTR_PBANDH;Text;Proportionalband des Heizungsreglers;Proportionalband des Heizungsreglers
+PAR_RTR_PBANDH;SuffixText;;
+PAR_RTR_IZEITH;Text;Integrierzeit des Heizungsreglers;Integrierzeit des Heizungsreglers
+PAR_RTR_IZEITH;SuffixText;;
+PAR_RTR_PBANDH_RADIATOR;Text;Proportionalband des Heizungsreglers;Proportionalband des Heizungsreglers
+PAR_RTR_PBANDH_RADIATOR;SuffixText;;
+PAR_RTR_IZEITH_RADIATOR;Text;Integrierzeit des Heizungsreglers;Integrierzeit des Heizungsreglers
+PAR_RTR_IZEITH_RADIATOR;SuffixText;;
+PAR_RTR_PBANDH_FUSSBOD;Text;Proportionalband des Heizungsreglers;Proportionalband des Heizungsreglers
+PAR_RTR_PBANDH_FUSSBOD;SuffixText;;
+PAR_RTR_IZEITH_FUSSBOD;Text;Integrierzeit des Heizungsreglers;Integrierzeit des Heizungsreglers
+PAR_RTR_IZEITH_FUSSBOD;SuffixText;;
+PAR_RTR_REGPARAMH;Text;Einstellung der Regelparameter;Einstellung der Regelparameter
+PAR_RTR_REGPARAMH;SuffixText;;
+PAR_RTR_ANLTYPH;Text;Anlagentyp;Anlagentyp
+PAR_RTR_ANLTYPH;SuffixText;;
+PAR_RTR_DELTASNDH;Text;Senden der Stellgröße Heizen;Senden der Stellgröße Heizen
+PAR_RTR_DELTASNDH;SuffixText;;
+PAR_RTR_ZYKSNDH;Text;Zyklisch senden der Stellgröße Heizen;Zyklisch senden der Stellgröße Heizen
+PAR_RTR_ZYKSNDH;SuffixText;;
+PAR_RTR_BASSOLRST;Text;Basissollwert nach Laden der Applikation;Basissollwert nach Laden der Applikation
+PAR_RTR_BASSOLRST;SuffixText;;
+PAR_RTR_SOLFROST;Text;Sollwert für Frostschutzbetrieb (bei Heizen);Sollwert für Frostschutzbetrieb (bei Heizen)
+PAR_RTR_SOLFROST;SuffixText;;
+PAR_RTR_MINBASSOL;Text;Minimal gültiger Basissollwert;Minimal gültiger Basissollwert
+PAR_RTR_MINBASSOL;SuffixText;;
+PAR_RTR_MAXBASSOL;Text;Maximal gültiger Basissollwert;Maximal gültiger Basissollwert
+PAR_RTR_MAXBASSOL;SuffixText;;
+PAR_RTR_MAXSOLVERSCH;Text;Maximal gültige Sollwertverschiebung;Maximal gültige Sollwertverschiebung
+PAR_RTR_MAXSOLVERSCH;SuffixText;;
+PAR_RTR_STBYABSH;Text;Absenkung im Standbybetrieb (bei Heizen);Absenkung im Standbybetrieb (bei Heizen)
+PAR_RTR_STBYABSH;SuffixText;;
+PAR_RTR_NACHTABSH;Text;Absenkung im Nachtbetrieb (bei Heizen);Absenkung im Nachtbetrieb (bei Heizen)
+PAR_RTR_NACHTABSH;SuffixText;;
+PAR_RTR_FUSSTMAX;Text;Maximale Fußbodentemperatur;Maximale Fußbodentemperatur
+PAR_RTR_FUSSTMAX;SuffixText;;
+PAR_RTR_ARTSTELLGR2STH;Text;Art der Stellgröße;Art der Stellgröße
+PAR_RTR_ARTSTELLGR2STH;SuffixText;;
+PAR_RTR_ARTSTELLGR2STK;Text;Art der Stellgröße;Art der Stellgröße
+PAR_RTR_ARTSTELLGR2STK;SuffixText;;
+PAR_RTR_DELTAZUSSTUFH;Text;Differenz zw. Hauptstufe und Zusatzstufe;Differenz zw. Hauptstufe und Zusatzstufe
+PAR_RTR_DELTAZUSSTUFH;SuffixText;;
+PAR_RTR_DELTAZUSSTUFK;Text;Differenz zw. Hauptstufe und Zusatzstufe;Differenz zw. Hauptstufe und Zusatzstufe
+PAR_RTR_DELTAZUSSTUFK;SuffixText;;
+PAR_RTR_PBANDZUSH;Text;Proportionalband;Proportionalband
+PAR_RTR_PBANDZUSH;SuffixText;;
+PAR_RTR_PBANDZUSK;Text;Proportionalband;Proportionalband
+PAR_RTR_PBANDZUSK;SuffixText;;
+PAR_RTR_PWM_ZUSH;Text;PWM-Periode;PWM-Periode
+PAR_RTR_PWM_ZUSH;SuffixText;min;min
+PAR_RTR_DELTASNDZUSH;Text;Senden der Stellgröße;Senden der Stellgröße
+PAR_RTR_DELTASNDZUSH;SuffixText;;
+PAR_RTR_ZYKSNDZUSH;Text;Zyklisch senden;Zyklisch senden
+PAR_RTR_ZYKSNDZUSH;SuffixText;;
+PAR_RTR_HYS2PKTK;Text;Hysterese des 2-Punkt Reglers;Hysterese des 2-Punkt Reglers
+PAR_RTR_HYS2PKTK;SuffixText;;
+PAR_RTR_RCKFHYS2PKTK;Text;Rückführung der Hysterese nach Schaltpunkt;Rückführung der Hysterese nach Schaltpunkt
+PAR_RTR_RCKFHYS2PKTK;SuffixText;;
+PAR_RTR_PBANDK;Text;Proportionalband des Kühlenreglers;Proportionalband des Kühlenreglers
+PAR_RTR_PBANDK;SuffixText;;
+PAR_RTR_IZEITK;Text;Integrierzeit des Kühlenreglers;Integrierzeit des Kühlenreglers
+PAR_RTR_IZEITK;SuffixText;;
+PAR_RTR_PBANDK_KUEHLDECKE;Text;Proportionalband des Kühlenreglers;Proportionalband des Kühlenreglers
+PAR_RTR_PBANDK_KUEHLDECKE;SuffixText;;
+PAR_RTR_IZEITK_KUEHLDECKE;Text;Integrierzeit des Kühlenreglers;Integrierzeit des Kühlenreglers
+PAR_RTR_IZEITK_KUEHLDECKE;SuffixText;;
+PAR_RTR_PBANDK_FANCOIL;Text;Proportionalband des Kühlenreglers;Proportionalband des Kühlenreglers
+PAR_RTR_PBANDK_FANCOIL;SuffixText;;
+PAR_RTR_IZEITK_FANCOIL;Text;Integrierzeit des Kühlenreglers;Integrierzeit des Kühlenreglers
+PAR_RTR_IZEITK_FANCOIL;SuffixText;;
+PAR_RTR_REGPARAMK;Text;Einstellung der Regelparameter;Einstellung der Regelparameter
+PAR_RTR_REGPARAMK;SuffixText;;
+PAR_RTR_ANLTYPK;Text;Anlagentyp;Anlagentyp
+PAR_RTR_ANLTYPK;SuffixText;;
+PAR_RTR_DELTASNDK;Text;Senden der Stellgröße Kühlen;Senden der Stellgröße Kühlen
+PAR_RTR_DELTASNDK;SuffixText;;
+PAR_RTR_ZYKSNDK;Text;Zyklisch senden der Stellgröße Kühlen;Zyklisch senden der Stellgröße Kühlen
+PAR_RTR_ZYKSNDK;SuffixText;;
+PAR_RTR_TOTZO2RO;Text;Totzone zw. Heizen und Kühlen;Totzone zw. Heizen und Kühlen
+PAR_RTR_TOTZO2RO;SuffixText;;
+PAR_RTR_TOTZO2ROHYHK;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Heizen + Hysterese Kühlen);Totzone zw. Heizen und Kühlen (+ Hysterese Heizen + Hysterese Kühlen)
+PAR_RTR_TOTZO2ROHYHK;SuffixText;;
+PAR_RTR_TOTZO4RO;Text;Totzone zw. Heizen und Kühlen;Totzone zw. Heizen und Kühlen
+PAR_RTR_TOTZO4RO;SuffixText;;
+PAR_RTR_TOTZO4ROHYK;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Kühlen);Totzone zw. Heizen und Kühlen (+ Hysterese Kühlen)
+PAR_RTR_TOTZO4ROHYK;SuffixText;;
+PAR_RTR_TOTZO4ROHYH;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Heizen);Totzone zw. Heizen und Kühlen (+ Hysterese Heizen)
+PAR_RTR_TOTZO4ROHYH;SuffixText;;
+PAR_RTR_TOTZO4ROHYHK;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Heizen + Hysterese Kühlen);Totzone zw. Heizen und Kühlen (+ Hysterese Heizen + Hysterese Kühlen)
+PAR_RTR_TOTZO4ROHYHK;SuffixText;;
+PAR_RTR_TOTZO4RO_AUTO;Text;Totzone zw. Heizen und Kühlen;Totzone zw. Heizen und Kühlen
+PAR_RTR_TOTZO4RO_AUTO;SuffixText;;
+PAR_RTR_TOTZO4ROHYK_AUTO;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Kühlen);Totzone zw. Heizen und Kühlen (+ Hysterese Kühlen)
+PAR_RTR_TOTZO4ROHYK_AUTO;SuffixText;;
+PAR_RTR_TOTZO4ROHYH_AUTO;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Heizen);Totzone zw. Heizen und Kühlen (+ Hysterese Heizen)
+PAR_RTR_TOTZO4ROHYH_AUTO;SuffixText;;
+PAR_RTR_TOTZO4ROHYHK_AUTO;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Heizen + Hysterese Kühlen);Totzone zw. Heizen und Kühlen (+ Hysterese Heizen + Hysterese Kühlen)
+PAR_RTR_TOTZO4ROHYHK_AUTO;SuffixText;;
+PAR_RTR_TOTZO4ROHYK_OBJ;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Kühlen);Totzone zw. Heizen und Kühlen (+ Hysterese Kühlen)
+PAR_RTR_TOTZO4ROHYK_OBJ;SuffixText;;
+PAR_RTR_TOTZO4ROHYH_OBJ;Text;Totzone zw. Heizen und Kühlen (+ Hysterese Heizen);Totzone zw. Heizen und Kühlen (+ Hysterese Heizen)
+PAR_RTR_TOTZO4ROHYH_OBJ;SuffixText;;
+PAR_RTR_SOLHITZ;Text;Sollwert für Hitzeschutzbetrieb (bei Kühlen);Sollwert für Hitzeschutzbetrieb (bei Kühlen)
+PAR_RTR_SOLHITZ;SuffixText;;
+PAR_RTR_STBYANHK;Text;Anhebung im Standbybetrieb (bei Kühlen);Anhebung im Standbybetrieb (bei Kühlen)
+PAR_RTR_STBYANHK;SuffixText;;
+PAR_RTR_NACHTANHK;Text;Anhebung im Nachtbetrieb (bei Kühlen);Anhebung im Nachtbetrieb (bei Kühlen)
+PAR_RTR_NACHTANHK;SuffixText;;
+PAR_RTR_SOLANPAB;Text;Sollwertkorrektur ab;Sollwertkorrektur ab
+PAR_RTR_SOLANPAB;SuffixText;;
+PAR_RTR_BASSOLANP;Text;Startsollwert;Startsollwert
+PAR_RTR_BASSOLANP;SuffixText;;
+PAR_RTR_ZYKSNDSOLANP;Text;Sollwertanpassung senden;Sollwertanpassung senden
+PAR_RTR_ZYKSNDSOLANP;SuffixText;;
+PAR_RTR_PWM_ZUSK;Text;PWM-Periode;PWM-Periode
+PAR_RTR_PWM_ZUSK;SuffixText;min;min
+PAR_RTR_DELTASNDZUSK;Text;Senden der Stellgröße;Senden der Stellgröße
+PAR_RTR_DELTASNDZUSK;SuffixText;;
+PAR_RTR_ZYKSNDZUSK;Text;Zyklisch senden;Zyklisch senden
+PAR_RTR_ZYKSNDZUSK;SuffixText;;
+PAR_ALG_I0_AKTI;Text;Kanal aktivieren;Kanal aktivieren
+PAR_ALG_I0_AKTI;SuffixText;;
+PAR_BM_I0_FUNKTION;Text;Funktion des Kanals;Funktion des Kanals
+PAR_BM_I0_FUNKTION;SuffixText;;
+PAR_BM_I0_SPERRSINN;Text;Sperrtelegramm;Sperrtelegramm
+PAR_BM_I0_SPERRSINN;SuffixText;;
+PAR_BM_I0_S_ENTPREL;Text;Entprellzeit;Entprellzeit
+PAR_BM_I0_S_ENTPREL;SuffixText;;
+PAR_BM_I0_S_ZYKZT;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_S_ZYKZT;SuffixText;;
+PAR_BM_I0_T_TASTRWIRKSIN;Text;Angeschlossener Taster;Angeschlossener Taster
+PAR_BM_I0_T_TASTRWIRKSIN;SuffixText;;
+PAR_BM_I0_T_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I0_T_LANGDRCK;SuffixText;;
+PAR_BM_I0_T_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I0_T_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I0_D_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I0_D_LANGDRCK;SuffixText;;
+PAR_BM_I0_D_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I0_D_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I0_J_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I0_J_LANGDRCK;SuffixText;;
+PAR_BM_I0_J_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I0_J_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I0_0_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I0_0_S_SNDWENN1;SuffixText;;
+PAR_BM_I0_0_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I0_0_S_SNDWENN0;SuffixText;;
+PAR_BM_I0_0_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_0_S_ZYKSND;SuffixText;;
+PAR_BM_I0_0_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_0_S_SPERREIN;SuffixText;;
+PAR_BM_I0_0_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_0_S_SPERRAUS;SuffixText;;
+PAR_BM_I0_D_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I0_D_DOPPKLICK;SuffixText;;
+PAR_BM_I0_J_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I0_J_DOPPKLICK;SuffixText;;
+PAR_BM_I0_D_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_D_SPERREINDKL;SuffixText;;
+PAR_BM_I0_D_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_D_SPERRAUSDKL;SuffixText;;
+PAR_BM_I0_J_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_J_SPERREINDKL;SuffixText;;
+PAR_BM_I0_J_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_J_SPERRAUSDKL;SuffixText;;
+PAR_BM_I0_0_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I0_0_T_BEIKURZ;SuffixText;;
+PAR_BM_I0_0_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I0_0_T_BEILNG;SuffixText;;
+PAR_BM_I0_0_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I0_0_T_DOPPKLICK;SuffixText;;
+PAR_BM_CH0_ANZAHL_TELEGRAMME;Text;Anzahl der Telegramme;Anzahl der Telegramme
+PAR_BM_CH0_ANZAHL_TELEGRAMME;SuffixText;;
+PAR_BM_I0_SPERR;Text;Sperrfunktion aktivieren;Sperrfunktion aktivieren
+PAR_BM_I0_SPERR;SuffixText;;
+PAR_BM_I0_D_REAKLNGKRZ;Text;Reaktion auf lang / kurz;Reaktion auf lang / kurz
+PAR_BM_I0_D_REAKLNGKRZ;SuffixText;;
+PAR_BM_I0_D_SCHRITTW;Text;Schrittweite für Dimmen;Schrittweite für Dimmen
+PAR_BM_I0_D_SCHRITTW;SuffixText;;
+PAR_BM_I0_J_BEDIEN;Text;Bedienung;Bedienung
+PAR_BM_I0_J_BEDIEN;SuffixText;;
+PAR_BM_I0_J_STOPMIT;Text;Stoppen der Fahrbewegung durch;Stoppen der Fahrbewegung durch
+PAR_BM_I0_J_STOPMIT;SuffixText;;
+PAR_BM_I0_0_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I0_0_S_OBJTYP;SuffixText;;
+PAR_BM_I0_0_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_0_S_BUSWIED;SuffixText;;
+PAR_BM_I0_0_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_0_T_SPERREIN;SuffixText;;
+PAR_BM_I0_0_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_0_T_SPERRAUS;SuffixText;;
+PAR_BM_I0_D_REAKBUSWIED;Text;Reaktion bei Bus- oder Netzwiederkehr;Reaktion bei Bus- oder Netzwiederkehr
+PAR_BM_I0_D_REAKBUSWIED;SuffixText;;
+PAR_BM_I0_D_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_D_SPERREIN;SuffixText;;
+PAR_BM_I0_D_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_D_SPERRAUS;SuffixText;;
+PAR_BM_I0_J_REAKBUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_J_REAKBUSWIED;SuffixText;;
+PAR_BM_I0_J_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_J_SPERREIN;SuffixText;;
+PAR_BM_I0_J_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_J_SPERRAUS;SuffixText;;
+PAR_BM_I0_0_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I0_0_T_OBJTYP;SuffixText;;
+PAR_BM_I0_0_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_0_T_ZYKSND;SuffixText;;
+PAR_BM_I0_0_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_0_T_BUSWIED;SuffixText;;
+PAR_BM_I0_D_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I0_D_OBJTYPDKL;SuffixText;;
+PAR_BM_I0_D_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_D_BUSWIEDDKL;SuffixText;;
+PAR_BM_I0_J_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I0_J_OBJTYPDKL;SuffixText;;
+PAR_BM_I0_J_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_J_BUSWIEDDKL;SuffixText;;
+PAR_BM_I0_1_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I0_1_S_SNDWENN1;SuffixText;;
+PAR_BM_I0_1_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I0_1_S_SNDWENN0;SuffixText;;
+PAR_BM_I0_1_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_1_S_ZYKSND;SuffixText;;
+PAR_BM_I0_1_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_1_S_SPERREIN;SuffixText;;
+PAR_BM_I0_1_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_1_S_SPERRAUS;SuffixText;;
+PAR_BM_I0_1_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_1_T_SPERREIN;SuffixText;;
+PAR_BM_I0_1_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_1_T_SPERRAUS;SuffixText;;
+PAR_BM_I0_0_D_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_D_TELSCHALTDKL;SuffixText;;
+PAR_BM_I0_0_D_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_D_TELPRIODKL;SuffixText;;
+PAR_BM_I0_0_D_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_D_TELVALDKL;SuffixText;;
+PAR_BM_I0_0_D_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_D_TELPROZDKL;SuffixText;;
+PAR_BM_I0_0_D_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_D_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_0_D_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_D_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_0_J_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_J_TELSCHALTDKL;SuffixText;;
+PAR_BM_I0_0_J_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_J_TELPRIODKL;SuffixText;;
+PAR_BM_I0_0_J_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_J_TELVALDKL;SuffixText;;
+PAR_BM_I0_0_J_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_J_TELPROZDKL;SuffixText;;
+PAR_BM_I0_0_J_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_J_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_0_J_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_J_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_0_J_TELHOEHEDKL;Text;Höhe;Höhe
+PAR_BM_I0_0_J_TELHOEHEDKL;SuffixText;;
+PAR_BM_I0_0_J_TELLAMELLEDKL;Text;Lamelle;Lamelle
+PAR_BM_I0_0_J_TELLAMELLEDKL;SuffixText;;
+PAR_BM_I0_0_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELSCHALT1;SuffixText;;
+PAR_BM_I0_0_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELPRIO1;SuffixText;;
+PAR_BM_I0_0_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELVAL1;SuffixText;;
+PAR_BM_I0_0_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELPROZ1;SuffixText;;
+PAR_BM_I0_0_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I0_0_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I0_0_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I0_0_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I0_0_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELVALKRZ;SuffixText;;
+PAR_BM_I0_0_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I0_0_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I0_0_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I0_D_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_D_ZYKSNDDKL;SuffixText;;
+PAR_BM_I0_J_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_J_ZYKSNDDKL;SuffixText;;
+PAR_BM_I0_1_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I0_1_S_OBJTYP;SuffixText;;
+PAR_BM_I0_1_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_1_S_BUSWIED;SuffixText;;
+PAR_BM_I0_1_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I0_1_T_OBJTYP;SuffixText;;
+PAR_BM_I0_1_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_1_T_ZYKSND;SuffixText;;
+PAR_BM_I0_1_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_1_T_BUSWIED;SuffixText;;
+PAR_BM_I0_0_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELSCHALT0;SuffixText;;
+PAR_BM_I0_0_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELPRIO0;SuffixText;;
+PAR_BM_I0_0_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELVAL0;SuffixText;;
+PAR_BM_I0_0_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TELPROZ0;SuffixText;;
+PAR_BM_I0_0_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I0_0_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I0_0_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I0_0_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I0_0_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I0_0_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELVALLNG;SuffixText;;
+PAR_BM_I0_0_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELPROZLNG;SuffixText;;
+PAR_BM_I0_0_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I0_0_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I0_0_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I0_0_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELPRIODKL;SuffixText;;
+PAR_BM_I0_0_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELVALDKL;SuffixText;;
+PAR_BM_I0_0_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TELPROZDKL;SuffixText;;
+PAR_BM_I0_0_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_0_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_0_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_1_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELSCHALT1;SuffixText;;
+PAR_BM_I0_1_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELPRIO1;SuffixText;;
+PAR_BM_I0_1_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELVAL1;SuffixText;;
+PAR_BM_I0_1_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELPROZ1;SuffixText;;
+PAR_BM_I0_1_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I0_1_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I0_1_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELSCHALT0;SuffixText;;
+PAR_BM_I0_1_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELPRIO0;SuffixText;;
+PAR_BM_I0_1_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELVAL0;SuffixText;;
+PAR_BM_I0_1_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TELPROZ0;SuffixText;;
+PAR_BM_I0_1_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I0_1_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I0_1_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I0_1_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I0_1_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I0_1_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELVALKRZ;SuffixText;;
+PAR_BM_I0_1_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I0_1_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I0_1_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I0_1_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I0_1_T_BEIKURZ;SuffixText;;
+PAR_BM_I0_1_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I0_1_T_BEILNG;SuffixText;;
+PAR_BM_I0_1_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I0_1_T_DOPPKLICK;SuffixText;;
+PAR_BM_I0_1_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I0_1_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I0_1_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELVALLNG;SuffixText;;
+PAR_BM_I0_1_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELPROZLNG;SuffixText;;
+PAR_BM_I0_1_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I0_1_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I0_2_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELSCHALT1;SuffixText;;
+PAR_BM_I0_2_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELPRIO1;SuffixText;;
+PAR_BM_I0_2_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELVAL1;SuffixText;;
+PAR_BM_I0_2_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELPROZ1;SuffixText;;
+PAR_BM_I0_2_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I0_2_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I0_1_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I0_1_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELPRIODKL;SuffixText;;
+PAR_BM_I0_1_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELVALDKL;SuffixText;;
+PAR_BM_I0_1_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TELPROZDKL;SuffixText;;
+PAR_BM_I0_1_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_1_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_1_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_2_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELSCHALT0;SuffixText;;
+PAR_BM_I0_2_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELPRIO0;SuffixText;;
+PAR_BM_I0_2_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELVAL0;SuffixText;;
+PAR_BM_I0_2_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TELPROZ0;SuffixText;;
+PAR_BM_I0_2_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I0_2_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I0_2_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I0_2_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I0_2_S_OBJTYP;SuffixText;;
+PAR_BM_I0_2_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_2_S_BUSWIED;SuffixText;;
+PAR_BM_I0_2_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I0_2_T_BEIKURZ;SuffixText;;
+PAR_BM_I0_2_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I0_2_T_BEILNG;SuffixText;;
+PAR_BM_I0_2_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I0_2_T_DOPPKLICK;SuffixText;;
+PAR_BM_I0_2_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I0_2_S_SNDWENN1;SuffixText;;
+PAR_BM_I0_2_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I0_2_S_SNDWENN0;SuffixText;;
+PAR_BM_I0_2_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_2_S_ZYKSND;SuffixText;;
+PAR_BM_I0_2_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_2_S_SPERREIN;SuffixText;;
+PAR_BM_I0_2_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_2_S_SPERRAUS;SuffixText;;
+PAR_BM_I0_2_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I0_2_T_OBJTYP;SuffixText;;
+PAR_BM_I0_2_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I0_2_T_ZYKSND;SuffixText;;
+PAR_BM_I0_2_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I0_2_T_BUSWIED;SuffixText;;
+PAR_BM_I0_2_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I0_2_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I0_2_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELVALKRZ;SuffixText;;
+PAR_BM_I0_2_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I0_2_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I0_2_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I0_2_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I0_2_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I0_2_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELVALLNG;SuffixText;;
+PAR_BM_I0_2_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELPROZLNG;SuffixText;;
+PAR_BM_I0_2_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I0_2_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I0_2_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I0_2_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELPRIODKL;SuffixText;;
+PAR_BM_I0_2_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELVALDKL;SuffixText;;
+PAR_BM_I0_2_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TELPROZDKL;SuffixText;;
+PAR_BM_I0_2_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_2_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I0_2_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I0_2_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I0_2_T_SPERREIN;SuffixText;;
+PAR_BM_I0_2_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I0_2_T_SPERRAUS;SuffixText;;
+PAR_ALG_I1_AKTI;Text;Kanal aktivieren;Kanal aktivieren
+PAR_ALG_I1_AKTI;SuffixText;;
+PAR_BM_I1_FUNKTION;Text;Funktion des Kanals;Funktion des Kanals
+PAR_BM_I1_FUNKTION;SuffixText;;
+PAR_BM_I1_SPERRSINN;Text;Sperrtelegramm;Sperrtelegramm
+PAR_BM_I1_SPERRSINN;SuffixText;;
+PAR_BM_I1_S_ENTPREL;Text;Entprellzeit;Entprellzeit
+PAR_BM_I1_S_ENTPREL;SuffixText;;
+PAR_BM_I1_S_ZYKZT;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_S_ZYKZT;SuffixText;;
+PAR_BM_I1_T_TASTRWIRKSIN;Text;Angeschlossener Taster;Angeschlossener Taster
+PAR_BM_I1_T_TASTRWIRKSIN;SuffixText;;
+PAR_BM_I1_T_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I1_T_LANGDRCK;SuffixText;;
+PAR_BM_I1_T_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I1_T_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I1_D_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I1_D_LANGDRCK;SuffixText;;
+PAR_BM_I1_D_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I1_D_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I1_J_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I1_J_LANGDRCK;SuffixText;;
+PAR_BM_I1_J_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I1_J_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I1_0_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I1_0_S_SNDWENN1;SuffixText;;
+PAR_BM_I1_0_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I1_0_S_SNDWENN0;SuffixText;;
+PAR_BM_I1_0_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_0_S_ZYKSND;SuffixText;;
+PAR_BM_I1_0_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_0_S_SPERREIN;SuffixText;;
+PAR_BM_I1_0_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_0_S_SPERRAUS;SuffixText;;
+PAR_BM_I1_D_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I1_D_DOPPKLICK;SuffixText;;
+PAR_BM_I1_J_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I1_J_DOPPKLICK;SuffixText;;
+PAR_BM_I1_D_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_D_SPERREINDKL;SuffixText;;
+PAR_BM_I1_D_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_D_SPERRAUSDKL;SuffixText;;
+PAR_BM_I1_J_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_J_SPERREINDKL;SuffixText;;
+PAR_BM_I1_J_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_J_SPERRAUSDKL;SuffixText;;
+PAR_BM_I1_0_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I1_0_T_BEIKURZ;SuffixText;;
+PAR_BM_I1_0_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I1_0_T_BEILNG;SuffixText;;
+PAR_BM_I1_0_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I1_0_T_DOPPKLICK;SuffixText;;
+PAR_BM_CH1_ANZAHL_TELEGRAMME;Text;Anzahl der Telegramme;Anzahl der Telegramme
+PAR_BM_CH1_ANZAHL_TELEGRAMME;SuffixText;;
+PAR_BM_I1_SPERR;Text;Sperrfunktion aktivieren;Sperrfunktion aktivieren
+PAR_BM_I1_SPERR;SuffixText;;
+PAR_BM_I1_D_REAKLNGKRZ;Text;Reaktion auf lang / kurz;Reaktion auf lang / kurz
+PAR_BM_I1_D_REAKLNGKRZ;SuffixText;;
+PAR_BM_I1_D_SCHRITTW;Text;Schrittweite für Dimmen;Schrittweite für Dimmen
+PAR_BM_I1_D_SCHRITTW;SuffixText;;
+PAR_BM_I1_J_BEDIEN;Text;Bedienung;Bedienung
+PAR_BM_I1_J_BEDIEN;SuffixText;;
+PAR_BM_I1_J_STOPMIT;Text;Stoppen der Fahrbewegung durch;Stoppen der Fahrbewegung durch
+PAR_BM_I1_J_STOPMIT;SuffixText;;
+PAR_BM_I1_0_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I1_0_S_OBJTYP;SuffixText;;
+PAR_BM_I1_0_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_0_S_BUSWIED;SuffixText;;
+PAR_BM_I1_0_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_0_T_SPERREIN;SuffixText;;
+PAR_BM_I1_0_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_0_T_SPERRAUS;SuffixText;;
+PAR_BM_I1_D_REAKBUSWIED;Text;Reaktion bei Bus- oder Netzwiederkehr;Reaktion bei Bus- oder Netzwiederkehr
+PAR_BM_I1_D_REAKBUSWIED;SuffixText;;
+PAR_BM_I1_D_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_D_SPERREIN;SuffixText;;
+PAR_BM_I1_D_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_D_SPERRAUS;SuffixText;;
+PAR_BM_I1_J_REAKBUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_J_REAKBUSWIED;SuffixText;;
+PAR_BM_I1_J_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_J_SPERREIN;SuffixText;;
+PAR_BM_I1_J_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_J_SPERRAUS;SuffixText;;
+PAR_BM_I1_0_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I1_0_T_OBJTYP;SuffixText;;
+PAR_BM_I1_0_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_0_T_ZYKSND;SuffixText;;
+PAR_BM_I1_0_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_0_T_BUSWIED;SuffixText;;
+PAR_BM_I1_D_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I1_D_OBJTYPDKL;SuffixText;;
+PAR_BM_I1_D_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_D_BUSWIEDDKL;SuffixText;;
+PAR_BM_I1_J_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I1_J_OBJTYPDKL;SuffixText;;
+PAR_BM_I1_J_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_J_BUSWIEDDKL;SuffixText;;
+PAR_BM_I1_1_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I1_1_S_SNDWENN1;SuffixText;;
+PAR_BM_I1_1_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I1_1_S_SNDWENN0;SuffixText;;
+PAR_BM_I1_1_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_1_S_ZYKSND;SuffixText;;
+PAR_BM_I1_1_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_1_S_SPERREIN;SuffixText;;
+PAR_BM_I1_1_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_1_S_SPERRAUS;SuffixText;;
+PAR_BM_I1_1_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_1_T_SPERREIN;SuffixText;;
+PAR_BM_I1_1_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_1_T_SPERRAUS;SuffixText;;
+PAR_BM_I1_0_D_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_D_TELSCHALTDKL;SuffixText;;
+PAR_BM_I1_0_D_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_D_TELPRIODKL;SuffixText;;
+PAR_BM_I1_0_D_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_D_TELVALDKL;SuffixText;;
+PAR_BM_I1_0_D_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_D_TELPROZDKL;SuffixText;;
+PAR_BM_I1_0_D_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_D_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_0_D_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_D_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_0_J_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_J_TELSCHALTDKL;SuffixText;;
+PAR_BM_I1_0_J_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_J_TELPRIODKL;SuffixText;;
+PAR_BM_I1_0_J_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_J_TELVALDKL;SuffixText;;
+PAR_BM_I1_0_J_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_J_TELPROZDKL;SuffixText;;
+PAR_BM_I1_0_J_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_J_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_0_J_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_J_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_0_J_TELHOEHEDKL;Text;Höhe;Höhe
+PAR_BM_I1_0_J_TELHOEHEDKL;SuffixText;;
+PAR_BM_I1_0_J_TELLAMELLEDKL;Text;Lamelle;Lamelle
+PAR_BM_I1_0_J_TELLAMELLEDKL;SuffixText;;
+PAR_BM_I1_0_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELSCHALT1;SuffixText;;
+PAR_BM_I1_0_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELPRIO1;SuffixText;;
+PAR_BM_I1_0_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELVAL1;SuffixText;;
+PAR_BM_I1_0_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELPROZ1;SuffixText;;
+PAR_BM_I1_0_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I1_0_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I1_0_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I1_0_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I1_0_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELVALKRZ;SuffixText;;
+PAR_BM_I1_0_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I1_0_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I1_0_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I1_D_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_D_ZYKSNDDKL;SuffixText;;
+PAR_BM_I1_J_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_J_ZYKSNDDKL;SuffixText;;
+PAR_BM_I1_1_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I1_1_S_OBJTYP;SuffixText;;
+PAR_BM_I1_1_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_1_S_BUSWIED;SuffixText;;
+PAR_BM_I1_1_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I1_1_T_OBJTYP;SuffixText;;
+PAR_BM_I1_1_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_1_T_ZYKSND;SuffixText;;
+PAR_BM_I1_1_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_1_T_BUSWIED;SuffixText;;
+PAR_BM_I1_0_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELSCHALT0;SuffixText;;
+PAR_BM_I1_0_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELPRIO0;SuffixText;;
+PAR_BM_I1_0_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELVAL0;SuffixText;;
+PAR_BM_I1_0_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TELPROZ0;SuffixText;;
+PAR_BM_I1_0_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I1_0_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I1_0_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I1_0_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I1_0_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I1_0_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELVALLNG;SuffixText;;
+PAR_BM_I1_0_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELPROZLNG;SuffixText;;
+PAR_BM_I1_0_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I1_0_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I1_0_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I1_0_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELPRIODKL;SuffixText;;
+PAR_BM_I1_0_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELVALDKL;SuffixText;;
+PAR_BM_I1_0_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TELPROZDKL;SuffixText;;
+PAR_BM_I1_0_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_0_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_0_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_1_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELSCHALT1;SuffixText;;
+PAR_BM_I1_1_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELPRIO1;SuffixText;;
+PAR_BM_I1_1_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELVAL1;SuffixText;;
+PAR_BM_I1_1_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELPROZ1;SuffixText;;
+PAR_BM_I1_1_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I1_1_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I1_1_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELSCHALT0;SuffixText;;
+PAR_BM_I1_1_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELPRIO0;SuffixText;;
+PAR_BM_I1_1_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELVAL0;SuffixText;;
+PAR_BM_I1_1_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TELPROZ0;SuffixText;;
+PAR_BM_I1_1_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I1_1_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I1_1_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I1_1_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I1_1_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I1_1_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELVALKRZ;SuffixText;;
+PAR_BM_I1_1_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I1_1_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I1_1_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I1_1_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I1_1_T_BEIKURZ;SuffixText;;
+PAR_BM_I1_1_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I1_1_T_BEILNG;SuffixText;;
+PAR_BM_I1_1_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I1_1_T_DOPPKLICK;SuffixText;;
+PAR_BM_I1_1_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I1_1_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I1_1_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELVALLNG;SuffixText;;
+PAR_BM_I1_1_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELPROZLNG;SuffixText;;
+PAR_BM_I1_1_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I1_1_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I1_2_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELSCHALT1;SuffixText;;
+PAR_BM_I1_2_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELPRIO1;SuffixText;;
+PAR_BM_I1_2_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELVAL1;SuffixText;;
+PAR_BM_I1_2_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELPROZ1;SuffixText;;
+PAR_BM_I1_2_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I1_2_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I1_1_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I1_1_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELPRIODKL;SuffixText;;
+PAR_BM_I1_1_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELVALDKL;SuffixText;;
+PAR_BM_I1_1_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TELPROZDKL;SuffixText;;
+PAR_BM_I1_1_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_1_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_1_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_2_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELSCHALT0;SuffixText;;
+PAR_BM_I1_2_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELPRIO0;SuffixText;;
+PAR_BM_I1_2_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELVAL0;SuffixText;;
+PAR_BM_I1_2_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TELPROZ0;SuffixText;;
+PAR_BM_I1_2_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I1_2_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I1_2_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I1_2_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I1_2_S_OBJTYP;SuffixText;;
+PAR_BM_I1_2_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_2_S_BUSWIED;SuffixText;;
+PAR_BM_I1_2_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I1_2_T_BEIKURZ;SuffixText;;
+PAR_BM_I1_2_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I1_2_T_BEILNG;SuffixText;;
+PAR_BM_I1_2_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I1_2_T_DOPPKLICK;SuffixText;;
+PAR_BM_I1_2_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I1_2_S_SNDWENN1;SuffixText;;
+PAR_BM_I1_2_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I1_2_S_SNDWENN0;SuffixText;;
+PAR_BM_I1_2_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_2_S_ZYKSND;SuffixText;;
+PAR_BM_I1_2_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_2_S_SPERREIN;SuffixText;;
+PAR_BM_I1_2_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_2_S_SPERRAUS;SuffixText;;
+PAR_BM_I1_2_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I1_2_T_OBJTYP;SuffixText;;
+PAR_BM_I1_2_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I1_2_T_ZYKSND;SuffixText;;
+PAR_BM_I1_2_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I1_2_T_BUSWIED;SuffixText;;
+PAR_BM_I1_2_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I1_2_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I1_2_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELVALKRZ;SuffixText;;
+PAR_BM_I1_2_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I1_2_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I1_2_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I1_2_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I1_2_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I1_2_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELVALLNG;SuffixText;;
+PAR_BM_I1_2_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELPROZLNG;SuffixText;;
+PAR_BM_I1_2_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I1_2_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I1_2_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I1_2_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELPRIODKL;SuffixText;;
+PAR_BM_I1_2_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELVALDKL;SuffixText;;
+PAR_BM_I1_2_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TELPROZDKL;SuffixText;;
+PAR_BM_I1_2_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_2_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I1_2_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I1_2_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I1_2_T_SPERREIN;SuffixText;;
+PAR_BM_I1_2_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I1_2_T_SPERRAUS;SuffixText;;
+PAR_ALG_I2_AKTI;Text;Kanal aktivieren;Kanal aktivieren
+PAR_ALG_I2_AKTI;SuffixText;;
+PAR_BM_I2_FUNKTION_TEMP;Text;PAR_BM_I2_FUNKTION_TEMP;
+PAR_BM_I2_FUNKTION_TEMP;SuffixText;;
+PAR_BM_I2_FUNKTION;Text;Funktion des Kanals;Funktion des Kanals
+PAR_BM_I2_FUNKTION;SuffixText;;
+PAR_BM_I2_SPERRSINN;Text;Sperrtelegramm;Sperrtelegramm
+PAR_BM_I2_SPERRSINN;SuffixText;;
+PAR_BM_I2_S_ENTPREL;Text;Entprellzeit;Entprellzeit
+PAR_BM_I2_S_ENTPREL;SuffixText;;
+PAR_BM_I2_S_ZYKZT;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_S_ZYKZT;SuffixText;;
+PAR_BM_I2_T_TASTRWIRKSIN;Text;Angeschlossener Taster;Angeschlossener Taster
+PAR_BM_I2_T_TASTRWIRKSIN;SuffixText;;
+PAR_BM_I2_T_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I2_T_LANGDRCK;SuffixText;;
+PAR_BM_I2_T_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I2_T_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I2_D_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I2_D_LANGDRCK;SuffixText;;
+PAR_BM_I2_D_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I2_D_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I2_J_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I2_J_LANGDRCK;SuffixText;;
+PAR_BM_I2_J_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I2_J_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I2_0_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I2_0_S_SNDWENN1;SuffixText;;
+PAR_BM_I2_0_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I2_0_S_SNDWENN0;SuffixText;;
+PAR_BM_I2_0_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_0_S_ZYKSND;SuffixText;;
+PAR_BM_I2_0_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_0_S_SPERREIN;SuffixText;;
+PAR_BM_I2_0_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_0_S_SPERRAUS;SuffixText;;
+PAR_BM_I2_TMP_SENSORTYP;Text;Sensortyp;Sensortyp
+PAR_BM_I2_TMP_SENSORTYP;SuffixText;;
+PAR_BM_I2_TMP_DELTATMP;Text;Temperatur senden bei Änderung von;Temperatur senden bei Änderung von
+PAR_BM_I2_TMP_DELTATMP;SuffixText;;
+PAR_BM_I2_D_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I2_D_DOPPKLICK;SuffixText;;
+PAR_BM_I2_J_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I2_J_DOPPKLICK;SuffixText;;
+PAR_BM_I2_D_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_D_SPERREINDKL;SuffixText;;
+PAR_BM_I2_D_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_D_SPERRAUSDKL;SuffixText;;
+PAR_BM_I2_J_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_J_SPERREINDKL;SuffixText;;
+PAR_BM_I2_J_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_J_SPERRAUSDKL;SuffixText;;
+PAR_BM_I2_0_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I2_0_T_BEIKURZ;SuffixText;;
+PAR_BM_I2_0_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I2_0_T_BEILNG;SuffixText;;
+PAR_BM_I2_0_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I2_0_T_DOPPKLICK;SuffixText;;
+PAR_BM_CH2_ANZAHL_TELEGRAMME;Text;Anzahl der Telegramme;Anzahl der Telegramme
+PAR_BM_CH2_ANZAHL_TELEGRAMME;SuffixText;;
+PAR_BM_I2_SPERR;Text;Sperrfunktion aktivieren;Sperrfunktion aktivieren
+PAR_BM_I2_SPERR;SuffixText;;
+PAR_BM_I2_D_REAKLNGKRZ;Text;Reaktion auf lang / kurz;Reaktion auf lang / kurz
+PAR_BM_I2_D_REAKLNGKRZ;SuffixText;;
+PAR_BM_I2_D_SCHRITTW;Text;Schrittweite für Dimmen;Schrittweite für Dimmen
+PAR_BM_I2_D_SCHRITTW;SuffixText;;
+PAR_BM_I2_J_BEDIEN;Text;Bedienung;Bedienung
+PAR_BM_I2_J_BEDIEN;SuffixText;;
+PAR_BM_I2_J_STOPMIT;Text;Stoppen der Fahrbewegung durch;Stoppen der Fahrbewegung durch
+PAR_BM_I2_J_STOPMIT;SuffixText;;
+PAR_BM_I2_0_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I2_0_S_OBJTYP;SuffixText;;
+PAR_BM_I2_0_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_0_S_BUSWIED;SuffixText;;
+PAR_BM_I2_0_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_0_T_SPERREIN;SuffixText;;
+PAR_BM_I2_0_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_0_T_SPERRAUS;SuffixText;;
+PAR_BM_I2_TMP_ABGL;Text;Temperaturabgleich;Temperaturabgleich
+PAR_BM_I2_TMP_ABGL;SuffixText;x0,1 K;x0,1 K
+PAR_BM_I2_D_REAKBUSWIED;Text;Reaktion bei Bus- oder Netzwiederkehr;Reaktion bei Bus- oder Netzwiederkehr
+PAR_BM_I2_D_REAKBUSWIED;SuffixText;;
+PAR_BM_I2_D_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_D_SPERREIN;SuffixText;;
+PAR_BM_I2_D_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_D_SPERRAUS;SuffixText;;
+PAR_BM_I2_J_REAKBUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_J_REAKBUSWIED;SuffixText;;
+PAR_BM_I2_J_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_J_SPERREIN;SuffixText;;
+PAR_BM_I2_J_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_J_SPERRAUS;SuffixText;;
+PAR_BM_I2_0_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I2_0_T_OBJTYP;SuffixText;;
+PAR_BM_I2_0_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_0_T_ZYKSND;SuffixText;;
+PAR_BM_I2_0_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_0_T_BUSWIED;SuffixText;;
+PAR_BM_I2_TMP_ZYKSND;Text;Temperatur zyklisch senden;Temperatur zyklisch senden
+PAR_BM_I2_TMP_ZYKSND;SuffixText;;
+PAR_BM_I2_D_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I2_D_OBJTYPDKL;SuffixText;;
+PAR_BM_I2_D_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_D_BUSWIEDDKL;SuffixText;;
+PAR_BM_I2_J_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I2_J_OBJTYPDKL;SuffixText;;
+PAR_BM_I2_J_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_J_BUSWIEDDKL;SuffixText;;
+PAR_BM_I2_1_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I2_1_S_SNDWENN1;SuffixText;;
+PAR_BM_I2_1_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I2_1_S_SNDWENN0;SuffixText;;
+PAR_BM_I2_1_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_1_S_ZYKSND;SuffixText;;
+PAR_BM_I2_1_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_1_S_SPERREIN;SuffixText;;
+PAR_BM_I2_1_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_1_S_SPERRAUS;SuffixText;;
+PAR_BM_I2_1_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_1_T_SPERREIN;SuffixText;;
+PAR_BM_I2_1_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_1_T_SPERRAUS;SuffixText;;
+PAR_BM_I2_0_D_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_D_TELSCHALTDKL;SuffixText;;
+PAR_BM_I2_0_D_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_D_TELPRIODKL;SuffixText;;
+PAR_BM_I2_0_D_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_D_TELVALDKL;SuffixText;;
+PAR_BM_I2_0_D_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_D_TELPROZDKL;SuffixText;;
+PAR_BM_I2_0_D_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_D_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_0_D_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_D_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_0_J_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_J_TELSCHALTDKL;SuffixText;;
+PAR_BM_I2_0_J_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_J_TELPRIODKL;SuffixText;;
+PAR_BM_I2_0_J_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_J_TELVALDKL;SuffixText;;
+PAR_BM_I2_0_J_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_J_TELPROZDKL;SuffixText;;
+PAR_BM_I2_0_J_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_J_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_0_J_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_J_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_0_J_TELHOEHEDKL;Text;Höhe;Höhe
+PAR_BM_I2_0_J_TELHOEHEDKL;SuffixText;;
+PAR_BM_I2_0_J_TELLAMELLEDKL;Text;Lamelle;Lamelle
+PAR_BM_I2_0_J_TELLAMELLEDKL;SuffixText;;
+PAR_BM_I2_0_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELSCHALT1;SuffixText;;
+PAR_BM_I2_0_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELPRIO1;SuffixText;;
+PAR_BM_I2_0_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELVAL1;SuffixText;;
+PAR_BM_I2_0_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELPROZ1;SuffixText;;
+PAR_BM_I2_0_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I2_0_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I2_0_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I2_0_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I2_0_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELVALKRZ;SuffixText;;
+PAR_BM_I2_0_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I2_0_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I2_0_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I2_D_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_D_ZYKSNDDKL;SuffixText;;
+PAR_BM_I2_J_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_J_ZYKSNDDKL;SuffixText;;
+PAR_BM_I2_1_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I2_1_S_OBJTYP;SuffixText;;
+PAR_BM_I2_1_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_1_S_BUSWIED;SuffixText;;
+PAR_BM_I2_1_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I2_1_T_OBJTYP;SuffixText;;
+PAR_BM_I2_1_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_1_T_ZYKSND;SuffixText;;
+PAR_BM_I2_1_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_1_T_BUSWIED;SuffixText;;
+PAR_BM_I2_0_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELSCHALT0;SuffixText;;
+PAR_BM_I2_0_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELPRIO0;SuffixText;;
+PAR_BM_I2_0_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELVAL0;SuffixText;;
+PAR_BM_I2_0_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TELPROZ0;SuffixText;;
+PAR_BM_I2_0_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I2_0_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I2_0_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I2_0_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I2_0_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I2_0_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELVALLNG;SuffixText;;
+PAR_BM_I2_0_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELPROZLNG;SuffixText;;
+PAR_BM_I2_0_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I2_0_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I2_0_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I2_0_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELPRIODKL;SuffixText;;
+PAR_BM_I2_0_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELVALDKL;SuffixText;;
+PAR_BM_I2_0_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TELPROZDKL;SuffixText;;
+PAR_BM_I2_0_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_0_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_0_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_1_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELSCHALT1;SuffixText;;
+PAR_BM_I2_1_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELPRIO1;SuffixText;;
+PAR_BM_I2_1_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELVAL1;SuffixText;;
+PAR_BM_I2_1_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELPROZ1;SuffixText;;
+PAR_BM_I2_1_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I2_1_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I2_1_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELSCHALT0;SuffixText;;
+PAR_BM_I2_1_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELPRIO0;SuffixText;;
+PAR_BM_I2_1_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELVAL0;SuffixText;;
+PAR_BM_I2_1_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TELPROZ0;SuffixText;;
+PAR_BM_I2_1_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I2_1_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I2_1_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I2_1_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I2_1_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I2_1_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELVALKRZ;SuffixText;;
+PAR_BM_I2_1_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I2_1_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I2_1_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I2_1_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I2_1_T_BEIKURZ;SuffixText;;
+PAR_BM_I2_1_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I2_1_T_BEILNG;SuffixText;;
+PAR_BM_I2_1_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I2_1_T_DOPPKLICK;SuffixText;;
+PAR_BM_I2_1_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I2_1_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I2_1_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELVALLNG;SuffixText;;
+PAR_BM_I2_1_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELPROZLNG;SuffixText;;
+PAR_BM_I2_1_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I2_1_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I2_2_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELSCHALT1;SuffixText;;
+PAR_BM_I2_2_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELPRIO1;SuffixText;;
+PAR_BM_I2_2_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELVAL1;SuffixText;;
+PAR_BM_I2_2_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELPROZ1;SuffixText;;
+PAR_BM_I2_2_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I2_2_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I2_1_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I2_1_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELPRIODKL;SuffixText;;
+PAR_BM_I2_1_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELVALDKL;SuffixText;;
+PAR_BM_I2_1_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TELPROZDKL;SuffixText;;
+PAR_BM_I2_1_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_1_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_1_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_2_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELSCHALT0;SuffixText;;
+PAR_BM_I2_2_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELPRIO0;SuffixText;;
+PAR_BM_I2_2_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELVAL0;SuffixText;;
+PAR_BM_I2_2_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TELPROZ0;SuffixText;;
+PAR_BM_I2_2_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I2_2_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I2_2_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I2_2_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I2_2_S_OBJTYP;SuffixText;;
+PAR_BM_I2_2_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_2_S_BUSWIED;SuffixText;;
+PAR_BM_I2_2_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I2_2_T_BEIKURZ;SuffixText;;
+PAR_BM_I2_2_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I2_2_T_BEILNG;SuffixText;;
+PAR_BM_I2_2_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I2_2_T_DOPPKLICK;SuffixText;;
+PAR_BM_I2_2_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I2_2_S_SNDWENN1;SuffixText;;
+PAR_BM_I2_2_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I2_2_S_SNDWENN0;SuffixText;;
+PAR_BM_I2_2_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_2_S_ZYKSND;SuffixText;;
+PAR_BM_I2_2_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_2_S_SPERREIN;SuffixText;;
+PAR_BM_I2_2_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_2_S_SPERRAUS;SuffixText;;
+PAR_BM_I2_2_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I2_2_T_OBJTYP;SuffixText;;
+PAR_BM_I2_2_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I2_2_T_ZYKSND;SuffixText;;
+PAR_BM_I2_2_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I2_2_T_BUSWIED;SuffixText;;
+PAR_BM_I2_2_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I2_2_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I2_2_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELVALKRZ;SuffixText;;
+PAR_BM_I2_2_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I2_2_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I2_2_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I2_2_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I2_2_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I2_2_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELVALLNG;SuffixText;;
+PAR_BM_I2_2_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELPROZLNG;SuffixText;;
+PAR_BM_I2_2_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I2_2_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I2_2_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I2_2_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELPRIODKL;SuffixText;;
+PAR_BM_I2_2_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELVALDKL;SuffixText;;
+PAR_BM_I2_2_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TELPROZDKL;SuffixText;;
+PAR_BM_I2_2_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_2_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I2_2_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I2_2_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I2_2_T_SPERREIN;SuffixText;;
+PAR_BM_I2_2_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I2_2_T_SPERRAUS;SuffixText;;
+PAR_ALG_I3_AKTI;Text;Kanal aktivieren;Kanal aktivieren
+PAR_ALG_I3_AKTI;SuffixText;;
+PAR_BM_I3_FUNKTION_TEMP;Text;PAR_BM_I3_FUNKTION_TEMP;
+PAR_BM_I3_FUNKTION_TEMP;SuffixText;;
+PAR_BM_I3_FUNKTION;Text;Funktion des Kanals;Funktion des Kanals
+PAR_BM_I3_FUNKTION;SuffixText;;
+PAR_BM_I3_SPERRSINN;Text;Sperrtelegramm;Sperrtelegramm
+PAR_BM_I3_SPERRSINN;SuffixText;;
+PAR_BM_I3_S_ENTPREL;Text;Entprellzeit;Entprellzeit
+PAR_BM_I3_S_ENTPREL;SuffixText;;
+PAR_BM_I3_S_ZYKZT;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_S_ZYKZT;SuffixText;;
+PAR_BM_I3_T_TASTRWIRKSIN;Text;Angeschlossener Taster;Angeschlossener Taster
+PAR_BM_I3_T_TASTRWIRKSIN;SuffixText;;
+PAR_BM_I3_T_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I3_T_LANGDRCK;SuffixText;;
+PAR_BM_I3_T_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I3_T_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I3_D_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I3_D_LANGDRCK;SuffixText;;
+PAR_BM_I3_D_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I3_D_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I3_J_LANGDRCK;Text;Langer Tastendruck ab;Langer Tastendruck ab
+PAR_BM_I3_J_LANGDRCK;SuffixText;;
+PAR_BM_I3_J_ZTDOPLKLIK;Text;Zeit für Doppelklick;Zeit für Doppelklick
+PAR_BM_I3_J_ZTDOPLKLIK;SuffixText;;
+PAR_BM_I3_0_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I3_0_S_SNDWENN1;SuffixText;;
+PAR_BM_I3_0_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I3_0_S_SNDWENN0;SuffixText;;
+PAR_BM_I3_0_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_0_S_ZYKSND;SuffixText;;
+PAR_BM_I3_0_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_0_S_SPERREIN;SuffixText;;
+PAR_BM_I3_0_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_0_S_SPERRAUS;SuffixText;;
+PAR_BM_I3_TMP_SENSORTYP;Text;Sensortyp;Sensortyp
+PAR_BM_I3_TMP_SENSORTYP;SuffixText;;
+PAR_BM_I3_TMP_DELTATMP;Text;Temperatur senden bei Änderung von;Temperatur senden bei Änderung von
+PAR_BM_I3_TMP_DELTATMP;SuffixText;;
+PAR_BM_I3_D_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I3_D_DOPPKLICK;SuffixText;;
+PAR_BM_I3_J_DOPPKLICK;Text;Zusatzfunktion Doppelklick;Zusatzfunktion Doppelklick
+PAR_BM_I3_J_DOPPKLICK;SuffixText;;
+PAR_BM_I3_D_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_D_SPERREINDKL;SuffixText;;
+PAR_BM_I3_D_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_D_SPERRAUSDKL;SuffixText;;
+PAR_BM_I3_J_SPERREINDKL;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_J_SPERREINDKL;SuffixText;;
+PAR_BM_I3_J_SPERRAUSDKL;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_J_SPERRAUSDKL;SuffixText;;
+PAR_BM_I3_0_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I3_0_T_BEIKURZ;SuffixText;;
+PAR_BM_I3_0_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I3_0_T_BEILNG;SuffixText;;
+PAR_BM_I3_0_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I3_0_T_DOPPKLICK;SuffixText;;
+PAR_BM_CH3_ANZAHL_TELEGRAMME;Text;Anzahl der Telegramme;Anzahl der Telegramme
+PAR_BM_CH3_ANZAHL_TELEGRAMME;SuffixText;;
+PAR_BM_I3_SPERR;Text;Sperrfunktion aktivieren;Sperrfunktion aktivieren
+PAR_BM_I3_SPERR;SuffixText;;
+PAR_BM_I3_D_REAKLNGKRZ;Text;Reaktion auf lang / kurz;Reaktion auf lang / kurz
+PAR_BM_I3_D_REAKLNGKRZ;SuffixText;;
+PAR_BM_I3_D_SCHRITTW;Text;Schrittweite für Dimmen;Schrittweite für Dimmen
+PAR_BM_I3_D_SCHRITTW;SuffixText;;
+PAR_BM_I3_J_BEDIEN;Text;Bedienung;Bedienung
+PAR_BM_I3_J_BEDIEN;SuffixText;;
+PAR_BM_I3_J_STOPMIT;Text;Stoppen der Fahrbewegung durch;Stoppen der Fahrbewegung durch
+PAR_BM_I3_J_STOPMIT;SuffixText;;
+PAR_BM_I3_0_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I3_0_S_OBJTYP;SuffixText;;
+PAR_BM_I3_0_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_0_S_BUSWIED;SuffixText;;
+PAR_BM_I3_0_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_0_T_SPERREIN;SuffixText;;
+PAR_BM_I3_0_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_0_T_SPERRAUS;SuffixText;;
+PAR_BM_I3_TMP_ABGL;Text;Temperaturabgleich;Temperaturabgleich
+PAR_BM_I3_TMP_ABGL;SuffixText;x0,1 K;x0,1 K
+PAR_BM_I3_D_REAKBUSWIED;Text;Reaktion bei Bus- oder Netzwiederkehr;Reaktion bei Bus- oder Netzwiederkehr
+PAR_BM_I3_D_REAKBUSWIED;SuffixText;;
+PAR_BM_I3_D_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_D_SPERREIN;SuffixText;;
+PAR_BM_I3_D_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_D_SPERRAUS;SuffixText;;
+PAR_BM_I3_J_REAKBUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_J_REAKBUSWIED;SuffixText;;
+PAR_BM_I3_J_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_J_SPERREIN;SuffixText;;
+PAR_BM_I3_J_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_J_SPERRAUS;SuffixText;;
+PAR_BM_I3_0_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I3_0_T_OBJTYP;SuffixText;;
+PAR_BM_I3_0_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_0_T_ZYKSND;SuffixText;;
+PAR_BM_I3_0_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_0_T_BUSWIED;SuffixText;;
+PAR_BM_I3_TMP_ZYKSND;Text;Temperatur zyklisch senden;Temperatur zyklisch senden
+PAR_BM_I3_TMP_ZYKSND;SuffixText;;
+PAR_BM_I3_D_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I3_D_OBJTYPDKL;SuffixText;;
+PAR_BM_I3_D_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_D_BUSWIEDDKL;SuffixText;;
+PAR_BM_I3_J_OBJTYPDKL;Text;Objekttyp;Objekttyp
+PAR_BM_I3_J_OBJTYPDKL;SuffixText;;
+PAR_BM_I3_J_BUSWIEDDKL;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_J_BUSWIEDDKL;SuffixText;;
+PAR_BM_I3_1_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I3_1_S_SNDWENN1;SuffixText;;
+PAR_BM_I3_1_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I3_1_S_SNDWENN0;SuffixText;;
+PAR_BM_I3_1_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_1_S_ZYKSND;SuffixText;;
+PAR_BM_I3_1_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_1_S_SPERREIN;SuffixText;;
+PAR_BM_I3_1_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_1_S_SPERRAUS;SuffixText;;
+PAR_BM_I3_1_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_1_T_SPERREIN;SuffixText;;
+PAR_BM_I3_1_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_1_T_SPERRAUS;SuffixText;;
+PAR_BM_I3_0_D_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_D_TELSCHALTDKL;SuffixText;;
+PAR_BM_I3_0_D_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_D_TELPRIODKL;SuffixText;;
+PAR_BM_I3_0_D_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_D_TELVALDKL;SuffixText;;
+PAR_BM_I3_0_D_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_D_TELPROZDKL;SuffixText;;
+PAR_BM_I3_0_D_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_D_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_0_D_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_D_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_0_J_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_J_TELSCHALTDKL;SuffixText;;
+PAR_BM_I3_0_J_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_J_TELPRIODKL;SuffixText;;
+PAR_BM_I3_0_J_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_J_TELVALDKL;SuffixText;;
+PAR_BM_I3_0_J_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_J_TELPROZDKL;SuffixText;;
+PAR_BM_I3_0_J_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_J_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_0_J_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_J_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_0_J_TELHOEHEDKL;Text;Höhe;Höhe
+PAR_BM_I3_0_J_TELHOEHEDKL;SuffixText;;
+PAR_BM_I3_0_J_TELLAMELLEDKL;Text;Lamelle;Lamelle
+PAR_BM_I3_0_J_TELLAMELLEDKL;SuffixText;;
+PAR_BM_I3_0_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELSCHALT1;SuffixText;;
+PAR_BM_I3_0_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELPRIO1;SuffixText;;
+PAR_BM_I3_0_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELVAL1;SuffixText;;
+PAR_BM_I3_0_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELPROZ1;SuffixText;;
+PAR_BM_I3_0_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I3_0_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I3_0_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I3_0_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I3_0_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELVALKRZ;SuffixText;;
+PAR_BM_I3_0_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I3_0_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I3_0_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I3_D_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_D_ZYKSNDDKL;SuffixText;;
+PAR_BM_I3_J_ZYKSNDDKL;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_J_ZYKSNDDKL;SuffixText;;
+PAR_BM_I3_1_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I3_1_S_OBJTYP;SuffixText;;
+PAR_BM_I3_1_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_1_S_BUSWIED;SuffixText;;
+PAR_BM_I3_1_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I3_1_T_OBJTYP;SuffixText;;
+PAR_BM_I3_1_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_1_T_ZYKSND;SuffixText;;
+PAR_BM_I3_1_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_1_T_BUSWIED;SuffixText;;
+PAR_BM_I3_0_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELSCHALT0;SuffixText;;
+PAR_BM_I3_0_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELPRIO0;SuffixText;;
+PAR_BM_I3_0_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELVAL0;SuffixText;;
+PAR_BM_I3_0_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TELPROZ0;SuffixText;;
+PAR_BM_I3_0_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I3_0_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I3_0_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I3_0_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I3_0_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I3_0_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELVALLNG;SuffixText;;
+PAR_BM_I3_0_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELPROZLNG;SuffixText;;
+PAR_BM_I3_0_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I3_0_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I3_0_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I3_0_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELPRIODKL;SuffixText;;
+PAR_BM_I3_0_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELVALDKL;SuffixText;;
+PAR_BM_I3_0_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TELPROZDKL;SuffixText;;
+PAR_BM_I3_0_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_0_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_0_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_1_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELSCHALT1;SuffixText;;
+PAR_BM_I3_1_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELPRIO1;SuffixText;;
+PAR_BM_I3_1_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELVAL1;SuffixText;;
+PAR_BM_I3_1_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELPROZ1;SuffixText;;
+PAR_BM_I3_1_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I3_1_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I3_1_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELSCHALT0;SuffixText;;
+PAR_BM_I3_1_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELPRIO0;SuffixText;;
+PAR_BM_I3_1_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELVAL0;SuffixText;;
+PAR_BM_I3_1_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TELPROZ0;SuffixText;;
+PAR_BM_I3_1_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I3_1_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I3_1_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I3_1_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I3_1_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I3_1_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELVALKRZ;SuffixText;;
+PAR_BM_I3_1_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I3_1_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I3_1_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I3_1_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I3_1_T_BEIKURZ;SuffixText;;
+PAR_BM_I3_1_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I3_1_T_BEILNG;SuffixText;;
+PAR_BM_I3_1_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I3_1_T_DOPPKLICK;SuffixText;;
+PAR_BM_I3_1_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I3_1_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I3_1_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELVALLNG;SuffixText;;
+PAR_BM_I3_1_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELPROZLNG;SuffixText;;
+PAR_BM_I3_1_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I3_1_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I3_2_S_TELSCHALT1;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELSCHALT1;SuffixText;;
+PAR_BM_I3_2_S_TELPRIO1;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELPRIO1;SuffixText;;
+PAR_BM_I3_2_S_TELVAL1;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELVAL1;SuffixText;;
+PAR_BM_I3_2_S_TELPROZ1;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELPROZ1;SuffixText;;
+PAR_BM_I3_2_S_TEL2BY1;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TEL2BY1;SuffixText;#,#;#,#
+PAR_BM_I3_2_S_TEL4BY1;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TEL4BY1;SuffixText;#,#;#,#
+PAR_BM_I3_1_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I3_1_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELPRIODKL;SuffixText;;
+PAR_BM_I3_1_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELVALDKL;SuffixText;;
+PAR_BM_I3_1_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TELPROZDKL;SuffixText;;
+PAR_BM_I3_1_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_1_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_1_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_2_S_TELSCHALT0;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELSCHALT0;SuffixText;;
+PAR_BM_I3_2_S_TELPRIO0;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELPRIO0;SuffixText;;
+PAR_BM_I3_2_S_TELVAL0;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELVAL0;SuffixText;;
+PAR_BM_I3_2_S_TELPROZ0;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TELPROZ0;SuffixText;;
+PAR_BM_I3_2_S_TEL2BY0;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TEL2BY0;SuffixText;#,#;#,#
+PAR_BM_I3_2_S_TEL4BY0;Text;Telegramm;Telegramm
+PAR_BM_I3_2_S_TEL4BY0;SuffixText;#,#;#,#
+PAR_BM_I3_2_S_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I3_2_S_OBJTYP;SuffixText;;
+PAR_BM_I3_2_S_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_2_S_BUSWIED;SuffixText;;
+PAR_BM_I3_2_T_BEIKURZ;Text;Senden nach kurzer Bedienung;Senden nach kurzer Bedienung
+PAR_BM_I3_2_T_BEIKURZ;SuffixText;;
+PAR_BM_I3_2_T_BEILNG;Text;Senden nach langer Bedienung;Senden nach langer Bedienung
+PAR_BM_I3_2_T_BEILNG;SuffixText;;
+PAR_BM_I3_2_T_DOPPKLICK;Text;Senden nach Doppelklick;Senden nach Doppelklick
+PAR_BM_I3_2_T_DOPPKLICK;SuffixText;;
+PAR_BM_I3_2_S_SNDWENN1;Text;Senden wenn Eingang = 1;Senden wenn Eingang = 1
+PAR_BM_I3_2_S_SNDWENN1;SuffixText;;
+PAR_BM_I3_2_S_SNDWENN0;Text;Senden wenn Eingang = 0;Senden wenn Eingang = 0
+PAR_BM_I3_2_S_SNDWENN0;SuffixText;;
+PAR_BM_I3_2_S_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_2_S_ZYKSND;SuffixText;;
+PAR_BM_I3_2_S_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_2_S_SPERREIN;SuffixText;;
+PAR_BM_I3_2_S_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_2_S_SPERRAUS;SuffixText;;
+PAR_BM_I3_2_T_OBJTYP;Text;Objekttyp;Objekttyp
+PAR_BM_I3_2_T_OBJTYP;SuffixText;;
+PAR_BM_I3_2_T_ZYKSND;Text;Zyklisch senden;Zyklisch senden
+PAR_BM_I3_2_T_ZYKSND;SuffixText;;
+PAR_BM_I3_2_T_BUSWIED;Text;Reaktion bei Buswiederkehr;Reaktion bei Buswiederkehr
+PAR_BM_I3_2_T_BUSWIED;SuffixText;;
+PAR_BM_I3_2_T_TELSCHALTKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELSCHALTKRZ;SuffixText;;
+PAR_BM_I3_2_T_TELPRIOKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELPRIOKRZ;SuffixText;;
+PAR_BM_I3_2_T_TELVALKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELVALKRZ;SuffixText;;
+PAR_BM_I3_2_T_TELPROZKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELPROZKRZ;SuffixText;;
+PAR_BM_I3_2_T_TEL2BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TEL2BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I3_2_T_TEL4BYKRZ;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TEL4BYKRZ;SuffixText;#,#;#,#
+PAR_BM_I3_2_T_TELSCHALTLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELSCHALTLNG;SuffixText;;
+PAR_BM_I3_2_T_TELPRIOLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELPRIOLNG;SuffixText;;
+PAR_BM_I3_2_T_TELVALLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELVALLNG;SuffixText;;
+PAR_BM_I3_2_T_TELPROZLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELPROZLNG;SuffixText;;
+PAR_BM_I3_2_T_TEL2BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TEL2BYLNG;SuffixText;#,#;#,#
+PAR_BM_I3_2_T_TEL4BYLNG;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TEL4BYLNG;SuffixText;#,#;#,#
+PAR_BM_I3_2_T_TELSCHALTDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELSCHALTDKL;SuffixText;;
+PAR_BM_I3_2_T_TELPRIODKL;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELPRIODKL;SuffixText;;
+PAR_BM_I3_2_T_TELVALDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELVALDKL;SuffixText;;
+PAR_BM_I3_2_T_TELPROZDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TELPROZDKL;SuffixText;;
+PAR_BM_I3_2_T_TEL2BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TEL2BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_2_T_TEL4BYDKL;Text;Telegramm;Telegramm
+PAR_BM_I3_2_T_TEL4BYDKL;SuffixText;#,#;#,#
+PAR_BM_I3_2_T_SPERREIN;Text;Reaktion beim Setzen der Sperre;Reaktion beim Setzen der Sperre
+PAR_BM_I3_2_T_SPERREIN;SuffixText;;
+PAR_BM_I3_2_T_SPERRAUS;Text;Reaktion beim Aufheben der Sperre;Reaktion beim Aufheben der Sperre
+PAR_BM_I3_2_T_SPERRAUS;SuffixText;;
+PAR_ALARM_0_TEXT;Text;PAR_ALARM_0_TEXT;
+PAR_ALARM_0_TEXT;SuffixText;;
+PAR_ALARM_0_CODE;Text;PAR_ALARM_0_CODE;
+PAR_ALARM_0_CODE;SuffixText;;
+PAR_ALARM_1_TEXT;Text;PAR_ALARM_1_TEXT;
+PAR_ALARM_1_TEXT;SuffixText;;
+PAR_ALARM_1_CODE;Text;PAR_ALARM_1_CODE;
+PAR_ALARM_1_CODE;SuffixText;;
+PAR_ALARM_2_TEXT;Text;PAR_ALARM_2_TEXT;
+PAR_ALARM_2_TEXT;SuffixText;;
+PAR_ALARM_2_CODE;Text;PAR_ALARM_2_CODE;
+PAR_ALARM_2_CODE;SuffixText;;
+PAR_ALARM_3_TEXT;Text;PAR_ALARM_3_TEXT;
+PAR_ALARM_3_TEXT;SuffixText;;
+PAR_ALARM_3_CODE;Text;PAR_ALARM_3_CODE;
+PAR_ALARM_3_CODE;SuffixText;;
+PAR_ALARM_ALS_TEXT;Text;PAR_ALARM_ALS_TEXT;
+PAR_ALARM_ALS_TEXT;SuffixText;;
+PAR_ALARM_ALS_CODE;Text;PAR_ALARM_ALS_CODE;
+PAR_ALARM_ALS_CODE;SuffixText;;
+PAR_ALARM_THRESHOLDS_CO2_TEXT;Text;PAR_ALARM_THRESHOLDS_CO2_TEXT;
+PAR_ALARM_THRESHOLDS_CO2_TEXT;SuffixText;;
+PAR_ALARM_THRESHOLDS_CO2_CODE;Text;PAR_ALARM_THRESHOLDS_CO2_CODE;
+PAR_ALARM_THRESHOLDS_CO2_CODE;SuffixText;;
+PAR_ALARM_THRESHOLDS_HUM_TEXT;Text;PAR_ALARM_THRESHOLDS_HUM_TEXT;
+PAR_ALARM_THRESHOLDS_HUM_TEXT;SuffixText;;
+PAR_ALARM_THRESHOLDS_HUM_CODE;Text;PAR_ALARM_THRESHOLDS_HUM_CODE;
+PAR_ALARM_THRESHOLDS_HUM_CODE;SuffixText;;
+PAR_ALARM_EXTIN3_TEXT;Text;PAR_ALARM_EXTIN3_TEXT;
+PAR_ALARM_EXTIN3_TEXT;SuffixText;;
+PAR_ALARM_EXTIN3_CODE;Text;PAR_ALARM_EXTIN3_CODE;
+PAR_ALARM_EXTIN3_CODE;SuffixText;;
+PAR_ALARM_EXTIN4_TEXT;Text;PAR_ALARM_EXTIN4_TEXT;
+PAR_ALARM_EXTIN4_TEXT;SuffixText;;
+PAR_ALARM_EXTIN4_CODE;Text;PAR_ALARM_EXTIN4_CODE;
+PAR_ALARM_EXTIN4_CODE;SuffixText;;
+PAR_INFO_0_TEXT;Text;PAR_INFO_0_TEXT;
+PAR_INFO_0_TEXT;SuffixText;;
+PAR_INFO_1_TEXT;Text;PAR_INFO_1_TEXT;
+PAR_INFO_1_TEXT;SuffixText;;
+PAR_INFO_2_TEXT;Text;PAR_INFO_2_TEXT;
+PAR_INFO_2_TEXT;SuffixText;;
+GO_MW_LED_ONOFF_RCV_GO;Text;GO_BASE_2;
+GO_MW_LED_ONOFF_RCV_GO;FunctionText;GO_BASE_2;
+GO_MW_TMP_SND_GO;Text;GO_BASE_1;
+GO_MW_TMP_SND_GO;FunctionText;GO_BASE_1;
+GO_RTR_TMPEXT_GO;Text;GO_BASE_27;
+GO_RTR_TMPEXT_GO;FunctionText;GO_BASE_27;
+GO_RTR_ISTWREGELUNG_GO;Text;GO_BASE_24;
+GO_RTR_ISTWREGELUNG_GO;FunctionText;GO_BASE_24;
+GO_RTR_EXTIST_GO;Text;GO_BASE_25;
+GO_RTR_EXTIST_GO;FunctionText;GO_BASE_25;
+GO_RTR_ISTW_AUSFALL_GO;Text;GO_BASE_26;
+GO_RTR_ISTW_AUSFALL_GO;FunctionText;GO_BASE_26;
+GO_RTR_NSTBY_GO;Text;GO_BASE_13;
+GO_RTR_NSTBY_GO;FunctionText;GO_BASE_13;
+GO_RTR_COMFT_GO;Text;GO_BASE_14;
+GO_RTR_COMFT_GO;FunctionText;GO_BASE_14;
+GO_RTR_FROST_GO;Text;GO_BASE_15;
+GO_RTR_FROST_GO;FunctionText;GO_BASE_15;
+GO_RTR_BASZN_GO;Text;GO_BASE_17;
+GO_RTR_BASZN_GO;FunctionText;GO_BASE_17;
+GO_RTR_AKTBA_GO;Text;GO_BASE_16;
+GO_RTR_AKTBA_GO;FunctionText;GO_BASE_16;
+GO_RTR_STGRHZN_PRZ_GO;Text;GO_BASE_18;
+GO_RTR_STGRHZN_PRZ_GO;FunctionText;GO_BASE_18;
+GO_RTR_BSW_GO;Text;GO_BASE_10;
+GO_RTR_BSW_GO;FunctionText;GO_BASE_10;
+GO_RTR_OFFS_GO;Text;GO_BASE_11;
+GO_RTR_OFFS_GO;FunctionText;GO_BASE_11;
+GO_RTR_SLW_GO;Text;GO_BASE_23;
+GO_RTR_SLW_GO;FunctionText;GO_BASE_23;
+GO_RTR_STGRHZUS_PRZ_GO;Text;GO_BASE_19;
+GO_RTR_STGRHZUS_PRZ_GO;FunctionText;GO_BASE_19;
+GO_RTR_STGRKAUTO_PRZ_GO;Text;GO_BASE_20;
+GO_RTR_STGRKAUTO_PRZ_GO;FunctionText;GO_BASE_20;
+GO_RTR_HK1100_GO;Text;GO_BASE_22;
+GO_RTR_HK1100_GO;FunctionText;GO_BASE_22;
+GO_RTR_TPKT_ALARMRCV_GO;Text;GO_BASE_28;
+GO_RTR_TPKT_ALARMRCV_GO;FunctionText;GO_BASE_28;
+GO_RTR_SLWANPREL_SND_GO;Text;GO_BASE_12;
+GO_RTR_SLWANPREL_SND_GO;FunctionText;GO_BASE_12;
+GO_RTR_STGRKZUS_PRZ_GO;Text;GO_BASE_21;
+GO_RTR_STGRKZUS_PRZ_GO;FunctionText;GO_BASE_21;
+GO_BM_I0_DIM_SWI_SEND_GO;Text;GO_BASE_30;
+GO_BM_I0_DIM_SWI_SEND_GO;FunctionText;GO_BASE_30;
+GO_BM_I0_DIM_AUFAB_GO;Text;GO_BASE_31;
+GO_BM_I0_DIM_AUFAB_GO;FunctionText;GO_BASE_31;
+GO_BM_I00_DIMDKLI_SWI_GO;Text;GO_BASE_32;
+GO_BM_I00_DIMDKLI_SWI_GO;FunctionText;GO_BASE_32;
+GO_BM_I01_J_LAM_GO;Text;GO_BASE_33;
+GO_BM_I01_J_LAM_GO;FunctionText;GO_BASE_33;
+GO_BM_I0_SP_1001_GO;Text;GO_BASE_34;
+GO_BM_I0_SP_1001_GO;FunctionText;GO_BASE_34;
+GO_BM_I1_DIM_SWI_SEND_GO;Text;GO_BASE_35;
+GO_BM_I1_DIM_SWI_SEND_GO;FunctionText;GO_BASE_35;
+GO_BM_I1_DIM_AUFAB_GO;Text;GO_BASE_36;
+GO_BM_I1_DIM_AUFAB_GO;FunctionText;GO_BASE_36;
+GO_BM_I10_DIMDKLI_SWI_GO;Text;GO_BASE_37;
+GO_BM_I10_DIMDKLI_SWI_GO;FunctionText;GO_BASE_37;
+GO_BM_I11_J_LAM_GO;Text;GO_BASE_38;
+GO_BM_I11_J_LAM_GO;FunctionText;GO_BASE_38;
+GO_BM_I1_SP_1001_GO;Text;GO_BASE_39;
+GO_BM_I1_SP_1001_GO;FunctionText;GO_BASE_39;
+GO_BM_I2_DIM_SWI_SEND_GO;Text;GO_BASE_40;
+GO_BM_I2_DIM_SWI_SEND_GO;FunctionText;GO_BASE_40;
+GO_BM_I2_DIM_AUFAB_GO;Text;GO_BASE_41;
+GO_BM_I2_DIM_AUFAB_GO;FunctionText;GO_BASE_41;
+GO_BM_I20_DIMDKLI_SWI_GO;Text;GO_BASE_42;
+GO_BM_I20_DIMDKLI_SWI_GO;FunctionText;GO_BASE_42;
+GO_BM_I21_J_LAM_GO;Text;GO_BASE_43;
+GO_BM_I21_J_LAM_GO;FunctionText;GO_BASE_43;
+GO_BM_I2_SP_1001_GO;Text;GO_BASE_44;
+GO_BM_I2_SP_1001_GO;FunctionText;GO_BASE_44;
+GO_BM_I3_DIM_SWI_SEND_GO;Text;GO_BASE_45;
+GO_BM_I3_DIM_SWI_SEND_GO;FunctionText;GO_BASE_45;
+GO_BM_I3_DIM_AUFAB_GO;Text;GO_BASE_46;
+GO_BM_I3_DIM_AUFAB_GO;FunctionText;GO_BASE_46;
+GO_BM_I30_DIMDKLI_SWI_GO;Text;GO_BASE_47;
+GO_BM_I30_DIMDKLI_SWI_GO;FunctionText;GO_BASE_47;
+GO_BM_I31_J_LAM_GO;Text;GO_BASE_48;
+GO_BM_I31_J_LAM_GO;FunctionText;GO_BASE_48;
+GO_BM_I3_SP_1001_GO;Text;GO_BASE_49;
+GO_BM_I3_SP_1001_GO;FunctionText;GO_BASE_49;
+GO_ALARM_INFO_GO;Text;GO_BASE_51;
+GO_ALARM_INFO_GO;FunctionText;GO_BASE_51;
+GO_ALARM_ERRORCODE_GO;Text;GO_BASE_52;
+GO_ALARM_ERRORCODE_GO;FunctionText;GO_BASE_52;
+GO_ALARM_ERRORTEXT_GO;Text;GO_BASE_53;
+GO_ALARM_ERRORTEXT_GO;FunctionText;GO_BASE_53;
+GO_FIRMWARE_VERSION_SND_GO;Text;GO_BASE_50;
+GO_FIRMWARE_VERSION_SND_GO;FunctionText;GO_BASE_50;
+GO_MW_LED_ONOFF_RCV;Text;Geräte-LEDs;Geräte-LEDs
+GO_MW_LED_ONOFF_RCV;FunctionText;Reduziert;Reduziert
+GO_MW_LED_PERCENT_RCV;Text;Geräte-LEDs;Geräte-LEDs
+GO_MW_LED_PERCENT_RCV;FunctionText;Helligkeit;Helligkeit
+GO_MW_TMP_SND;Text;Temperaturwert;Temperaturwert
+GO_MW_TMP_SND;FunctionText;Senden;Senden
+GO_RTR_TMPEXT;Text;Außentemperatur;Außentemperatur
+GO_RTR_TMPEXT;FunctionText;Empfangen;Empfangen
+GO_RTR_ISTWREGELUNG;Text;Istwert für Regelung;Istwert für Regelung
+GO_RTR_ISTWREGELUNG;FunctionText;Senden;Senden
+GO_RTR_EXTIST;Text;Externer Istwert;Externer Istwert
+GO_RTR_EXTIST;FunctionText;Empfangen;Empfangen
+GO_RTR_EXTIST_KL;Text;Externer Istwert;Externer Istwert
+GO_RTR_EXTIST_KL;FunctionText;Empfangen;Empfangen
+GO_RTR_ISTW_AUSFALL;Text;Istwertausfall;Istwertausfall
+GO_RTR_ISTW_AUSFALL;FunctionText;Senden;Senden
+GO_RTR_NSTBY;Text;Nacht <-> Standby;Nacht <-> Standby
+GO_RTR_NSTBY;FunctionText;1=Nacht, 0=Standby;1=Nacht, 0=Standby
+GO_RTR_COMFT;Text;Komfort;Komfort
+GO_RTR_COMFT;FunctionText;Empfangen;Empfangen
+GO_RTR_FROST;Text;Frost-/Hitzeschutz;Frost-/Hitzeschutz
+GO_RTR_FROST;FunctionText;Empfangen;Empfangen
+GO_RTR_BAVW;Text;Betriebsartvorwahl;Betriebsartvorwahl
+GO_RTR_BAVW;FunctionText;Empfangen;Empfangen
+GO_RTR_PRES;Text;Präsenz;Präsenz
+GO_RTR_PRES;FunctionText;Empfangen;Empfangen
+GO_RTR_FNST;Text;Fensterstatus;Fensterstatus
+GO_RTR_FNST;FunctionText;Geschlossen=0, Offen=1;Geschlossen=0, Offen=1
+GO_RTR_BASZN;Text;Betriebsart als Szene;Betriebsart als Szene
+GO_RTR_BASZN;FunctionText;Speichern/abrufen;Speichern/abrufen
+GO_RTR_AKTBA;Text;Aktuelle Betriebsart;Aktuelle Betriebsart
+GO_RTR_AKTBA;FunctionText;Senden;Senden
+GO_RTR_STGRHZN_PRZ;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRHZN_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRHZN_SW;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRHZN_SW;FunctionText;Senden;Senden
+GO_RTR_BSW;Text;Basissollwert;Basissollwert
+GO_RTR_BSW;FunctionText;Solltemperatur vorgeben;Solltemperatur vorgeben
+GO_RTR_BSWRAD;Text;Basissollwert am Stellrad;Basissollwert am Stellrad
+GO_RTR_BSWRAD;FunctionText;Senden;Senden
+GO_RTR_OFFS;Text;Manuelle Sollwertverschiebung;Manuelle Sollwertverschiebung
+GO_RTR_OFFS;FunctionText;Empfangen;Empfangen
+GO_RTR_OFFSRAD;Text;Sollwertverschiebung am Stellrad;Sollwertverschiebung am Stellrad
+GO_RTR_OFFSRAD;FunctionText;Senden;Senden
+GO_RTR_SLW;Text;Aktueller Sollwert;Aktueller Sollwert
+GO_RTR_SLW;FunctionText;Setzen/senden;Setzen/senden
+GO_RTR_STGRHZUS_PRZ;Text;Stellgröße Heizen Zusatzstufe;Stellgröße Heizen Zusatzstufe
+GO_RTR_STGRHZUS_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRHZUS_SW;Text;PWM Heizen Zusatzstufe;PWM Heizen Zusatzstufe
+GO_RTR_STGRHZUS_SW;FunctionText;Senden;Senden
+GO_RTR_STGRHAUTO_PRZ;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRHAUTO_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRHAUTO_SW;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRHAUTO_SW;FunctionText;Senden;Senden
+GO_RTR_STGRKAUTO_PRZ;Text;Stellgröße Kühlen;Stellgröße Kühlen
+GO_RTR_STGRKAUTO_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRKAUTO_SW;Text;Stellgröße Kühlen;Stellgröße Kühlen
+GO_RTR_STGRKAUTO_SW;FunctionText;Senden;Senden
+GO_RTR_STGRH_PRZ;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRH_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRK_PRZ;Text;Stellgröße Kühlen;Stellgröße Kühlen
+GO_RTR_STGRK_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRHK_PRZ;Text;Stellgröße Heizen/Kühlen;Stellgröße Heizen/Kühlen
+GO_RTR_STGRHK_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRH_SW;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRH_SW;FunctionText;Senden;Senden
+GO_RTR_STGRK_SW;Text;Stellgröße Kühlen;Stellgröße Kühlen
+GO_RTR_STGRK_SW;FunctionText;Senden;Senden
+GO_RTR_STGRHK_SW;Text;Stellgröße Heizen/Kühlen;Stellgröße Heizen/Kühlen
+GO_RTR_STGRHK_SW;FunctionText;Senden;Senden
+GO_RTR_STGRHDIF_PRZ;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRHDIF_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRKDIF_SW;Text;Stellgröße Kühlen;Stellgröße Kühlen
+GO_RTR_STGRKDIF_SW;FunctionText;Senden;Senden
+GO_RTR_STGRHDIF_SW;Text;Stellgröße Heizen;Stellgröße Heizen
+GO_RTR_STGRHDIF_SW;FunctionText;Senden;Senden
+GO_RTR_STGRKDIF_PRZ;Text;Stellgröße Kühlen;Stellgröße Kühlen
+GO_RTR_STGRKDIF_PRZ;FunctionText;Senden;Senden
+GO_RTR_HK1100;Text;Heizbetrieb/Kühlbetrieb senden;Heizbetrieb/Kühlbetrieb senden
+GO_RTR_HK1100;FunctionText;0 = Kühlen, 1 = Heizen;0 = Kühlen, 1 = Heizen
+GO_RTR_HK1001;Text;Heizbetrieb/Kühlbetrieb senden;Heizbetrieb/Kühlbetrieb senden
+GO_RTR_HK1001;FunctionText;0 = Heizen, 1 = Kühlen;0 = Heizen, 1 = Kühlen
+GO_RTR_HK1100R;Text;Umschalten zwischen Heizen und Kühlen;Umschalten zwischen Heizen und Kühlen
+GO_RTR_HK1100R;FunctionText;0 = Kühlen, 1 = Heizen;0 = Kühlen, 1 = Heizen
+GO_RTR_HK1001R;Text;Umschalten zwischen Heizen und Kühlen;Umschalten zwischen Heizen und Kühlen
+GO_RTR_HK1001R;FunctionText;0 = Heizen, 1 = Kühlen;0 = Heizen, 1 = Kühlen
+GO_RTR_TPKT_ALARMRCV;Text;Taupunktalarm;Taupunktalarm
+GO_RTR_TPKT_ALARMRCV;FunctionText;Empfangen;Empfangen
+GO_RTR_SLWANPREL_SND;Text;Außentemperaturkompensation;Außentemperaturkompensation
+GO_RTR_SLWANPREL_SND;FunctionText;Senden;Senden
+GO_RTR_SLWANPABS_SND;Text;Außentemperaturkompensation;Außentemperaturkompensation
+GO_RTR_SLWANPABS_SND;FunctionText;Senden;Senden
+GO_RTR_SLWANPREL_RCV;Text;Außentemperaturkompensation;Außentemperaturkompensation
+GO_RTR_SLWANPREL_RCV;FunctionText;Sollwert schieben;Sollwert schieben
+GO_RTR_STGRKZUS_PRZ;Text;Stellgröße Kühlen Zusatzstufe;Stellgröße Kühlen Zusatzstufe
+GO_RTR_STGRKZUS_PRZ;FunctionText;Senden;Senden
+GO_RTR_STGRKZUS_SW;Text;PWM Kühlen Zusatzstufe;PWM Kühlen Zusatzstufe
+GO_RTR_STGRKZUS_SW;FunctionText;Senden;Senden
+GO_BM_I0_DIM_SWI_SEND;Text;Kanal I1;Kanal I1
+GO_BM_I0_DIM_SWI_SEND;FunctionText;Schalten;Schalten
+GO_BM_I0_DIM_SWI_SENDRECEIVE;Text;Kanal I1;Kanal I1
+GO_BM_I0_DIM_SWI_SENDRECEIVE;FunctionText;Schalten;Schalten
+GO_BM_I0_DIM_AUFAB;Text;Kanal I1;Kanal I1
+GO_BM_I0_DIM_AUFAB;FunctionText;Heller / Dunkler;Heller / Dunkler
+GO_BM_I00_DIMDKLI_SWI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_DIMDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I00_DIMDKLI_PRI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_DIMDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I00_DIMDKLI_VAL;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_DIMDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I00_DIMDKLI_PRZ;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_DIMDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I00_DIMDKLI_9X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_DIMDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I00_DIMDKLI_14X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_DIMDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I0_JAL_STP;Text;Kanal I1;Kanal I1
+GO_BM_I0_JAL_STP;FunctionText;Step / Stop;Step / Stop
+GO_BM_I0_JAL_AUFAB;Text;Kanal I1;Kanal I1
+GO_BM_I0_JAL_AUFAB;FunctionText;AUF / AB;AUF / AB
+GO_BM_I0_JAL_AUF;Text;Kanal I1;Kanal I1
+GO_BM_I0_JAL_AUF;FunctionText;AUF;AUF
+GO_BM_I0_JAL_AB;Text;Kanal I1;Kanal I1
+GO_BM_I0_JAL_AB;FunctionText;AB;AB
+GO_BM_I00_JALDKLI_SWI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_JALDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I00_JALDKLI_PRI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_JALDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I00_JALDKLI_VAL;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_JALDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I00_JALDKLI_PRZ;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_JALDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I00_JALDKLI_9X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_JALDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I00_JALDKLI_14X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_JALDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I00_J_HOE;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_J_HOE;FunctionText;Höhe %;Höhe %
+GO_BM_I01_J_LAM;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_J_LAM;FunctionText;Lamelle %;Lamelle %
+GO_BM_I00_S_SWI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I00_S_PRI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I00_S_VAL;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I00_S_PRZ;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I00_S_9X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I00_S_14X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I00_T_SWI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I00_T_PRI;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I00_T_VAL;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I00_T_PRZ;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I00_T_9X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I00_T_14X;Text;Kanal I1.1;Kanal I1.1
+GO_BM_I00_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I01_S_SWI;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I01_S_PRI;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I01_S_VAL;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I01_S_PRZ;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I01_S_9X;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I01_S_14X;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I01_T_SWI;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I01_T_PRI;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I01_T_VAL;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I01_T_PRZ;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I01_T_9X;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I01_T_14X;Text;Kanal I1.2;Kanal I1.2
+GO_BM_I01_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I02_S_SWI;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I02_S_PRI;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I02_S_VAL;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I02_S_PRZ;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I02_S_9X;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I02_S_14X;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I02_T_SWI;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I02_T_PRI;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I02_T_VAL;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I02_T_PRZ;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I02_T_9X;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I02_T_14X;Text;Kanal I1.3;Kanal I1.3
+GO_BM_I02_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I0_SP_1001;Text;Kanal I1;Kanal I1
+GO_BM_I0_SP_1001;FunctionText;Sperren = 1;Sperren = 1
+GO_BM_I0_SP_1003;Text;Kanal I1;Kanal I1
+GO_BM_I0_SP_1003;FunctionText;Sperren = 0;Sperren = 0
+GO_BM_I1_DIM_SWI_SEND;Text;Kanal I2;Kanal I2
+GO_BM_I1_DIM_SWI_SEND;FunctionText;Schalten;Schalten
+GO_BM_I1_DIM_SWI_SENDRECEIVE;Text;Kanal I2;Kanal I2
+GO_BM_I1_DIM_SWI_SENDRECEIVE;FunctionText;Schalten;Schalten
+GO_BM_I1_DIM_AUFAB;Text;Kanal I2;Kanal I2
+GO_BM_I1_DIM_AUFAB;FunctionText;Heller / Dunkler;Heller / Dunkler
+GO_BM_I10_DIMDKLI_SWI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_DIMDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I10_DIMDKLI_PRI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_DIMDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I10_DIMDKLI_VAL;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_DIMDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I10_DIMDKLI_PRZ;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_DIMDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I10_DIMDKLI_9X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_DIMDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I10_DIMDKLI_14X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_DIMDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I1_JAL_STP;Text;Kanal I2;Kanal I2
+GO_BM_I1_JAL_STP;FunctionText;Step / Stop;Step / Stop
+GO_BM_I1_JAL_AUFAB;Text;Kanal I2;Kanal I2
+GO_BM_I1_JAL_AUFAB;FunctionText;AUF / AB;AUF / AB
+GO_BM_I1_JAL_AUF;Text;Kanal I2;Kanal I2
+GO_BM_I1_JAL_AUF;FunctionText;AUF;AUF
+GO_BM_I1_JAL_AB;Text;Kanal I2;Kanal I2
+GO_BM_I1_JAL_AB;FunctionText;AB;AB
+GO_BM_I10_JALDKLI_SWI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_JALDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I10_JALDKLI_PRI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_JALDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I10_JALDKLI_VAL;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_JALDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I10_JALDKLI_PRZ;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_JALDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I10_JALDKLI_9X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_JALDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I10_JALDKLI_14X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_JALDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I10_J_HOE;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_J_HOE;FunctionText;Höhe %;Höhe %
+GO_BM_I11_J_LAM;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_J_LAM;FunctionText;Lamelle %;Lamelle %
+GO_BM_I10_S_SWI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I10_S_PRI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I10_S_VAL;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I10_S_PRZ;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I10_S_9X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I10_S_14X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I10_T_SWI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I10_T_PRI;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I10_T_VAL;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I10_T_PRZ;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I10_T_9X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I10_T_14X;Text;Kanal I2.1;Kanal I2.1
+GO_BM_I10_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I11_S_SWI;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I11_S_PRI;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I11_S_VAL;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I11_S_PRZ;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I11_S_9X;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I11_S_14X;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I11_T_SWI;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I11_T_PRI;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I11_T_VAL;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I11_T_PRZ;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I11_T_9X;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I11_T_14X;Text;Kanal I2.2;Kanal I2.2
+GO_BM_I11_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I12_S_SWI;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I12_S_PRI;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I12_S_VAL;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I12_S_PRZ;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I12_S_9X;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I12_S_14X;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I12_T_SWI;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I12_T_PRI;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I12_T_VAL;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I12_T_PRZ;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I12_T_9X;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I12_T_14X;Text;Kanal I2.3;Kanal I2.3
+GO_BM_I12_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I1_SP_1001;Text;Kanal I2;Kanal I2
+GO_BM_I1_SP_1001;FunctionText;Sperren = 1;Sperren = 1
+GO_BM_I1_SP_1003;Text;Kanal I2;Kanal I2
+GO_BM_I1_SP_1003;FunctionText;Sperren = 0;Sperren = 0
+GO_BM_I2_DIM_SWI_SEND;Text;Kanal I3;Kanal I3
+GO_BM_I2_DIM_SWI_SEND;FunctionText;Schalten;Schalten
+GO_BM_I2_DIM_SWI_SENDRECEIVE;Text;Kanal I3;Kanal I3
+GO_BM_I2_DIM_SWI_SENDRECEIVE;FunctionText;Schalten;Schalten
+GO_BM_I2_DIM_AUFAB;Text;Kanal I3;Kanal I3
+GO_BM_I2_DIM_AUFAB;FunctionText;Heller / Dunkler;Heller / Dunkler
+GO_BM_I20_DIMDKLI_SWI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_DIMDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I20_DIMDKLI_PRI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_DIMDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I20_DIMDKLI_VAL;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_DIMDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I20_DIMDKLI_PRZ;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_DIMDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I20_DIMDKLI_9X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_DIMDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I20_DIMDKLI_14X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_DIMDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I2_JAL_STP;Text;Kanal I3;Kanal I3
+GO_BM_I2_JAL_STP;FunctionText;Step / Stop;Step / Stop
+GO_BM_I2_JAL_AUFAB;Text;Kanal I3;Kanal I3
+GO_BM_I2_JAL_AUFAB;FunctionText;AUF / AB;AUF / AB
+GO_BM_I2_JAL_AUF;Text;Kanal I3;Kanal I3
+GO_BM_I2_JAL_AUF;FunctionText;AUF;AUF
+GO_BM_I2_JAL_AB;Text;Kanal I3;Kanal I3
+GO_BM_I2_JAL_AB;FunctionText;AB;AB
+GO_BM_I20_JALDKLI_SWI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_JALDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I20_JALDKLI_PRI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_JALDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I20_JALDKLI_VAL;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_JALDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I20_JALDKLI_PRZ;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_JALDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I20_JALDKLI_9X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_JALDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I20_JALDKLI_14X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_JALDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I20_J_HOE;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_J_HOE;FunctionText;Höhe %;Höhe %
+GO_BM_I21_J_LAM;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_J_LAM;FunctionText;Lamelle %;Lamelle %
+GO_BM_I20_S_SWI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I20_S_PRI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I20_S_VAL;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I20_S_PRZ;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I20_S_9X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I20_S_14X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I20_T_SWI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I20_T_PRI;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I20_T_VAL;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I20_T_PRZ;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I20_T_9X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I20_T_14X;Text;Kanal I3.1;Kanal I3.1
+GO_BM_I20_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I21_S_SWI;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I21_S_PRI;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I21_S_VAL;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I21_S_PRZ;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I21_S_9X;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I21_S_14X;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I21_T_SWI;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I21_T_PRI;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I21_T_VAL;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I21_T_PRZ;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I21_T_9X;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I21_T_14X;Text;Kanal I3.2;Kanal I3.2
+GO_BM_I21_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I22_S_SWI;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I22_S_PRI;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I22_S_VAL;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I22_S_PRZ;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I22_S_9X;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I22_S_14X;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I22_T_SWI;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I22_T_PRI;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I22_T_VAL;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I22_T_PRZ;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I22_T_9X;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I22_T_14X;Text;Kanal I3.3;Kanal I3.3
+GO_BM_I22_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I2_SP_1001;Text;Kanal I3;Kanal I3
+GO_BM_I2_SP_1001;FunctionText;Sperren = 1;Sperren = 1
+GO_BM_I2_SP_1003;Text;Kanal I3;Kanal I3
+GO_BM_I2_SP_1003;FunctionText;Sperren = 0;Sperren = 0
+GO_BM_I2_TMP;Text;Kanal I3;Kanal I3
+GO_BM_I2_TMP;FunctionText;Istwert Temperatur;Istwert Temperatur
+GO_BM_I3_DIM_SWI_SEND;Text;Kanal I4;Kanal I4
+GO_BM_I3_DIM_SWI_SEND;FunctionText;Schalten;Schalten
+GO_BM_I3_DIM_SWI_SENDRECEIVE;Text;Kanal I4;Kanal I4
+GO_BM_I3_DIM_SWI_SENDRECEIVE;FunctionText;Schalten;Schalten
+GO_BM_I3_DIM_AUFAB;Text;Kanal I4;Kanal I4
+GO_BM_I3_DIM_AUFAB;FunctionText;Heller / Dunkler;Heller / Dunkler
+GO_BM_I30_DIMDKLI_SWI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_DIMDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I30_DIMDKLI_PRI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_DIMDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I30_DIMDKLI_VAL;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_DIMDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I30_DIMDKLI_PRZ;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_DIMDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I30_DIMDKLI_9X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_DIMDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I30_DIMDKLI_14X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_DIMDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I3_JAL_STP;Text;Kanal I4;Kanal I4
+GO_BM_I3_JAL_STP;FunctionText;Step / Stop;Step / Stop
+GO_BM_I3_JAL_AUFAB;Text;Kanal I4;Kanal I4
+GO_BM_I3_JAL_AUFAB;FunctionText;AUF / AB;AUF / AB
+GO_BM_I3_JAL_AUF;Text;Kanal I4;Kanal I4
+GO_BM_I3_JAL_AUF;FunctionText;AUF;AUF
+GO_BM_I3_JAL_AB;Text;Kanal I4;Kanal I4
+GO_BM_I3_JAL_AB;FunctionText;AB;AB
+GO_BM_I30_JALDKLI_SWI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_JALDKLI_SWI;FunctionText;Schalten;Schalten
+GO_BM_I30_JALDKLI_PRI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_JALDKLI_PRI;FunctionText;Priorität;Priorität
+GO_BM_I30_JALDKLI_VAL;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_JALDKLI_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I30_JALDKLI_PRZ;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_JALDKLI_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I30_JALDKLI_9X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_JALDKLI_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I30_JALDKLI_14X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_JALDKLI_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I30_J_HOE;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_J_HOE;FunctionText;Höhe %;Höhe %
+GO_BM_I31_J_LAM;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_J_LAM;FunctionText;Lamelle %;Lamelle %
+GO_BM_I30_S_SWI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I30_S_PRI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I30_S_VAL;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I30_S_PRZ;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I30_S_9X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I30_S_14X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I30_T_SWI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I30_T_PRI;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I30_T_VAL;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I30_T_PRZ;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I30_T_9X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I30_T_14X;Text;Kanal I4.1;Kanal I4.1
+GO_BM_I30_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I31_S_SWI;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I31_S_PRI;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I31_S_VAL;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I31_S_PRZ;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I31_S_9X;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I31_S_14X;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I31_T_SWI;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I31_T_PRI;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I31_T_VAL;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I31_T_PRZ;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I31_T_9X;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I31_T_14X;Text;Kanal I4.2;Kanal I4.2
+GO_BM_I31_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I32_S_SWI;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_S_SWI;FunctionText;Schalten;Schalten
+GO_BM_I32_S_PRI;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_S_PRI;FunctionText;Priorität;Priorität
+GO_BM_I32_S_VAL;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_S_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I32_S_PRZ;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_S_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I32_S_9X;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_S_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I32_S_14X;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_S_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I32_T_SWI;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_T_SWI;FunctionText;Schalten;Schalten
+GO_BM_I32_T_PRI;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_T_PRI;FunctionText;Priorität;Priorität
+GO_BM_I32_T_VAL;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_T_VAL;FunctionText;Wert senden;Wert senden
+GO_BM_I32_T_PRZ;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_T_PRZ;FunctionText;Prozentwert senden;Prozentwert senden
+GO_BM_I32_T_9X;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_T_9X;FunctionText;2 Byte DPT 9.x;2 Byte DPT 9.x
+GO_BM_I32_T_14X;Text;Kanal I4.3;Kanal I4.3
+GO_BM_I32_T_14X;FunctionText;4 Byte DPT 14.x;4 Byte DPT 14.x
+GO_BM_I3_SP_1001;Text;Kanal I4;Kanal I4
+GO_BM_I3_SP_1001;FunctionText;Sperren = 1;Sperren = 1
+GO_BM_I3_SP_1003;Text;Kanal I4;Kanal I4
+GO_BM_I3_SP_1003;FunctionText;Sperren = 0;Sperren = 0
+GO_BM_I3_TMP;Text;Kanal I4;Kanal I4
+GO_BM_I3_TMP;FunctionText;Istwert Temperatur;Istwert Temperatur
+GO_ALARM_INFO;Text;Alarm;Alarm
+GO_ALARM_INFO;FunctionText;Info;Info
+GO_ALARM_ERRORCODE;Text;Alarm;Alarm
+GO_ALARM_ERRORCODE;FunctionText;Fehlercode;Fehlercode
+GO_ALARM_ERRORTEXT;Text;Alarm;Alarm
+GO_ALARM_ERRORTEXT;FunctionText;Fehlertext;Fehlertext
+GO_FIRMWARE_VERSION_SND;Text;Firmware;Firmware
+GO_FIRMWARE_VERSION_SND;FunctionText;Version;Version
+PB_INVISIBLE;Text;PB_INVISIBLE;
+CH_ALG;Text;Allgemein;Allgemein
+P_BLCK_ALG;Text;Allgemein;Allgemein
+P_BLCK_ALG.SEP1;Text;;
+P_BLCK_MESS;Text;Messwerte;Messwerte
+CH_RTR;Text;RTR;RTR
+P_BLCK_RTR_EINSTELLUNG;Text;Einstellung;Einstellung
+P_BLCK_RTR_ISTWERT;Text;Istwert;Istwert
+P_BLCK_RTR_BETRIEBSART;Text;Betriebsart;Betriebsart
+P_BLCK_RTR_REGELUNG_HEIZEN;Text;Regelung Heizen;Regelung Heizen
+P_BLCK_RTR_SOLLWERTE_HEIZEN;Text;Sollwerte Heizen;Sollwerte Heizen
+P_BLCK_RTR_ZUSATZSTUFE_HEIZEN;Text;Zusatzstufe Heizen;Zusatzstufe Heizen
+P_BLCK_RTR_REGELUNG_KUEHLEN;Text;Regelung Kühlen;Regelung Kühlen
+P_BLCK_RTR_SOLLWERTE_KUEHLEN;Text;Sollwerte Kühlen;Sollwerte Kühlen
+P_BLCK_RTR_SOLLWERTANPASSUNG;Text;Sollwertanpassung;Sollwertanpassung
+P_BLCK_RTR_ZUSATZSTUFE_KUEHLEN;Text;Zusatzstufe Kühlen;Zusatzstufe Kühlen
+CH_BINARY_INPUTS;Text;Externe Eingänge;Externe Eingänge
+PBLCK_BM_I0_MAIN;Text;Kanal I1;Kanal I1
+PSEP_BM_I0_MAIN_S1;Text;  ;
+PSEP_BM_I0_S4;Text;;
+P_BLCK_BM_CH0_T_SEND_OBJ0;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I0_T_OBJ0_SEP1;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I0_T_OBJ0_SEP2;Text;;
+PSEP_BM_I0_T_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH0_T_SEND_OBJ1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I0_T_OBJ1_SEP1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I0_T_OBJ1_SEP2;Text;;
+PSEP_BM_I0_T_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH0_T_SEND_OBJ2;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I0_T_OBJ2_SEP1;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I0_T_OBJ2_SEP2;Text;;
+PSEP_BM_I0_T_OBJ2_SEP3;Text;;
+PSEP_BM_I0_D_S1;Text;;
+P_BLCK_BM_CH0_D_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I0_D_DKL_SEP1;Text;Doppelklick Dimmkanal 1;Doppelklick Dimmkanal 1
+PSEP_BM_I0_D_DKL_SEP2;Text; ;
+PSEP_BM_I0_D_DKL_SEP3;Text;;
+P_BLCK_BM_CH0_D;Text;Dimmen;Dimmen
+PSEP_BM_I0_D_SEP1;Text;Dimmen;Dimmen
+PSEP_BM_I0_D_SEP2;Text; ;
+PSEP_BM_I0_J_S1;Text;;
+P_BLCK_BM_CH0_J_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I0_J_DKL_SEP1;Text;Doppelklick Jalousiekanal 1;Doppelklick Jalousiekanal 1
+PSEP_BM_I0_J_DKL_SEP2;Text; ;
+PSEP_BM_I0_J_DKL_SEP3;Text;;
+P_BLCK_BM_CH0_J;Text;Jalousie;Jalousie
+PSEP_BM_I0_J_SEP1;Text;Jalousie Kanal 1;Jalousie Kanal 1
+PSEP_BM_I0_J_SEP2;Text; ;
+PSEP_BM_I0_S1;Text;;
+PSEP_BM_I0_S3;Text;;
+PSEP_BM_I0_S2;Text;;
+P_BLCK_BM_CH0_S_SEND_OBJ0;Text;Schalterobjekt 1;Schalterobjekt 1
+PSEP_BM_I0_S_OBJ0_SEP1;Text;Schalter-Objekt 1;Schalter-Objekt 1
+PSEP_BM_I0_S_OBJ0_SEP2;Text;;
+PSEP_BM_I0_S_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH0_S_SEND_OBJ1;Text;Schalterobjekt 2;Schalterobjekt 2
+PSEP_BM_I0_S_OBJ1_SEP1;Text;Schalter-Objekt 2;Schalter-Objekt 2
+PSEP_BM_I0_S_OBJ1_SEP2;Text;;
+PSEP_BM_I0_S_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH0_S_SEND_OBJ2;Text;Schalterobjekt 3;Schalterobjekt 3
+PSEP_BM_I0_S_OBJ2_SEP1;Text;Schalter-Objekt 3;Schalter-Objekt 3
+PSEP_BM_I0_S_OBJ2_SEP2;Text;;
+PSEP_BM_I0_S_OBJ2_SEP3;Text;;
+PBLCK_BM_I1_MAIN;Text;Kanal I2;Kanal I2
+PSEP_BM_I1_MAIN_S1;Text;  ;
+PSEP_BM_I1_S4;Text;;
+P_BLCK_BM_CH1_T_SEND_OBJ0;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I1_T_OBJ0_SEP1;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I1_T_OBJ0_SEP2;Text;;
+PSEP_BM_I1_T_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH1_T_SEND_OBJ1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I1_T_OBJ1_SEP1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I1_T_OBJ1_SEP2;Text;;
+PSEP_BM_I1_T_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH1_T_SEND_OBJ2;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I1_T_OBJ2_SEP1;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I1_T_OBJ2_SEP2;Text;;
+PSEP_BM_I1_T_OBJ2_SEP3;Text;;
+PSEP_BM_I1_D_S1;Text;;
+P_BLCK_BM_CH1_D_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I1_D_DKL_SEP1;Text;Doppelklick Dimmkanal 2;Doppelklick Dimmkanal 2
+PSEP_BM_I1_D_DKL_SEP2;Text; ;
+PSEP_BM_I1_D_DKL_SEP3;Text;;
+P_BLCK_BM_CH1_D;Text;Dimmen;Dimmen
+PSEP_BM_I1_D_SEP1;Text;Dimmen;Dimmen
+PSEP_BM_I1_D_SEP2;Text; ;
+PSEP_BM_I1_J_S1;Text;;
+P_BLCK_BM_CH1_J_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I1_J_DKL_SEP1;Text;Doppelklick Jalousiekanal 2;Doppelklick Jalousiekanal 2
+PSEP_BM_I1_J_DKL_SEP2;Text; ;
+PSEP_BM_I1_J_DKL_SEP3;Text;;
+P_BLCK_BM_CH1_J;Text;Jalousie;Jalousie
+PSEP_BM_I1_J_SEP1;Text;Jalousie Kanal 2;Jalousie Kanal 2
+PSEP_BM_I1_J_SEP2;Text; ;
+PSEP_BM_I1_S1;Text;;
+PSEP_BM_I1_S3;Text;;
+PSEP_BM_I1_S2;Text;;
+P_BLCK_BM_CH1_S_SEND_OBJ0;Text;Schalterobjekt 1;Schalterobjekt 1
+PSEP_BM_I1_S_OBJ0_SEP1;Text;Schalter-Objekt 1;Schalter-Objekt 1
+PSEP_BM_I1_S_OBJ0_SEP2;Text;;
+PSEP_BM_I1_S_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH1_S_SEND_OBJ1;Text;Schalterobjekt 2;Schalterobjekt 2
+PSEP_BM_I1_S_OBJ1_SEP1;Text;Schalter-Objekt 2;Schalter-Objekt 2
+PSEP_BM_I1_S_OBJ1_SEP2;Text;;
+PSEP_BM_I1_S_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH1_S_SEND_OBJ2;Text;Schalterobjekt 3;Schalterobjekt 3
+PSEP_BM_I1_S_OBJ2_SEP1;Text;Schalter-Objekt 3;Schalter-Objekt 3
+PSEP_BM_I1_S_OBJ2_SEP2;Text;;
+PSEP_BM_I1_S_OBJ2_SEP3;Text;;
+PBLCK_BM_I2_MAIN;Text;Kanal I3;Kanal I3
+PSEP_BM_I2_MAIN_S1;Text;  ;
+PSEP_BM_I2_S4;Text;;
+P_BLCK_BM_CH2_T_SEND_OBJ0;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I2_T_OBJ0_SEP1;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I2_T_OBJ0_SEP2;Text;;
+PSEP_BM_I2_T_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH2_T_SEND_OBJ1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I2_T_OBJ1_SEP1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I2_T_OBJ1_SEP2;Text;;
+PSEP_BM_I2_T_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH2_T_SEND_OBJ2;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I2_T_OBJ2_SEP1;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I2_T_OBJ2_SEP2;Text;;
+PSEP_BM_I2_T_OBJ2_SEP3;Text;;
+PSEP_BM_I2_D_S1;Text;;
+P_BLCK_BM_CH2_D_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I2_D_DKL_SEP1;Text;Doppelklick Dimmkanal 3;Doppelklick Dimmkanal 3
+PSEP_BM_I2_D_DKL_SEP2;Text; ;
+PSEP_BM_I2_D_DKL_SEP3;Text;;
+P_BLCK_BM_CH2_D;Text;Dimmen;Dimmen
+PSEP_BM_I2_D_SEP1;Text;Dimmen;Dimmen
+PSEP_BM_I2_D_SEP2;Text; ;
+PSEP_BM_I2_J_S1;Text;;
+P_BLCK_BM_CH2_J_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I2_J_DKL_SEP1;Text;Doppelklick Jalousiekanal 3;Doppelklick Jalousiekanal 3
+PSEP_BM_I2_J_DKL_SEP2;Text; ;
+PSEP_BM_I2_J_DKL_SEP3;Text;;
+P_BLCK_BM_CH2_J;Text;Jalousie;Jalousie
+PSEP_BM_I2_J_SEP1;Text;Jalousie Kanal 3;Jalousie Kanal 3
+PSEP_BM_I2_J_SEP2;Text; ;
+PSEP_BM_I2_S1;Text;;
+PSEP_BM_I2_S3;Text;;
+PSEP_BM_I2_S2;Text;;
+P_BLCK_BM_CH2_S_SEND_OBJ0;Text;Schalterobjekt 1;Schalterobjekt 1
+PSEP_BM_I2_S_OBJ0_SEP1;Text;Schalter-Objekt 1;Schalter-Objekt 1
+PSEP_BM_I2_S_OBJ0_SEP2;Text;;
+PSEP_BM_I2_S_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH2_S_SEND_OBJ1;Text;Schalterobjekt 2;Schalterobjekt 2
+PSEP_BM_I2_S_OBJ1_SEP1;Text;Schalter-Objekt 2;Schalter-Objekt 2
+PSEP_BM_I2_S_OBJ1_SEP2;Text;;
+PSEP_BM_I2_S_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH2_S_SEND_OBJ2;Text;Schalterobjekt 3;Schalterobjekt 3
+PSEP_BM_I2_S_OBJ2_SEP1;Text;Schalter-Objekt 3;Schalter-Objekt 3
+PSEP_BM_I2_S_OBJ2_SEP2;Text;;
+PSEP_BM_I2_S_OBJ2_SEP3;Text;;
+PBLCK_BM_I3_MAIN;Text;Kanal I4;Kanal I4
+PSEP_BM_I3_MAIN_S1;Text;  ;
+PSEP_BM_I3_S4;Text;;
+P_BLCK_BM_CH3_T_SEND_OBJ0;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I3_T_OBJ0_SEP1;Text;Tasterobjekt 1;Tasterobjekt 1
+PSEP_BM_I3_T_OBJ0_SEP2;Text;;
+PSEP_BM_I3_T_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH3_T_SEND_OBJ1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I3_T_OBJ1_SEP1;Text;Tasterobjekt 2;Tasterobjekt 2
+PSEP_BM_I3_T_OBJ1_SEP2;Text;;
+PSEP_BM_I3_T_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH3_T_SEND_OBJ2;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I3_T_OBJ2_SEP1;Text;Tasterobjekt 3;Tasterobjekt 3
+PSEP_BM_I3_T_OBJ2_SEP2;Text;;
+PSEP_BM_I3_T_OBJ2_SEP3;Text;;
+PSEP_BM_I3_D_S1;Text;;
+P_BLCK_BM_CH3_D_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I3_D_DKL_SEP1;Text;Doppelklick Dimmkanal 4;Doppelklick Dimmkanal 4
+PSEP_BM_I3_D_DKL_SEP2;Text; ;
+PSEP_BM_I3_D_DKL_SEP3;Text;;
+P_BLCK_BM_CH3_D;Text;Dimmen;Dimmen
+PSEP_BM_I3_D_SEP1;Text;Dimmen;Dimmen
+PSEP_BM_I3_D_SEP2;Text; ;
+PSEP_BM_I3_J_S1;Text;;
+P_BLCK_BM_CH3_J_DKL;Text;Doppelklick;Doppelklick
+PSEP_BM_I3_J_DKL_SEP1;Text;Doppelklick Jalousiekanal 4;Doppelklick Jalousiekanal 4
+PSEP_BM_I3_J_DKL_SEP2;Text; ;
+PSEP_BM_I3_J_DKL_SEP3;Text;;
+P_BLCK_BM_CH3_J;Text;Jalousie;Jalousie
+PSEP_BM_I3_J_SEP1;Text;Jalousie Kanal 4;Jalousie Kanal 4
+PSEP_BM_I3_J_SEP2;Text; ;
+PSEP_BM_I3_S1;Text;;
+PSEP_BM_I3_S3;Text;;
+PSEP_BM_I3_S2;Text;;
+P_BLCK_BM_CH3_S_SEND_OBJ0;Text;Schalterobjekt 1;Schalterobjekt 1
+PSEP_BM_I3_S_OBJ0_SEP1;Text;Schalter-Objekt 1;Schalter-Objekt 1
+PSEP_BM_I3_S_OBJ0_SEP2;Text;;
+PSEP_BM_I3_S_OBJ0_SEP3;Text;;
+P_BLCK_BM_CH3_S_SEND_OBJ1;Text;Schalterobjekt 2;Schalterobjekt 2
+PSEP_BM_I3_S_OBJ1_SEP1;Text;Schalter-Objekt 2;Schalter-Objekt 2
+PSEP_BM_I3_S_OBJ1_SEP2;Text;;
+PSEP_BM_I3_S_OBJ1_SEP3;Text;;
+P_BLCK_BM_CH3_S_SEND_OBJ2;Text;Schalterobjekt 3;Schalterobjekt 3
+PSEP_BM_I3_S_OBJ2_SEP1;Text;Schalter-Objekt 3;Schalter-Objekt 3
+PSEP_BM_I3_S_OBJ2_SEP2;Text;;
+PSEP_BM_I3_S_OBJ2_SEP3;Text;;
+PBLCK_ALARM_PARAMETERS;Text;PBLCK_ALARM_PARAMETERS;
+PBLCK_INFOMESSAGE_PARAMETERS;Text;PBLCK_INFOMESSAGE_PARAMETERS;
