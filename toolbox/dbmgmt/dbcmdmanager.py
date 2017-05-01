@@ -25,11 +25,18 @@ class DBCmdManager(object):
 	def addText(self, tablename, key, text):
 		self._createTable(tablename)
 		
-		d = {'table': dbf(tablename),
-			 'key': dbf(key),
-			 'text': dbf(text)}
-		cmd = """INSERT INTO '%(table)s' (ID, TXT) VALUES ('%(key)s', '%(text)s')""" % d
+		#cmd = """INSERT INTO ? (ID, TXT) VALUES (?,?)"""
+		#self._dbHandler.write(cmd, [tablename, key, text])
+		
+		# d = {'table': dbf(tablename),
+		# 	 'key': dbf(key),
+		# 	 'text': dbf(text).decode('latin-1')}
+		# cmd = """INSERT INTO '%(table)s' (ID, TXT) VALUES ('%(key)s', '%(text)s')""" % d
+		# self._dbHandler.write(cmd)
+		cmd = """INSERT INTO '%s' (ID, TXT) VALUES ('%s', '%s')""" % (dbf(tablename), dbf(key), dbf(text))
 		self._dbHandler.write(cmd)
+		#self._dbHandler.write(cmd, [dbf(key), dbf(text)])
+		#self._dbHandler.write(cmd, [dbf(key), dbf(text).decode('latin-1')])
 	
 	def getText(self, tablename, key):
 		if tablename not in self.getExistingTablenames():
@@ -37,6 +44,9 @@ class DBCmdManager(object):
 		
 		cmd = "SELECT TXT FROM '%s' WHERE ID = '%s'" % (dbf(tablename), dbf(key))
 		elems = self._dbHandler.read(cmd)
+		#cmd = "SELECT TXT FROM ? WHERE ID=?" # % (dbf(tablename), dbf(key))
+		#elems = self._dbHandler.read(cmd, [tablename, key])
+		#print "elems:", elems
 		if len(elems) == 0:
 			return None
 		elif len(elems) == 1:
@@ -55,6 +65,10 @@ class DBCmdManager(object):
 		"""
 		if tablename1 is tablename2:
 			return []
+		if tablename1 not in self.getExistingTablenames():
+			return []
+		if tablename2 not in self.getExistingTablenames():
+			return self.getKeys(tablename1)
 		keys1 = self.getKeys(tablename1)
 		for item in self.getKeys(tablename2):
 			if item in keys1:

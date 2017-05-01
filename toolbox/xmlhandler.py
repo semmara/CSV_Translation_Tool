@@ -8,207 +8,163 @@ if enablePerformance:
 else:
 	print "not using C implementation"
 	import xml.etree.ElementTree as ET
+from xml.dom import minidom
+from ast import literal_eval as make_tuple
 
-class XliffTransUnit(object):
-	def __init__(self, ident, source, target=None):
-		self.ident = ident
-		self.source = source
-		self.target = target
-	
-	def toXml(self):
-		xml = None
-		if self.target is not None:
-			xml = """<trans-unit id="%s" maxwidth="255" size-unit="char">
-	<source xml:space="preserve">%s</source>
-	<target xml:space="preserve">%s</target>
-</trans-unit>""" % (self.ident, self.source, self.target)
-		else:
-			xml = """<trans-unit id="%s" maxwidth="255" size-unit="char">
-	<source xml:space="preserve">%s</source>
-</trans-unit>""" % (self.ident, self.source)
-		return xml
-	
-	def __eq__(self, other):
-		if not isinstance(other, XliffTransUnit):
-			raise TypeError()
-		return self.ident == other.ident and self.source == other.source and self.target == other.target
+import json
 
+def dictDepth(d):
+	depth=0
+	q = [(i, depth+1) for i in d.values() if isinstance(i, dict)]
+	max_depth = 0
+	while (q):
+		n, depth = q.pop()
+		max_depth = max(max_depth, depth)
+		q = q + [(i, depth+1) for i in n.values() if isinstance(i, dict)]
+	return max_depth
 
-class XliffFile(object):
-	def __init__(self, orig, sourceLang, targetLang):
-		self.orig = orig
-		self.sourceLang = sourceLang
-		self.targetLang = targetLang
-		self.content = []
-		
-	def toXml(self):
-		cont = "\n".join([item.toXml() for item in self.content])
-		if cont is not "":
-			cont = "\n" + cont + "\n"
-		xml = """<file original="%s" source-language="%s" datatype="plaintext" target-language="%s">
-	<body>%s
-	</body>
-</file>""" % (self.orig, self.sourceLang, self.targetLang, cont)
-		return xml
-	
-	def addTransUnit(tu):
-		if not isinstance(tu, XliffTransUnit):
-			raise TypeError()
-		self.content.append(tu)
-
-
-class Xliff(object):
-	def __init__(self):
-		self.files = None
-		pass
-	
-	def toXml(self):
-		content = ""
-		xml = """<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">%s
-</xliff>""" % content
-		return xml
-	
-	# 
-	# def __str__(self):
-	# 	pass
-	# 
-	# def __repr__(self):
-	# 	pass
-
-def xmlToDict(filename):
+def xmlToDict(filename, respectFile = False, firstN = None):
+	#import pdb; pdb.set_trace()
 	ns = {'xliffns': 'urn:oasis:names:tc:xliff:document:1.2',
 		  'xml': 'http://www.w3.org/XML/1998/namespace'}
 	tree = ET.parse(filename)
 	root = tree.getroot()
 	
 	l = root.findall('xliffns:file', ns)
-	#print "number of 'file' elements", len(l)  # only for debug
 	
-	retFile = {}
+	ret = {}
 	for file_ in l:
-		f = {}
-		#print file_.tag, file_.attrib
+		#print file_.attrib['original']
+		translation = {}
 		for body_ in file_:
-			#print body_.tag, body_.attrib
-			
 			retTransUnit = {}
+			translationKey = str((file_.attrib['source-language'], file_.attrib['target-language']))
 			for transUnit in body_:
+				#import pdb; pdb.set_trace()
+				if firstN is not None:
+					if firstN is 0:
+						break
+					if firstN > 0:
+						firstN -= 1
+				
+				if transUnit.attrib['id'] in retTransUnit.keys():
+					print "ERROR: double key found for", transUnit.attrib['id']
+					continue
+				
 				st = {}
-				#print transUnit.tag, transUnit.attrib
 				src = transUnit.find('xliffns:source', ns)
 				if src is not None:
-					#print "->", src.tag, src.attrib, src.text
 					st['source'] = src.text
 				else:
 					print "ERROR: no source found for", transUnit.attrib['id']
 					continue
 				trgt = transUnit.find('xliffns:target', ns)
 				if trgt is not None:
-					#print "=>", trgt.tag, trgt.attrib, trgt.text
-					st['target'] = trgt.text
+					if trgt.text is not None:
+						st['target'] = trgt.text
+				# 	else:
+				# 		print "target.text is None:"
+				# 		print "\t", translationKey
+				# 		print "\t", transUnit.attrib['id']
+				# 		print "\t", src.text
+				# 		print "\t", trgt.text
+				# 		print
+				# else:
+				# 	print "target is None"
 				
-				if transUnit.attrib['id'] in retTransUnit.keys():
-					print "ERROR: double key found for", transUnit.attrib['id']
 				retTransUnit[transUnit.attrib['id']] = st
-				#print st
-				
-				#break  # only for debug
-			#print retTransUnit
-			f[str((file_.attrib['source-language'], file_.attrib['target-language']))] = retTransUnit
-			break  # only for debug
+				#print "+", retTransUnit
+			
+			if respectFile:
+				translation[translationKey] = retTransUnit
+			else:
+				if translationKey not in ret:
+					ret[translationKey] = {}
+				ret[translationKey].update(retTransUnit)
+				#print "++", json.dumps(ret, indent=4, separators=(',', ': '))
+			
+			if firstN is 0:
+				break
 		
-		#print f
-		retFile[file_.attrib['original']] = f
-		break  # only for debug
+		if respectFile:
+			ret[file_.attrib['original']] = translation
+		
+		if firstN is 0:
+			break
 	
-	#print retFile
-	return retFile
+	return ret
 
-def exportXliff():
-	pass
+def dictToXml(d, filename):
+	depth = dictDepth(d)
+	if depth is not 3:
+		print "depth is not 3"
+		return
+	
+	def prettify(elem):
+		rough_string = ET.tostring(elem, encoding='utf-8', method='xml')
+		reparsed = minidom.parseString(rough_string)
+		return reparsed.toprettyxml(indent="\t").encode('utf8')
+
+	root = ET.Element('xliff')
+	root.attrib['version'] = "1.2"
+	root.attrib['xmlns'] = "urn:oasis:names:tc:xliff:document:1.2"
+	for file_, fileVal in d.iteritems():
+		for transLang, transVal in fileVal.iteritems():
+			fileTag = ET.SubElement(root, 'file')
+			fileTag.attrib['original'] = file_
+			src, trgt = make_tuple(transLang)
+			fileTag.attrib['source-language'] = src
+			fileTag.attrib['datatype'] = 'plaintext'
+			fileTag.attrib['target-language'] = trgt
+			
+			bodyTag = ET.SubElement(fileTag, 'body')
+			
+			for tuId, tuCont in transVal.iteritems():
+				transUnitTag = ET.SubElement(bodyTag, 'trans-unit')
+				transUnitTag.attrib['id'] = tuId
+				transUnitTag.attrib['maxwidth'] = str(tuCont['len'])
+				transUnitTag.attrib['size-unit'] = "char"
+				
+				if "source" not in tuCont:
+					continue
+				
+				src = ET.SubElement(transUnitTag, 'source')
+				src.attrib['xml:space'] = "preserve"
+				src.text = tuCont['source']
+				
+				if "target" in tuCont:
+					trgt = ET.SubElement(transUnitTag, 'target')
+					trgt.attrib['xml:space'] = "preserve"
+					trgt.text = tuCont['target']
+	
+	# modify encoding and prettify
+	cont = prettify(root)
+	
+	# write xml to file
+	with open(filename, 'w') as f:
+		f.write(cont)
 
 
 if __name__ == '__main__':
 	import sys
-	impDict = xmlToDict(sys.argv[1])
-	
 	import json
-	print json.dumps(impDict, indent=4, separators=(',', ': '))
-	exit(0)
-
-if __name__ == '__main__':
-	xtu1 = XliffTransUnit("de->en", "ja", "yes")
-	xtu2 = XliffTransUnit("en->de", "yes", "ja")
-	assert xtu1 == xtu1
-	assert xtu1 != xtu2
-	xf1 = XliffFile("aFilename", "de-DE", "en-EN")
-	xf1.addTransUnit
 	
-	#pass
+	impDictFile = xmlToDict(sys.argv[1], True)
+	# impDictNoFile = xmlToDict(sys.argv[1], False)
 	
-	# from lxml import etree
-	# import sys
-	# 
-	# tree = etree.iterparse(sys.argv[1])
-	# for action, elem in tree:
-	# 	print "action=%s tag=%s text=%s tail=%s" % (action, elem.tag, elem.text, elem.tail)
+	#print json.dumps(impDictFile, indent=4, separators=(',', ': '))
+	# print json.dumps(impDictNoFile, indent=4, separators=(',', ': '))
 	
-	xliff = Xliff()
-	print xliff.toXml()
+	tmpFile = "/tmp/test.xml"
+	dictToXml(impDictFile, tmpFile)
+	testDict = xmlToDict(tmpFile, True)
+	assert impDictFile == testDict
+	print "xml parsing results are equal"
+	# dictToXml(impDictNoFile, "/tmp/NF.xml")
 	
-	# _ = folder.invokeFactory('News Item', 'news_en')
-	# news_en = folder.news_en
-	# news_en.setTitle("My english title")
-	# news_en.setDescription("My english description")
-	# news_en.setImageCaption("My english imageCaption")
-	# news_en.setText("My english text")
-	# news_en.reindexObject()
-	# 
-	# from slc.xliff.interfaces import IXLIFFExporter
-	# xliffexporter = IXLIFFExporter(news_en)
-	# xliffexporter.recursive = False
-	# xliffexporter.single_file = True
-	# xliffexporter.html_compatibility = False
-	# xliffexporter.zip = False
-	# xliffexporter.source_language=news_en.Language()
-	# xliffstr = xliffexporter.export()
-	# 
-	# from slc.xliff.BeautifulSoup import BeautifulSoup
-	# soup = BeautifulSoup(xliffstr)
-	# from slc.xliff.BeautifulSoup import NavigableString
-	# german_title = NavigableString(u"My german Title")
-	# soup.find('trans-unit', attrs={'id':'title'}).findNext('target').append( german_title )
-	# german_description = NavigableString(u"My german Description")
-	# soup.find('trans-unit', attrs={'id':'description'}).findNext('target').append( german_description )
-	# german_text = NavigableString(u"My german Text")
-	# soup.find('trans-unit', attrs={'id':'text'}).findNext('target').append( german_text )
-	# german_imageCaption = NavigableString(u"My german imageCaption")
-	# soup.find('trans-unit', attrs={'id':'imageCaption'}).findNext('target').append( german_imageCaption )
-	# xliffstr_de = soup.prettify()
-	# "My german Title" in xliffstr_de
-	# 
-	# xliffstr_de = xliffstr_de.replace("<target xml:lang=\"en\">", "<target xml:lang=\"de\">")
-	# xliffstr_de = xliffstr_de.replace("target-language=\"\"", "target-language=\"de\"")
-	# 
-	# from slc.xliff.interfaces import IXLIFFImporter
-	# from zope.component import getUtility
-	# xliffimporter = getUtility(IXLIFFImporter)
-	# from plone.namedfile.file import NamedFile
-	# xliff_file = NamedFile(data=xliffstr_de, contentType="text/xml", filename=u"transl_de.xliff")
-	# xliffimporter.upload(xliff_file, html_compatibility=False)
-	# 
-	# from plone.multilingual.interfaces import ITranslationManager
-	# news_de = ITranslationManager(news_en).get_translation('de')
-	# news_de.getId()
-	# #'news_en-de'
-	# news_de.Title()
-	# #'My german Title'
-	# 'My german Description' in news_de.Description()
-	# #True
-	# news_de.getImageCaption()
-	# #'My german imageCaption'
-	# news_de.getText()
-	# #'<p>My german Text</p>'
-	
+	print "impDictFile:"
+	print json.dumps(impDictFile, indent=4, separators=(',', ': '))
+	print
+	print "testDict:"
+	print json.dumps(testDict, indent=4, separators=(',', ': '))
 	

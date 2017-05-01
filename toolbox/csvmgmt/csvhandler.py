@@ -3,24 +3,29 @@
 
 from __future__ import unicode_literals
 import csv
-import codecs
 
-DELIMITER = ';'
-QUOTECHAR = '|'
+DELIMITER = str(';')
+QUOTECHAR = str('|')
 QUOTING = csv.QUOTE_MINIMAL
 	
 class CSVHandler(object):
 
 	@staticmethod
 	def read_from_csv_file(csvFilename):
-		with codecs.open(csvFilename, "r", "cp1257") as f:
+		with open(csvFilename, "r") as f:
 			reader = csv.reader(f, delimiter=DELIMITER, quotechar=QUOTECHAR, quoting=QUOTING)
 			return [row for row in reader]
 	
+
 	@staticmethod
-	def write_to_csv_file(csvFilename, data):
+	def write_to_csv_file(csvFilename, data, lineterminator = '\n'):
+		myexcel = csv.excel
+		myexcel.lineterminator = lineterminator
+		myexcel.delimiter = DELIMITER
+		myexcel.quotechar = QUOTECHAR
+		myexcel.quoting = QUOTING
 		with open(csvFilename, "w") as f:
-			writer = csv.writer(f, delimiter=DELIMITER, quotechar=QUOTECHAR, quoting=QUOTING)
+			writer = csv.writer(f, dialect=myexcel)
 			writer.writerows(data)
 
 if __name__ == '__main__':
