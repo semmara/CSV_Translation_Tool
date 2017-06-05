@@ -13,7 +13,6 @@ class DBCmdManager(object):
 	
 	def __init__(self, dbFilename):
 		self._dbHandler = DBHandler(dbFilename)
-		pass
 	
 	def _createTable(self, tablename):
 		if tablename in self._checkedTablenames:

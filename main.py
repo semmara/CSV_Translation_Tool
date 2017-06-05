@@ -66,8 +66,7 @@ def importXml(args, config):
 
 def exportXml(args, config):
 	if not os.path.isfile(args.dbFile):
-		print "no database found"
-		return
+		print "creating database"
 	if args.verbose:
 		print "command: export xml"
 		print args

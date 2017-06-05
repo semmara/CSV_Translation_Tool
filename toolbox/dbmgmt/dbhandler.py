@@ -61,5 +61,8 @@ class DBHandler(object):
 			print line
 
 if __name__ == '__main__':
-	dbh = DBHandler(':memory:', 'test')
-	dbh._DBHandler__dump()
+	dbh = DBHandler(':memory:')
+	dbh.dump()
+	
+	dbh = DBHandler('/tmp/moep.db')
+	dbh.dump()
