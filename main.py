@@ -132,10 +132,21 @@ def translate(args, config):
 	# read input csv
 	inputCsvData = CSVHandler.read_from_csv_file(args.inputfile)
 	
+	# sanity checks
+	if len(inputCsvData) == 0:
+		print "no data found"
+		return
+	if len(inputCsvData[0]) < 3:
+		print "missing default language"
+		return
+	if len(inputCsvData[0]) < 4:
+		print "no source language given"
+		return
+	
 	# import data from input csv
 	dbcm = DBCmdManager(args.dbFile)
 	if not args.noDatabaseImport:
-		stl = inputCsvData[0][3]
+		stl = inputCsvData[0][3]  # stl := source translation language
 		for line in inputCsvData[1:]:
 			#key = str(tuple(line[:2]))
 			key = _toKey(tuple(line[:2]))
