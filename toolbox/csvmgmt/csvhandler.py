@@ -3,6 +3,7 @@
 
 from __future__ import unicode_literals
 import csv
+import os.path
 
 DELIMITER = str(';')
 QUOTECHAR = str('|')
@@ -12,6 +13,8 @@ class CSVHandler(object):
 
 	@staticmethod
 	def read_from_csv_file(csvFilename):
+		if not os.path.isfile(csvFilename):
+			return []
 		with open(csvFilename, "r") as f:
 			reader = csv.reader(f, delimiter=DELIMITER, quotechar=QUOTECHAR, quoting=QUOTING)
 			return [row for row in reader]

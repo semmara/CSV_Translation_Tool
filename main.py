@@ -120,13 +120,58 @@ def exportXml(args, config):
 	dictToXml(d, filename)
 	print "created", filename
 
-def translate(args, config):
+def importCsv(args, config):
+	if args.verbose:
+		print "command: importcsv"
+		print args
+		print "working directory:", args.C
+	
+	# read input csv
+	inputCsvData = CSVHandler.read_from_csv_file(args.inputfile)
+	
+	# sanity checks
+	if len(inputCsvData) == 0:
+		print "no data found"
+		return
+	if len(inputCsvData[0]) < 3:
+		print "missing default language"
+		return
+	if len(inputCsvData[0]) < args.dataColumn + 1:
+		print "no source language given for column", args.dataColumn
+		return
+	
+	# import data from input csv
+	dbcm = DBCmdManager(args.dbFile)
+	if not args.noDatabaseImport:
+		stl = inputCsvData[0][args.dataColumn]  # stl := source translation language
+		for line in inputCsvData[1:]:
+			key = _toKey(tuple(line[:2]))
+			data = line[args.dataColumn].decode(CSV_CODING)
+			# ignore empty data
+			if data in [None, '']:
+				print "empty data for key", key
+				continue
+			needTranslation = True
+			# check database for current key
+			dbCont = dbcm.getText(stl, key)
+			if dbCont is not None:
+				if data == dbCont:
+					continue
+				else:
+					if args.forceOverwriteExistingData:
+						# overwrite database content
+						dbcm.addText(stl, key, data)
+					else:
+						print "database value and csv value are unequal. Use 'forceOverwriteExistingData' to update database."
+			else:
+				# add to database
+				dbcm.addText(stl, key, data)
+
+def appendTranslationToCsv(args, config):
 	if args.verbose:
 		print "command: translate"
 		print args
 		print "working directory:", args.C
-	
-	needTranslation = False
 	
 	# read input csv
 	inputCsvData = CSVHandler.read_from_csv_file(args.inputfile)
@@ -142,98 +187,44 @@ def translate(args, config):
 		print "no source language given"
 		return
 	
-	# import data from input csv
-	dbcm = DBCmdManager(args.dbFile)
-	if not args.noDatabaseImport:
-		stl = inputCsvData[0][3]  # stl := source translation language
-		for line in inputCsvData[1:]:
-			#key = str(tuple(line[:2]))
-			key = _toKey(tuple(line[:2]))
-			data = line[3].decode(CSV_CODING)
-			# ignore empty data
-			if data in [None, '']:
-				print "empty data for key", key
-				continue
-			needTranslation = True
-			# check database for current key
-			dbCont = dbcm.getText(stl, key)
-			if dbCont is not None:
-				if line[3] == dbCont:
-					continue
-				else:
-					if args.forceOverwriteExistingData:
-						# overwrite database content
-						dbcm.addText(stl, key, data)
-					else:
-						print "database value and csv value are unequal. Use 'forceOverwriteExistingData' to update database."
-			else:
-				# add to database
-				dbcm.addText(stl, key, data)
-	
-	# exit if flag is set or not
-	if args.noTranslation:
-		if args.verbose:
-			print "no translation wanted"
-			sys.exit(1)
-		return
-	
 	# get target translation language
-	ttl = args.targetTranslationLanguage
-	if ttl in [None, '']:
-		print "no target translation language given"
-		sys.exit(1)
-		return
-	if needTranslation:
+	ttls = set(args.targetTranslationLanguage)
+	errFound = False
+	dbcm = DBCmdManager(args.dbFile)
+	for ttl in ttls:
 		if ttl not in dbcm.getExistingTablenames():
-			print "no translation table found. Please check given target language"
-			sys.exit(1)
-			return
-	
-	err = False
-	if needTranslation:
-		# get translation from db (ignore empty input fields)
-		outputCsvData = inputCsvData[:1]
-		outputCsvData[0][3] = ttl  # header
-		numb = 0
-		for line in inputCsvData[1:]:
-			numb += 1
-			key = _toKey(tuple(line[:2]))
-			if line[3] not in [None, ''] :  # or args.forceifemptyinputdata:
-				value = dbcm.getText(ttl, key)
-				if value is None:
-					print "translation value not in database", ttl, key
-					err = True
-					print "---"
-					print "len line3:", len(line[3])
-					print "numb:", numb
-					print "value:", value
-					print "ttl:", ttl
-					print "key:", key
-					print "line:", line
-					
-					import json
-					print json.dumps(outputCsvData, indent=4, separators=(',', ': ')) 
-					raise
-					continue
-				line[3] = value.encode(CSV_CODING)
-			outputCsvData.append(line)
-		#print outputCsvData
-	else:
-		outputCsvData = inputCsvData
-		outputCsvData[0][3] = ttl  # header
-	
-	# check if translation is complete
-	if err:
-		print "translation is not complete"
+			print "Error: No translation table found. Please check given target language", ttl
+			errFound = True
+		if ttl in inputCsvData[0]:
+			print "Error:", ttl, "already found in csv file"
+			errFound = True
+	if errFound:
 		sys.exit(1)
 		return
+	
+	# calc number of existing columns
+	numbExistingCols = len(inputCsvData[0])
+	
+	for ttl in ttls:
+		outputCsvData = inputCsvData
+		
+		# extend header
+		outputCsvData[0].append(ttl)
+		
+		# get translation from db (ignore empty input fields)
+		for lineIdx in range(1, len(outputCsvData)):
+			key = _toKey(tuple(outputCsvData[lineIdx][:2]))
+			value = dbcm.getText(ttl, key)
+			if value is None:
+				print "translation value not in database", ttl, key
+				outputCsvData[lineIdx].append('')
+			else:
+				outputCsvData[lineIdx].append(value.encode(CSV_CODING))
 	
 	# write output csv
-	if not args.noTranslation:
-		CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
-	
+	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
 	print "translation is complete"
-	
+
 def status(args, config):
 	if args.verbose:
 		print "command: status"
@@ -287,7 +278,7 @@ if __name__ == '__main__':
 	subparsers = parent_parser.add_subparsers(help='sub-command help')
 	
 	# import xml
-	import_xml_parser = subparsers.add_parser('import', help='import xml')
+	import_xml_parser = subparsers.add_parser('importxml', help='import xml')
 	import_xml_parser.add_argument("inputfile", help='input file', default=DEFAULT_XML_INPUT_FILENAME)
 	import_xml_parser.add_argument('-s', "--simulate_database", help='simulate database', action="store_true")
 	import_xml_parser.add_argument("--force_overwrite_existing", action="store_true")
@@ -295,7 +286,7 @@ if __name__ == '__main__':
 	import_xml_parser.set_defaults(func=importXml)
 	
 	# export xml
-	export_xml_parser = subparsers.add_parser('export', help='export xml')
+	export_xml_parser = subparsers.add_parser('exportxml', help='export xml')
 	if cfg.getOption(cfg.defaultSection, cfg.optionDefaultSourceLanguage) is None:
 		export_xml_parser.add_argument("sourceTranslationLanguage", help='the source language (database table name) to translate from')
 	else:
@@ -305,17 +296,21 @@ if __name__ == '__main__':
 	export_xml_parser.add_argument('-t', "--withTargetTag", help='adds empty target tag to each trans-unit', action="store_true")
 	export_xml_parser.set_defaults(func=exportXml)
 	
-	# translate csv
-	translate_parser = subparsers.add_parser('translate', help='translate csv')
-	translate_parser.add_argument('-i', "--inputfile", required=True, help='input file', default=DEFAULT_CSV_INPUT_FILENAME)
-	translate_parser.add_argument('-o', "--outputfile", help='output file', default=DEFAULT_CSV_OUTPUT_FILENAME)
-	translate_parser.add_argument('-n', "--noTranslation", help='do not write translation output file', action="store_true")
-	translate_parser.add_argument('-t', "--targetTranslationLanguage", help='the target language (database table name) to translate to')
-	translate_parser.add_argument('-d', "--noDatabaseImport", help='do not import data to database', action="store_true")
-	translate_parser.add_argument('-f', "--forceOverwriteExistingData", help='overwrite data already in database', action="store_true")
-	translate_parser.add_argument('-l', "--lineterminator", help='set newline characters', default=DEFAULT_CSV_NEWLINE)
-	translate_parser.add_argument('-e', "--forceifemptyinputdata", help='check database for translation, also if data from inputfile is empty', action="store_true")
-	translate_parser.set_defaults(func=translate)
+	# import csv
+	import_csv_parser = subparsers.add_parser('importcsv', help='import to database from csv')
+	import_csv_parser.add_argument('-c', "--dataColumn", help='use this column to handle as import data', type=int, default=3)
+	import_csv_parser.add_argument('-d', "--noDatabaseImport", help='do not import data to database', action="store_true")
+	import_csv_parser.add_argument('-f', "--forceOverwriteExistingData", help='overwrite data already in database', action="store_true")
+	import_csv_parser.add_argument("inputfile", help='input file', default=DEFAULT_CSV_INPUT_FILENAME)
+	import_csv_parser.set_defaults(func=importCsv)
+	
+	# append translation to csv
+	append_to_csv_parser = subparsers.add_parser('appendtocsv', help='append translation to csv')
+	append_to_csv_parser.add_argument('-l', "--lineterminator", help='set newline characters', default=DEFAULT_CSV_NEWLINE)
+	append_to_csv_parser.add_argument("inputfile", help='input file', default=DEFAULT_CSV_INPUT_FILENAME)
+	append_to_csv_parser.add_argument('-o', "--outputfile", help='output file', default=DEFAULT_CSV_OUTPUT_FILENAME)
+	append_to_csv_parser.add_argument("targetTranslationLanguage", help='the target language (database table name) to translate to', nargs='+')
+	append_to_csv_parser.set_defaults(func=appendTranslationToCsv)
 	
 	# status / info
 	info_parser = subparsers.add_parser('status', help='status / info')
@@ -341,8 +336,10 @@ if __name__ == '__main__':
 		cfg = ConfigHandler(args.cfgFile)
 	cfg.save()
 	
-	#conf = {}
-	#conf["lenlimits"] = cfg.getLengths()
+	# check db file
+	if os.path.isdir(args.dbFile):
+		print "Error: value of dbFile is not a filename"
+		sys.exit(1)
 	
 	# change working directory
 	try:
