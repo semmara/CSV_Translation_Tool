@@ -139,6 +139,7 @@ def dictToXml(d, filename):
 	
 	# modify encoding and prettify
 	cont = prettify(root)
+	cont = cont.replace('<target xml:space="preserve"/>', '<target xml:space="preserve"></target>')
 	
 	# write xml to file
 	with open(filename, 'w') as f:
