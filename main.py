@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 # encoding: utf-8
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 import os.path
 from toolbox.dbmgmt.dbcmdmanager import DBCmdManager
 from toolbox.xmlhandler import xmlToDict, dictToXml

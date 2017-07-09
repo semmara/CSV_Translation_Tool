@@ -12,6 +12,7 @@ from xml.dom import minidom
 from ast import literal_eval as make_tuple
 
 import json
+from node import Node
 
 def dictDepth(d):
 	depth=0
@@ -100,50 +101,47 @@ def dictToXml(d, filename):
 		print "depth is not 3"
 		return
 	
-	def prettify(elem):
-		rough_string = ET.tostring(elem, encoding='utf-8', method='xml')
-		reparsed = minidom.parseString(rough_string)
-		return reparsed.toprettyxml(indent="\t").encode('utf8')
-
-	root = ET.Element('xliff')
-	root.attrib['version'] = "1.2"
-	root.attrib['xmlns'] = "urn:oasis:names:tc:xliff:document:1.2"
+	root = Node(u"xliff")
+	root.addArgument(u'''version="1.2"''')
+	root.addArgument(u'''xmlns="urn:oasis:names:tc:xliff:document:1.2"''')
 	for file_, fileVal in d.iteritems():
 		for transLang, transVal in fileVal.iteritems():
-			fileTag = ET.SubElement(root, 'file')
-			fileTag.attrib['original'] = file_
+			fileTag = Node(u"file", root)
+			fileTag.addArgument(u'''original="%s"''' % file_)
 			src, trgt = make_tuple(transLang)
-			fileTag.attrib['source-language'] = src
-			fileTag.attrib['datatype'] = 'plaintext'
-			fileTag.attrib['target-language'] = trgt
+			fileTag.addArgument(u'''source-language="%s"''' % src)
+			fileTag.addArgument(u'''datatype="plaintext"''')
+			fileTag.addArgument(u'''target-language="%s"''' % trgt)
 			
-			bodyTag = ET.SubElement(fileTag, 'body')
+			bodyTag = Node(u"body", fileTag)
 			
 			for tuId, tuCont in transVal.iteritems():
-				transUnitTag = ET.SubElement(bodyTag, 'trans-unit')
-				transUnitTag.attrib['id'] = tuId
-				transUnitTag.attrib['maxwidth'] = str(tuCont['len'])
-				transUnitTag.attrib['size-unit'] = "char"
+				transUnitTag = Node(u"trans-unit", bodyTag)
+				transUnitTag.addArgument(u'id="%s"' % tuId)
+				transUnitTag.addArgument(u'maxwidth="%s"' % str(tuCont['len']))
+				transUnitTag.addArgument(u'size-unit="%s"' % "char")
 				
 				if "source" not in tuCont:
 					continue
 				
-				src = ET.SubElement(transUnitTag, 'source')
-				src.attrib['xml:space'] = "preserve"
-				src.text = tuCont['source']
+				src = Node(u"source", transUnitTag)
+				src.addArgument(u'xml:space="preserve"')
+				src.addText(tuCont['source'])
 				
 				if "target" in tuCont:
-					trgt = ET.SubElement(transUnitTag, 'target')
-					trgt.attrib['xml:space'] = "preserve"
-					trgt.text = tuCont['target']
+					trgt = Node(u"target", transUnitTag)
+					trgt.addArgument(u'xml:space="preserve"')
+					trgt.addText(tuCont['target'])
+	cont = u'<?xml version="1.0" ?>\n' + root.getAsString()
 	
-	# modify encoding and prettify
-	cont = prettify(root)
-	cont = cont.replace('<target xml:space="preserve"/>', '<target xml:space="preserve"></target>')
+	# sanity check
+	if (cont is None) or (len(cont) == 0):
+		raise Exception
 	
 	# write xml to file
 	with open(filename, 'w') as f:
 		f.write(cont)
+	return
 
 
 if __name__ == '__main__':
