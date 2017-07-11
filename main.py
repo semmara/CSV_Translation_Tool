@@ -3,28 +3,18 @@
 # encoding: utf-8
 
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 import os.path
 from toolbox.dbmgmt.dbcmdmanager import DBCmdManager
 from toolbox.xmlhandler import xmlToDict, dictToXml
 from toolbox.confighandler import ConfigHandler
 from toolbox.csvmgmt.csvhandler import CSVHandler
+from toolbox.keyserializer import KeySerializer
 from itertools import permutations
-from ast import literal_eval as make_tuple
 
 CSV_CODING = "cp1257"
 DEFAULT_CODING = "utf8"
 DEFAULT_TEXT_LEN = 255
-
-def _toTuple(key_):
-	return make_tuple(key_)
-
-def _toKey(tuple_):
-	if not isinstance(tuple_, tuple):
-		raise
-	return str(tuple_)
 
 def importXml(args, config):
 	if args.verbose:
@@ -35,16 +25,17 @@ def importXml(args, config):
 		print args
 		print "working directory:", args.C
 	
-	d = xmlToDict(args.inputfile, False, 5)
+	d = xmlToDict(args.inputfile)
 	#exit(0)
 	#import json
 	#print json.dumps(d, indent=4, separators=(',', ': '))
 	#print
 	db = DBCmdManager(args.dbFile)
 	for translation, translationValue in d.iteritems():
-		srcLang, trgtLang = _toTuple(translation)
+		srcLang, trgtLang = KeySerializer.toTuple(translation)
 		if args.verbose:
-			print "translation from %s to %s" % _toTuple(translation)
+			#print "translation:", translation
+			print "translation from %s to %s" % KeySerializer.toTuple(translation)
 		for key, keyValue in translationValue.iteritems():
 			st = db.getText(srcLang, key)
 			if st is None:
@@ -90,7 +81,7 @@ def exportXml(args, config):
 		print "nothing found to translate from '%s' to '%s'" % (srcTbl, trgTbl)
 		return
 	
-	translationKey = _toKey((srcTbl, trgTbl))
+	translationKey = KeySerializer.toKey((srcTbl, trgTbl))
 	
 	fileOrig = translationKey  # or use sth. like: fileOrig = 'default'
 	for key in missingKeys:
@@ -108,7 +99,7 @@ def exportXml(args, config):
 		else:
 			d[fileOrig][translationKey][key] = { 'source': db.getText(srcTbl, key) }
 		d[fileOrig][translationKey][key]['len'] = config.getOption(config.defaultSection, config.optionDefaultTextLength, DEFAULT_TEXT_LEN)
-		k1, k2 = _toTuple(key)
+		k1, k2 = KeySerializer.toTuple(key)
 		for c1, c2 in config.getLengths().items():
 			if c1.find('.') < 0:
 				continue
@@ -149,7 +140,7 @@ def importCsv(args, config):
 	if not args.noDatabaseImport:
 		stl = inputCsvData[0][args.dataColumn]  # stl := source translation language
 		for line in inputCsvData[1:]:
-			key = _toKey(tuple(line[:2]))
+			key = KeySerializer.toKey(tuple(line[:2]))
 			data = line[args.dataColumn].decode(CSV_CODING)
 			# ignore empty data
 			if data in [None, '']:
@@ -217,7 +208,7 @@ def appendTranslationToCsv(args, config):
 		
 		# get translation from db (ignore empty input fields)
 		for lineIdx in range(1, len(outputCsvData)):
-			key = _toKey(tuple(outputCsvData[lineIdx][:2]))
+			key = KeySerializer.toKey(tuple(outputCsvData[lineIdx][:2]))
 			value = dbcm.getText(ttl, key)
 			if value is None:
 				print "translation value not in database", ttl, key

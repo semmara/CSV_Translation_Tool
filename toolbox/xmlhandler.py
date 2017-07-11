@@ -8,11 +8,10 @@ if enablePerformance:
 else:
 	print "not using C implementation"
 	import xml.etree.ElementTree as ET
-from xml.dom import minidom
-from ast import literal_eval as make_tuple
+from .keyserializer import KeySerializer
 
 import json
-from node import Node
+from .node import Node
 
 def dictDepth(d):
 	depth=0
@@ -25,7 +24,6 @@ def dictDepth(d):
 	return max_depth
 
 def xmlToDict(filename, respectFile = False, firstN = None):
-	#import pdb; pdb.set_trace()
 	ns = {'xliffns': 'urn:oasis:names:tc:xliff:document:1.2',
 		  'xml': 'http://www.w3.org/XML/1998/namespace'}
 	tree = ET.parse(filename)
@@ -35,21 +33,31 @@ def xmlToDict(filename, respectFile = False, firstN = None):
 	
 	ret = {}
 	for file_ in l:
-		#print file_.attrib['original']
 		translation = {}
 		for body_ in file_:
 			retTransUnit = {}
-			translationKey = str((file_.attrib['source-language'], file_.attrib['target-language']))
+			translationKey = KeySerializer.toKey((file_.attrib['source-language'], file_.attrib['target-language']))
 			for transUnit in body_:
-				#import pdb; pdb.set_trace()
 				if firstN is not None:
 					if firstN is 0:
 						break
 					if firstN > 0:
 						firstN -= 1
 				
-				if transUnit.attrib['id'] in retTransUnit.keys():
-					print "ERROR: double key found for", transUnit.attrib['id']
+				# workaround/manipulation for translation office
+				transUnit_attrib_id = transUnit.attrib['id']
+				if transUnit_attrib_id.startswith(u"Parameter_._"):
+					transUnit_attrib_id = transUnit_attrib_id.replace(u"Parameter_._", u"")
+				elif transUnit_attrib_id.startswith(u"PAT_"):
+					transUnit_attrib_id = transUnit_attrib_id.replace(u"ParameterTypeRestrictionEnumeration_._", u"")
+				elif transUnit_attrib_id.startswith(u"ENUM_PAT_"):
+					transUnit_attrib_id = transUnit_attrib_id.replace(u"ParameterTypeRestrictionEnumeration_._", u"")
+				elif transUnit_attrib_id.startswith(u"ENUM_"):
+					transUnit_attrib_id = transUnit_attrib_id.replace(u"ParameterTypeRestrictionEnumeration_._", u"")
+				# end of workaround
+				
+				if transUnit_attrib_id in retTransUnit.keys():
+					print "ERROR: double key found for", transUnit_attrib_id
 					continue
 				
 				st = {}
@@ -57,7 +65,7 @@ def xmlToDict(filename, respectFile = False, firstN = None):
 				if src is not None:
 					st['source'] = src.text
 				else:
-					print "ERROR: no source found for", transUnit.attrib['id']
+					print "ERROR: no source found for", transUnit_attrib_id
 					continue
 				trgt = transUnit.find('xliffns:target', ns)
 				if trgt is not None:
@@ -73,7 +81,7 @@ def xmlToDict(filename, respectFile = False, firstN = None):
 				# else:
 				# 	print "target is None"
 				
-				retTransUnit[transUnit.attrib['id']] = st
+				retTransUnit[transUnit_attrib_id] = st
 				#print "+", retTransUnit
 			
 			if respectFile:
@@ -108,7 +116,7 @@ def dictToXml(d, filename):
 		for transLang, transVal in fileVal.iteritems():
 			fileTag = Node(u"file", root)
 			fileTag.addArgument(u'''original="%s"''' % file_)
-			src, trgt = make_tuple(transLang)
+			src, trgt = KeySerializer.toTuple(transLang)
 			fileTag.addArgument(u'''source-language="%s"''' % src)
 			fileTag.addArgument(u'''datatype="plaintext"''')
 			fileTag.addArgument(u'''target-language="%s"''' % trgt)
@@ -117,6 +125,18 @@ def dictToXml(d, filename):
 			
 			for tuId, tuCont in transVal.iteritems():
 				transUnitTag = Node(u"trans-unit", bodyTag)
+				
+				# workaround/manipulation for translation office
+				if tuId.startswith(u"PAR_"):
+					tuId = u"Parameter_._" + tuId
+				elif tuId.startswith(u"PAT_"):
+					tuId = u"ParameterTypeRestrictionEnumeration_._" + tuId
+				elif tuId.startswith(u"ENUM_PAT_"):
+					tuId = u"ParameterTypeRestrictionEnumeration_._" + tuId
+				elif tuId.startswith(u"ENUM_"):
+					tuId = u"ParameterTypeRestrictionEnumeration_._" + tuId
+				# end of workaround
+				
 				transUnitTag.addArgument(u'id="%s"' % tuId)
 				transUnitTag.addArgument(u'maxwidth="%s"' % str(tuCont['len']))
 				transUnitTag.addArgument(u'size-unit="%s"' % "char")
@@ -140,7 +160,7 @@ def dictToXml(d, filename):
 	
 	# write xml to file
 	with open(filename, 'w') as f:
-		f.write(cont)
+		f.write(cont.encode("utf-8"))
 	return
 
 
