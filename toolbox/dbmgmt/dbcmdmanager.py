@@ -8,11 +8,9 @@ def dbf(s):
 	return s.replace("'", "''")
 
 class DBCmdManager(object):
-	_checkedTablenames = []
-	_dbHandler = None
-	
 	def __init__(self, dbFilename):
 		self._dbHandler = DBHandler(dbFilename)
+		self._checkedTablenames = []
 	
 	def _createTable(self, tablename):
 		if tablename in self._checkedTablenames:
@@ -36,6 +34,13 @@ class DBCmdManager(object):
 		self._dbHandler.write(cmd)
 		#self._dbHandler.write(cmd, [dbf(key), dbf(text)])
 		#self._dbHandler.write(cmd, [dbf(key), dbf(text).decode('latin-1')])
+	
+	def deleteItem(self, tablename, key):
+		if tablename not in self.getExistingTablenames():
+			return
+		
+		cmd = """DELETE FROM '%s' WHERE ID = '%s'""" % (dbf(tablename), dbf(key))
+		self._dbHandler.write(cmd)
 	
 	def getText(self, tablename, key):
 		if tablename not in self.getExistingTablenames():

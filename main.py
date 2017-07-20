@@ -234,7 +234,29 @@ def status(args, config):
 	tableNames = db.getExistingTablenames()
 	print "existing tables:", ", ".join(tableNames)
 	for table in tableNames:
-		print table, "content size:", len(db.getKeys(table))
+		keys = db.getKeys(table)
+		print table, "content size:", len(keys)
+		for key in keys:
+			tup = KeySerializer.toTuple(key)
+			if len(tup) > 2:
+				newKey = KeySerializer.toKey(tup[-2:])
+				if args.deleteEvil:
+					db.deleteItem(table, key)
+					print "item with evil formatted key deleted:", key
+				elif args.fixEvil:
+					if db.exists(table, newKey):
+						if db.getText(table, key) == db.getText(table, newKey):
+							db.deleteItem(table, key)
+							print "item with evil formatted key fixed:", key
+						else:
+							print "Cannot fix item with evil formatted key:", key
+					else:
+						txt = db.getText(table, key)
+						db.deleteItem(table, key)
+						db.addText(table, newKey, txt)
+						print "item with evil formatted key fixed:", key
+				else:
+					print "item with evil formatted key found:", key
 
 def set_default_source_language(args, config):
 	if args.verbose:
@@ -309,6 +331,8 @@ if __name__ == '__main__':
 	
 	# status / info
 	info_parser = subparsers.add_parser('status', help='status / info')
+	info_parser.add_argument("--deleteEvil", help='deletes evil formatted keys from database', action="store_true")
+	info_parser.add_argument("--fixEvil", help='fixes evil formatted keys from database', action="store_true")
 	info_parser.set_defaults(func=status)
 	
 	# set
