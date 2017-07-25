@@ -26,15 +26,10 @@ def importXml(args, config):
 		print "working directory:", args.C
 	
 	d = xmlToDict(args.inputfile)
-	#exit(0)
-	#import json
-	#print json.dumps(d, indent=4, separators=(',', ': '))
-	#print
 	db = DBCmdManager(args.dbFile)
 	for translation, translationValue in d.iteritems():
 		srcLang, trgtLang = KeySerializer.toTuple(translation)
 		if args.verbose:
-			#print "translation:", translation
 			print "translation from %s to %s" % KeySerializer.toTuple(translation)
 		for key, keyValue in translationValue.iteritems():
 			st = db.getText(srcLang, key)

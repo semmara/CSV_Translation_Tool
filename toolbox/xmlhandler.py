@@ -45,15 +45,7 @@ def xmlToDict(filename, respectFile = False, firstN = None):
 						firstN -= 1
 				
 				# workaround/manipulation for translation office
-				transUnit_attrib_id = transUnit.attrib['id']
-				if transUnit_attrib_id.startswith(u"Parameter_._"):
-					transUnit_attrib_id = transUnit_attrib_id.replace(u"Parameter_._", u"")
-				elif transUnit_attrib_id.startswith(u"PAT_"):
-					transUnit_attrib_id = transUnit_attrib_id.replace(u"ParameterTypeRestrictionEnumeration_._", u"")
-				elif transUnit_attrib_id.startswith(u"ENUM_PAT_"):
-					transUnit_attrib_id = transUnit_attrib_id.replace(u"ParameterTypeRestrictionEnumeration_._", u"")
-				elif transUnit_attrib_id.startswith(u"ENUM_"):
-					transUnit_attrib_id = transUnit_attrib_id.replace(u"ParameterTypeRestrictionEnumeration_._", u"")
+				transUnit_attrib_id = KeySerializer.toKey(KeySerializer.toTuple(transUnit.attrib['id'])[-2:])
 				# end of workaround
 				
 				if transUnit_attrib_id in retTransUnit.keys():
