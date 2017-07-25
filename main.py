@@ -261,6 +261,34 @@ def set_default_source_language(args, config):
 	cfg.setOption(cfg.defaultSection, cfg.optionDefaultSourceLanguage, args.source_language)
 	cfg.save(args.cfgFile)
 
+def xliff_diff(args, config):
+	if args.verbose:
+		print "command: import xml"
+	if args.verbose:
+		print args
+		print "working directory:", args.C
+	lhs = xmlToDict(args.lhs)
+	rhs = xmlToDict(args.rhs)
+	
+	def createContList(d):
+		l = []
+		for translation, translationValue in d.iteritems():
+			srcLang, trgtLang = KeySerializer.toTuple(translation)
+			if args.verbose:
+				print "translation from %s to %s" % KeySerializer.toTuple(translation)
+			for key, keyValue in translationValue.iteritems():
+				#print key, keyValue
+				l.append(keyValue['source'])
+				#return
+		return l
+	
+	l_lhs = createContList(lhs)
+	l_rhs = createContList(rhs)
+	print "number of items:", len(l_lhs), len(l_rhs)
+	print "number of unique items:", len(set(l_lhs)), len(set(l_rhs))
+	print "lhs unique items:", list(set(l_lhs) - set(l_rhs))
+	print "rhs unique items:", list(set(l_rhs) - set(l_lhs))
+
 if __name__ == '__main__':
 	import argparse
 	from os.path import expanduser, join
@@ -341,6 +369,12 @@ if __name__ == '__main__':
 	default_source_language_parser.add_argument("source_language", help="set default source language")
 	default_source_language_parser.add_argument('-i', "--ignore_warnings", help="ignore warnings")
 	default_source_language_parser.set_defaults(func=set_default_source_language)
+	
+	# xliff diff
+	xliff_diff_parser = subparsers.add_parser('xliffdiff', help='prints diff infos to given xliff files')
+	xliff_diff_parser.add_argument("lhs", help='1. xliff file')
+	xliff_diff_parser.add_argument("rhs", help='2. xliff file')
+	xliff_diff_parser.set_defaults(func=xliff_diff)
 	
 	# parse arguments
 	args = parent_parser.parse_args()
