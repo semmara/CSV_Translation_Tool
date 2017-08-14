@@ -51,8 +51,18 @@ def importXml(args, config):
 			if txt == None:
 				db.addText(trgtLang, key, keyValue['target'])
 			elif txt != keyValue['target']:
-				print "Error in target:", trgtLang, key, keyValue['target']
-				continue
+				if args.force_overwrite_existing:
+					print "Warning: key '%s' already existing in '%s'" % (key, trgtLang)
+					print "         current content:", txt
+					print "         new content:    ", keyValue['target']
+					if raw_input('overwrite [y/N]:').lower() == 'y':
+						db.deleteItem(trgtLang, key)
+						db.addText(trgtLang, key, keyValue['target'])
+						print "value overwritten"
+					else:
+						print "skipped item"
+				else:
+					print "Error in target:", trgtLang, key, keyValue['target'], txt
 
 def exportXml(args, config):
 	if not os.path.isfile(args.dbFile):
@@ -209,6 +219,7 @@ def appendTranslationToCsv(args, config):
 				print "translation value not in database", ttl, key
 				outputCsvData[lineIdx].append('')
 			else:
+				print "append", ttl, key, value
 				outputCsvData[lineIdx].append(value.encode(CSV_CODING))
 	
 	# write output csv
