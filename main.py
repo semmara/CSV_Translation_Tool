@@ -12,8 +12,6 @@ from toolbox.csvmgmt.csvhandler import CSVHandler
 from toolbox.keyserializer import KeySerializer
 from itertools import permutations
 
-CSV_CODING = "cp1257"
-DEFAULT_CODING = "utf8"
 DEFAULT_TEXT_LEN = 255
 
 def importXml(args, config):
@@ -146,7 +144,7 @@ def importCsv(args, config):
 		stl = inputCsvData[0][args.dataColumn]  # stl := source translation language
 		for line in inputCsvData[1:]:
 			key = KeySerializer.toKey(tuple(line[:2]))
-			data = line[args.dataColumn].decode(CSV_CODING)
+			data = line[args.dataColumn]
 			# ignore empty data
 			if data in [None, '']:
 				print "empty data for key", key
@@ -220,7 +218,7 @@ def appendTranslationToCsv(args, config):
 				outputCsvData[lineIdx].append('')
 			else:
 				print "append", ttl, key, value
-				outputCsvData[lineIdx].append(value.encode(CSV_CODING))
+				outputCsvData[lineIdx].append(value)
 	
 	# write output csv
 	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
