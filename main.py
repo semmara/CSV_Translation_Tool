@@ -187,25 +187,36 @@ def appendTranslationToCsv(args, config):
 	
 	# get target translation language
 	ttls = set(args.targetTranslationLanguage)
-	errFound = False
 	dbcm = DBCmdManager(args.dbFile)
-	for ttl in ttls:
+	for ttl in list(ttls):
 		if ttl not in dbcm.getExistingTablenames():
-			print "Error: No translation table found. Please check given target language", ttl
-			errFound = True
-		if ttl in inputCsvData[0]:
-			print "Error:", ttl, "already found in csv file"
-			errFound = True
-	if errFound:
-		sys.exit(1)
-		return
+			print "#" * 80
+			print "Warning: No translation table found. Please check given target language", ttl
+			print "#" * 80
+			if args.yes:
+				ttls.discard(ttl)
+			else:
+				if raw_input("skip translation language %s [y/N]:" % ttl).lower() == 'y':
+					ttls.discard(ttl)
+				else:
+					sys.exit(1)
+		elif ttl in inputCsvData[0]:
+			print "#" * 80
+			print "Warning:", ttl, "already found in csv file"
+			print "#" * 80
+			if args.yes:
+				ttls.discard(ttl)
+			else:
+				if raw_input("skip translation language '%s' [y/N]:" % ttl).lower() == 'y':
+					ttls.discard(ttl)
+				else:
+					sys.exit(1)
 	
 	# calc number of existing columns
 	numbExistingCols = len(inputCsvData[0])
 	
+	outputCsvData = inputCsvData[:]
 	for ttl in ttls:
-		outputCsvData = inputCsvData
-		
 		# extend header
 		outputCsvData[0].append(ttl)
 		
@@ -359,6 +370,7 @@ if __name__ == '__main__':
 	append_to_csv_parser.add_argument("inputfile", help='input file', default=DEFAULT_CSV_INPUT_FILENAME)
 	append_to_csv_parser.add_argument('-o', "--outputfile", help='output file', default=DEFAULT_CSV_OUTPUT_FILENAME)
 	append_to_csv_parser.add_argument("targetTranslationLanguage", help='the target language (database table name) to translate to', nargs='+')
+	append_to_csv_parser.add_argument("--yes", help="applies 'yes' to all interactive questions", action="store_true")
 	append_to_csv_parser.set_defaults(func=appendTranslationToCsv)
 	
 	# status / info
