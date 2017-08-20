@@ -124,6 +124,8 @@ def importCsv(args, config):
 		print args
 		print "working directory:", args.C
 	
+	dataColumn = 2  # source translation column
+	
 	# read input csv
 	inputCsvData = CSVHandler.read_from_csv_file(args.inputfile)
 	
@@ -131,20 +133,23 @@ def importCsv(args, config):
 	if len(inputCsvData) == 0:
 		print "no data found"
 		return
-	if len(inputCsvData[0]) < 3:
-		print "missing default language"
-		return
-	if len(inputCsvData[0]) < args.dataColumn + 1:
-		print "no source language given for column", args.dataColumn
+	if len(inputCsvData[0]) < dataColumn + 1:
+		print "Number of columns to low. Needed:", dataColumn + 1
 		return
 	
 	# import data from input csv
 	dbcm = DBCmdManager(args.dbFile)
 	if not args.noDatabaseImport:
-		stl = inputCsvData[0][args.dataColumn]  # stl := source translation language
-		for line in inputCsvData[1:]:
+		
+		# get stl (source translation language)
+		cfg = ConfigHandler(args.cfgFile)
+		stl = cfg.getOption(cfg.defaultSection, cfg.optionDefaultDefaultLanguageRenaming)
+		if stl is None:
+			stl = inputCsvData[0][dataColumn]  # 'DefaultLanguage'
+		
+		for line in inputCsvData[1:]:  # ignore header
 			key = KeySerializer.toKey(tuple(line[:2]))
-			data = line[args.dataColumn]
+			data = line[dataColumn]
 			# ignore empty data
 			if data in [None, '']:
 				print "empty data for key", key
@@ -196,7 +201,7 @@ def appendTranslationToCsv(args, config):
 			if args.yes:
 				ttls.discard(ttl)
 			else:
-				if raw_input("skip translation language %s [y/N]:" % ttl).lower() == 'y':
+				if raw_input("skip translation language '%s' [y/N]:" % ttl).lower() == 'y':
 					ttls.discard(ttl)
 				else:
 					sys.exit(1)
@@ -273,12 +278,12 @@ def status(args, config):
 				else:
 					print "item with evil formatted key found:", key
 
-def set_default_source_language(args, config):
+def set_rename_DefaultLanguage(args, config):
 	if args.verbose:
-		print "command: set default source language"
+		print "command: rename DefaultLanguage to"
 		print "config file:", args.cfgFile
 	cfg = ConfigHandler(args.cfgFile)
-	cfg.setOption(cfg.defaultSection, cfg.optionDefaultSourceLanguage, args.source_language)
+	cfg.setOption(cfg.defaultSection, cfg.optionDefaultDefaultLanguageRenaming, args.rename_as)
 	cfg.save(args.cfgFile)
 
 def xliff_diff(args, config):
@@ -347,10 +352,7 @@ if __name__ == '__main__':
 	
 	# export xml
 	export_xml_parser = subparsers.add_parser('exportxml', help='export xml')
-	if cfg.getOption(cfg.defaultSection, cfg.optionDefaultSourceLanguage) is None:
-		export_xml_parser.add_argument("sourceTranslationLanguage", help='the source language (database table name) to translate from')
-	else:
-		export_xml_parser.add_argument('-s', "--sourceTranslationLanguage", help='the source language (database table name) to translate from', default=cfg.getOption(cfg.defaultSection, cfg.optionDefaultSourceLanguage))
+	export_xml_parser.add_argument("sourceTranslationLanguage", help='the source language (database table name) to translate from')
 	export_xml_parser.add_argument("targetTranslationLanguage", help='the target language (database table name) to translate to')
 	export_xml_parser.add_argument('-o', "--outputfile", help='output file', default=DEFAULT_XML_OUTPUT_FILENAME)
 	export_xml_parser.add_argument('-t', "--withTargetTag", help='adds empty target tag to each trans-unit', action="store_true")
@@ -358,7 +360,6 @@ if __name__ == '__main__':
 	
 	# import csv
 	import_csv_parser = subparsers.add_parser('importcsv', help='import to database from csv')
-	import_csv_parser.add_argument('-c', "--dataColumn", help='use this column to handle as import data', type=int, default=3)
 	import_csv_parser.add_argument('-d', "--noDatabaseImport", help='do not import data to database', action="store_true")
 	import_csv_parser.add_argument('-f', "--forceOverwriteExistingData", help='overwrite data already in database', action="store_true")
 	import_csv_parser.add_argument("inputfile", help='input file', default=DEFAULT_CSV_INPUT_FILENAME)
@@ -382,14 +383,10 @@ if __name__ == '__main__':
 	# set
 	set_parser = subparsers.add_parser('set', help='set')
 	set_parser_subparsers = set_parser.add_subparsers(help='sub-command help')
-	# subset default
-	default_parser = set_parser_subparsers.add_parser('default', help='default')
-	set_default_parser_subparsers = default_parser.add_subparsers(help='sub-command help')
-	# subsubset default source language
-	default_source_language_parser = set_default_parser_subparsers.add_parser('source_language', help='source language')
-	default_source_language_parser.add_argument("source_language", help="set default source language")
-	default_source_language_parser.add_argument('-i', "--ignore_warnings", help="ignore warnings")
-	default_source_language_parser.set_defaults(func=set_default_source_language)
+	# rename DefaultLanguage to
+	rename_DefaultLanguage_to = set_parser_subparsers.add_parser('rename_DefaultLanguage')
+	rename_DefaultLanguage_to.add_argument("rename_as")
+	rename_DefaultLanguage_to.set_defaults(func=set_rename_DefaultLanguage)
 	
 	# xliff diff
 	xliff_diff_parser = subparsers.add_parser('xliffdiff', help='prints diff infos to given xliff files')

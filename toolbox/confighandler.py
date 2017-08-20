@@ -10,6 +10,7 @@ default_config = """
 length_table = kScript
 #default_source_language = de-DE
 default_text_length = 255
+default_DefaultLanguage_renaming = de-DE
 
 [kScript]
 GO_.Text = 50
@@ -27,6 +28,7 @@ class ConfigHandler(object):
 	defaultSection = "Main"
 	optionDefaultSourceLanguage = "default_source_language"
 	optionDefaultTextLength = "default_text_length"
+	optionDefaultDefaultLanguageRenaming = "default_DefaultLanguage_renaming"
 	
 	def __init__(self, configFile = None):
 		self.configFile = configFile
