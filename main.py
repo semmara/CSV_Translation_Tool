@@ -186,9 +186,6 @@ def appendTranslationToCsv(args, config):
 	if len(inputCsvData[0]) < 3:
 		print "missing default language"
 		return
-	if len(inputCsvData[0]) < 4:
-		print "no source language given"
-		return
 	
 	# get target translation language
 	ttls = set(args.targetTranslationLanguage)
@@ -235,6 +232,11 @@ def appendTranslationToCsv(args, config):
 			else:
 				print "append", ttl, key, value
 				outputCsvData[lineIdx].append(value)
+	
+	# remove empty
+	for line in outputCsvData[:]:
+		if line[2] in [None, '']:
+			outputCsvData.remove(line)
 	
 	# write output csv
 	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
