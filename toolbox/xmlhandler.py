@@ -62,7 +62,11 @@ def xmlToDict(filename, respectFile = False, firstN = None):
 				trgt = transUnit.find('xliffns:target', ns)
 				if trgt is not None:
 					if trgt.text is not None:
-						st['target'] = trgt.text.replace('\n', ' ').replace('\r', ' ').replace('  ', ' ')
+						st['target'] = trgt.text
+						st['target'] = st['target'].replace('\n', ' ')
+						st['target'] = st['target'].replace('\r', ' ')
+						st['target'] = st['target'].replace('  ', ' ')
+						#st['target'] = st['target'].replace(u'\u2019', u"'")
 				# 	else:
 				# 		print "target.text is None:"
 				# 		print "\t", translationKey
