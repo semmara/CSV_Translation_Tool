@@ -188,9 +188,9 @@ def appendTranslationToCsv(args, config):
 		return
 	
 	# get target translation language
-	ttls = set(args.targetTranslationLanguage)
+	ttls = args.targetTranslationLanguage
 	dbcm = DBCmdManager(args.dbFile)
-	for ttl in list(ttls):
+	for ttl in ttls:
 		if ttl not in dbcm.getExistingTablenames():
 			print "#" * 80
 			print "Warning: No translation table found. Please check given target language", ttl
@@ -202,22 +202,13 @@ def appendTranslationToCsv(args, config):
 					ttls.discard(ttl)
 				else:
 					sys.exit(1)
-		elif ttl in inputCsvData[0]:
-			print "#" * 80
-			print "Warning:", ttl, "already found in csv file"
-			print "#" * 80
-			if args.yes:
-				ttls.discard(ttl)
-			else:
-				if raw_input("skip translation language '%s' [y/N]:" % ttl).lower() == 'y':
-					ttls.discard(ttl)
-				else:
-					sys.exit(1)
-	
-	# calc number of existing columns
-	numbExistingCols = len(inputCsvData[0])
 	
 	outputCsvData = inputCsvData[:]
+	
+	# remove existing translations
+	#for line in outputCsvData:
+	#	line = line[:3]
+	
 	for ttl in ttls:
 		# extend header
 		outputCsvData[0].append(ttl)
@@ -241,6 +232,29 @@ def appendTranslationToCsv(args, config):
 	# write output csv
 	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
 	print "translation is complete"
+
+def rmTranslationFromCsv(args, config):
+	if args.verbose:
+		print "command: remove translation from csv"
+		print args
+		print "working directory:", args.C
+	
+	# read input csv
+	inputCsvData = CSVHandler.read_from_csv_file(args.inputfile)
+	
+	header = inputCsvData[0]
+	
+	if args.lang not in header:
+		print "Error"
+		sys.exit(1)
+	
+	idx = header.index(args.lang)
+	outputCsvData = inputCsvData[:]
+	for line in outputCsvData:
+		line = line.pop(idx)
+	
+	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
+	print "remove of translation is complete"
 
 def status(args, config):
 	if args.verbose:
@@ -375,6 +389,14 @@ if __name__ == '__main__':
 	append_to_csv_parser.add_argument("targetTranslationLanguage", help='the target language (database table name) to translate to', nargs='+')
 	append_to_csv_parser.add_argument("--yes", help="applies 'yes' to all interactive questions", action="store_true")
 	append_to_csv_parser.set_defaults(func=appendTranslationToCsv)
+	
+	# remove translation from csv
+	rm_from_csv_parser = subparsers.add_parser('rmfromcsv')
+	rm_from_csv_parser.add_argument('-l', "--lineterminator", help='set newline characters', default=DEFAULT_CSV_NEWLINE)
+	rm_from_csv_parser.add_argument('inputfile', help='input file')
+	rm_from_csv_parser.add_argument('outputfile', help='output file')
+	rm_from_csv_parser.add_argument('lang', help='the languages to remove from csv', nargs='+')
+	rm_from_csv_parser.set_defaults(func=rmTranslationFromCsv)
 	
 	# status / info
 	info_parser = subparsers.add_parser('status', help='status / info')
