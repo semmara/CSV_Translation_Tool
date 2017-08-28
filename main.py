@@ -250,14 +250,16 @@ def rmTranslationFromCsv(args, config):
 	
 	header = inputCsvData[0]
 	
-	if args.lang not in header:
-		print "Error"
-		sys.exit(1)
+	for l in args.lang:
+		if l not in header:
+			print "Error"
+			sys.exit(1)
 	
-	idx = header.index(args.lang)
 	outputCsvData = inputCsvData[:]
-	for line in outputCsvData:
-		line = line.pop(idx)
+	for l in set(args.lang):
+		idx = header.index(l)
+		for line in outputCsvData:
+			line = line.pop(idx)
 	
 	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
 	print "remove of translation is complete"
