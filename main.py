@@ -199,10 +199,10 @@ def appendTranslationToCsv(args, config):
 			print "Warning: No translation table found. Please check given target language", ttl
 			print "#" * 80
 			if args.yes:
-				ttls.discard(ttl)
+				ttls.remove(ttl)
 			else:
 				if raw_input("skip translation language '%s' [y/N]:" % ttl).lower() == 'y':
-					ttls.discard(ttl)
+					ttls.remove(ttl)
 				else:
 					sys.exit(1)
 	
