@@ -206,7 +206,7 @@ def appendTranslationToCsv(args, config):
 				else:
 					sys.exit(1)
 	
-	outputCsvData = inputCsvData[:]
+	outputCsvData = _rmTranslationsFromCsvData(inputCsvData[:], ttls)
 	
 	# remove existing translations
 	#for line in outputCsvData:
@@ -239,6 +239,19 @@ def appendTranslationToCsv(args, config):
 	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
 	print "translation is complete"
 
+def _rmTranslationsFromCsvData(csvData, languages):
+	header = csvData[0]
+	for l in args.lang:
+		if l not in header:
+			print "Error"
+			sys.exit(1)
+	output = csvData[:]
+	for l in set(languages):
+		idx = header.index(l)
+		for line in output:
+			line = line.pop(idx)
+	return output
+
 def rmTranslationFromCsv(args, config):
 	if args.verbose:
 		print "command: remove translation from csv"
@@ -248,18 +261,7 @@ def rmTranslationFromCsv(args, config):
 	# read input csv
 	inputCsvData = CSVHandler.read_from_csv_file(args.inputfile)
 	
-	header = inputCsvData[0]
-	
-	for l in args.lang:
-		if l not in header:
-			print "Error"
-			sys.exit(1)
-	
-	outputCsvData = inputCsvData[:]
-	for l in set(args.lang):
-		idx = header.index(l)
-		for line in outputCsvData:
-			line = line.pop(idx)
+	outputCsvData = _rmTranslationsFromCsvData(inputCsvData, args.lang)
 	
 	CSVHandler.write_to_csv_file(args.outputfile, outputCsvData, args.lineterminator)
 	print "remove of translation is complete"
