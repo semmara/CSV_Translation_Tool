@@ -241,7 +241,7 @@ def appendTranslationToCsv(args, config):
 
 def _rmTranslationsFromCsvData(csvData, languages):
 	header = csvData[0]
-	for l in args.lang:
+	for l in languages:
 		if l not in header:
 			print "Error"
 			sys.exit(1)
