@@ -241,12 +241,12 @@ def appendTranslationToCsv(args, config):
 
 def _rmTranslationsFromCsvData(csvData, languages):
 	header = csvData[0]
+	rm_languages = []
 	for l in languages:
-		if l not in header:
-			print "Error"
-			sys.exit(1)
+		if l in header:
+			rm_languages.append(l)
 	output = csvData[:]
-	for l in set(languages):
+	for l in set(rm_languages):
 		idx = header.index(l)
 		for line in output:
 			line = line.pop(idx)
